@@ -1,0 +1,7 @@
+.gradle
+.idea
+.kotlintest
+build/
+/out/
+*.hprof
+*.iml

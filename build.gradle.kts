@@ -2,6 +2,7 @@ plugins {
 	`kotlin-dsl`
 	`maven-publish`
 	application
+	id("com.github.johnrengelman.shadow") version "5.1.0"
 }
 
 group = "au.com.touchsafe"
@@ -19,7 +20,8 @@ repositories {
 }
 
 val kotlinxCoroutinesReactorVersion = "1.3.2"
-//val ktorVersion = "1.2.2" // TODO: Upgrading this to "1.2.3" makes it so that we cannot log in to base-test!!! Upgrading this to "1.2.4" causes a compilation error!!!
+//val ktorVersion = "1.2.2"
+val logbackVersion = "1.2.3"
 val r2dbcMssqlVersion = "1.0.0.M7"
 
 dependencies {
@@ -29,9 +31,17 @@ dependencies {
 //	implementation("io.ktor", "ktor-server-netty", ktorVersion)
 //	implementation("io.ktor", "ktor-server-sessions", ktorVersion)
 	implementation("io.r2dbc", "r2dbc-mssql", r2dbcMssqlVersion)
+	implementation("org.jetbrains.kotlinx", "kotlinx-coroutines-jdk8",kotlinxCoroutinesReactorVersion)
 	implementation("org.jetbrains.kotlinx", "kotlinx-coroutines-reactor", kotlinxCoroutinesReactorVersion)
+
+	runtime("ch.qos.logback", "logback-classic", logbackVersion)
 }
 
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
 	kotlinOptions.jvmTarget = "1.11"
+}
+
+// TODO: Remove once console testing has been completed:
+val run by tasks.getting(JavaExec::class) {
+	standardInput = System.`in`
 }

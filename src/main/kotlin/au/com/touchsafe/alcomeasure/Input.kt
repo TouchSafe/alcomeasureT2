@@ -2,10 +2,12 @@ package au.com.touchsafe.alcomeasure
 
 object Input {
 
-	val applicationPropeties = java.util.ResourceBundle.getBundle("application")
+	val applicationProperties = java.util.ResourceBundle.getBundle("application")
 
 	suspend fun getId(): Id {
-		return Pin(readLine()!!) // TODO: Replace.
+		val id = Pin(readLine()!!) // TODO: Replace.
+		LOGGER.debug("Input detected: $id")
+		return id
 	}
 }
 

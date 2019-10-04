@@ -5,12 +5,15 @@ import kotlinx.coroutines.reactive.awaitSingle
 
 object SqlServer {
 
+	private const val APPLICATION_NAME = "AlcoMeasure Integration"
 	private val DB_FACTORY = io.r2dbc.mssql.MssqlConnectionConfiguration.builder()
-			.host(Input.applicationProperties.getString("dbHost"))
-			.port(Input.applicationProperties.getString("dbPort").toInt())
-			.database(Input.applicationProperties.getString("dbDatabase"))
-			.username(Input.applicationProperties.getString("dbUsername"))
-			.password(Input.applicationProperties.getString("dbPassphrase"))
+			.applicationName(APPLICATION_NAME)
+			.host(SETTINGS_BUNDLE.getString("dbHost"))
+			.port(SETTINGS_BUNDLE.getString("dbPort").toInt())
+			.database(SETTINGS_BUNDLE.getString("dbDatabase"))
+			.username(SETTINGS_BUNDLE.getString("dbUsername"))
+			.password(SETTINGS_BUNDLE.getString("dbPassphrase"))
+			.enableSsl()
 			.build()
 			.let {
 				val dbFactory = io.r2dbc.mssql.MssqlConnectionFactory(it)
@@ -23,10 +26,10 @@ object SqlServer {
 		val connection = DB_FACTORY.create().awaitSingle()
 		try {
 			val result = when (id) {
-				is Rfid -> execute(connection, "$VALIDATE_ID_SQL_START AND rfidFacilityId = @rfidFacilityId AND rfid = @rfid;", "rfid" to id.cardNumber, "rfidFacilityId" to id.facilityCode)
 				is Pin -> execute(connection, "$VALIDATE_ID_SQL_START AND pin = @pin;", "pin" to id.pin)
+				is Rfid -> execute(connection, "$VALIDATE_ID_SQL_START AND rfidFacilityId = @rfidFacilityId AND rfid = @rfid;", "rfidFacilityId" to id.facilityCode, "rfid" to id.cardNumber)
 			} ?: return null
-			return result.map { row, _ -> User(row["id", Int::class.java]!!, row["firstName", String::class.java]!!, row["lastName", String::class.java]!!) }.awaitSingle()
+			return result.map { row, _ -> User(row["id", Integer::class.java]!!.toInt(), row["firstName", String::class.java]!!, row["lastName", String::class.java]!!) }.awaitFirstOrNull()
 		} catch (ex: Throwable) {
 			LOGGER.error("Error occurred while validating an Id:", ex)
 			return null
@@ -50,10 +53,9 @@ object SqlServer {
 
 	private suspend fun execute(connection: io.r2dbc.mssql.MssqlConnection, sql: String, vararg bindings: Pair<String, Any>): io.r2dbc.mssql.MssqlResult? {
 		var statement = connection.createStatement(sql)
-		LOGGER.debug("----------------------------------------------------------------------------------------------------\nExecuting SQL: $sql")
 		bindings.forEach { binding ->
-			statement = statement.bind(binding.first, binding.second)
 			LOGGER.debug("Binding: ${binding.first} -> ${binding.second}")
+			statement = statement.bind(binding.first, binding.second)
 		}
 		return statement.execute().awaitFirstOrNull()
 	}

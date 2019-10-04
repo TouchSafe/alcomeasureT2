@@ -20,16 +20,11 @@ repositories {
 }
 
 val kotlinxCoroutinesReactorVersion = "1.3.2"
-//val ktorVersion = "1.2.2"
 val logbackVersion = "1.2.3"
-val r2dbcMssqlVersion = "1.0.0.M7"
+val r2dbcMssqlVersion = "0.8.0.M8"
 
 dependencies {
 	implementation(kotlin("stdlib"))
-//	implementation("io.ktor", "ktor-auth", ktorVersion)
-//	implementation("io.ktor", "ktor-jackson", ktorVersion)
-//	implementation("io.ktor", "ktor-server-netty", ktorVersion)
-//	implementation("io.ktor", "ktor-server-sessions", ktorVersion)
 	implementation("io.r2dbc", "r2dbc-mssql", r2dbcMssqlVersion)
 	implementation("org.jetbrains.kotlinx", "kotlinx-coroutines-jdk8",kotlinxCoroutinesReactorVersion)
 	implementation("org.jetbrains.kotlinx", "kotlinx-coroutines-reactor", kotlinxCoroutinesReactorVersion)

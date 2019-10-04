@@ -1,11 +1,9 @@
 package au.com.touchsafe.alcomeasure
 
-import kotlinx.coroutines.future.await
-
 object AlcoMeasure {
 
-	private val HOST = Input.applicationProperties.getString("alcomeasureHost")
-	private val PORT = Input.applicationProperties.getString("alcomeasurePort")
+	private val HOST = SETTINGS_BUNDLE.getString("alcomeasureHost")
+	private val PORT = SETTINGS_BUNDLE.getString("alcomeasurePort")
 	private val STATUS_URI = java.net.URI.create("http://$HOST:$PORT/status.cgi")
 
 	private const val ERROR_STATE_TAG_START = "<ErrorState value=\""
@@ -18,8 +16,12 @@ object AlcoMeasure {
 	private const val POLLING_DELAY = 500L
 	private const val RESULT_CONVERSION_VALUE = 44000.0
 
+	suspend fun displayMessage(message: String, displayTimeMs: Int = 3000) {
+		LOGGER.info(message) // TODO
+	}
+
 	suspend fun performTest(user: User): Result {
-		println("Perform Test: $user") // TODO: Remove.
+		displayMessage(java.text.MessageFormat.format(MESSAGES_BUNDLE.getString("WELCOME_PERSON"), user.firstName, user.surname))
 		return Result("", "", "", 0.0) // TODO: Remove.
 //		val httpClient = java.net.http.HttpClient.newHttpClient()
 //		val statusRequest = java.net.http.HttpRequest.newBuilder(STATUS_URI).build()

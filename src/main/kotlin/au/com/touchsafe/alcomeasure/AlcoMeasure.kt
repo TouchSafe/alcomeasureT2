@@ -28,50 +28,51 @@ object AlcoMeasure {
 		// TODO: Implement custom message display on the AlcoMeasure with new API.
 	}
 
-	suspend fun performTest(user: User): Double? {
+	suspend fun performTest(user: User): Result? {
 		displayMessage(java.text.MessageFormat.format(MESSAGES_BUNDLE.getString("WELCOME_PERSON"), user.firstName, user.surname))
-		return 0.04 // TODO: Disabled for easier testing.
-//		val httpClient = java.net.http.HttpClient.newHttpClient()
-//		val statusRequest = java.net.http.HttpRequest.newBuilder(STATUS_URI).build()
-//		val initialStatusResponseBody = httpClient.sendAsync(statusRequest, java.net.http.HttpResponse.BodyHandlers.ofString()).await().body().replace(NEW_LINE_REGEX, "")
-//		LOGGER.debug("Initial status response body:$initialStatusResponseBody:")
-//		val initialProcessStateValue = extractValue(initialStatusResponseBody, PROCESS_STATE_TAG_START)
-//		if (initialProcessStateValue != ProcessState.NONE.value) {
-//			LOGGER.error("Invalid initial process state value:$initialProcessStateValue:")
-//			displayMessage(MESSAGES_BUNDLE.getString("START_TEST_FAILED"))
-//		} else {
-//			val startTestRequest = java.net.http.HttpRequest.newBuilder(START_TEST_URI).build()
-//			val startTestResponseBody = httpClient.sendAsync(startTestRequest, java.net.http.HttpResponse.BodyHandlers.ofString()).await().body().replace(NEW_LINE_REGEX, "")
-//			LOGGER.debug("Start test response body:$startTestResponseBody:")
-//			if (startTestResponseBody != START_TEST_RESPONSE) {
-//				LOGGER.error("Invalid start test response body.")
-//				displayMessage(MESSAGES_BUNDLE.getString("START_TEST_FAILED"))
-//			} else {
-//				do {
-//					kotlinx.coroutines.delay(POLLING_DELAY)
-//					val testStatusResponseBody = httpClient.sendAsync(statusRequest, java.net.http.HttpResponse.BodyHandlers.ofString()).await().body().replace(NEW_LINE_REGEX, "")
-//					LOGGER.debug("Test status response body:$testStatusResponseBody:")
-//					val processStateValue = extractValue(testStatusResponseBody, PROCESS_STATE_TAG_START)
-//					val testStateValue = extractValue(testStatusResponseBody, TEST_STATE_TAG_START)
-//					if (processStateValue != ProcessState.NORMAL_TEST.value) {
-//						LOGGER.error("Process state has changed before the result has been read.")
-//					} else if (testStateValue == TestState.OUTCOME_NOT_RETRIEVED.value) {
-//						val outcomeValue = extractValue(testStatusResponseBody, OUTCOME_TAG_START)
-//						if (outcomeValue != Outcome.TEST_SUCCESSFUL.value) {
-//							LOGGER.info("Test not successful:$outcomeValue:")
-//						} else {
-//							val errorStateValue = extractValue(testStatusResponseBody, ERROR_STATE_TAG_START)
-//							if (errorStateValue != ErrorState.NONE.value) {
-//								LOGGER.info("Test error occurred:$outcomeValue:")
-//							} else {
-//								return extractValue(testStatusResponseBody, LAST_RESULT_TAG_START).toInt() / RESULT_CONVERSION_VALUE
-//							}
-//						}
-//					}
-//				} while (processStateValue == ProcessState.NORMAL_TEST.value)
-//			}
-//		}
-//		return null
+		val httpClient = java.net.http.HttpClient.newHttpClient()
+		val statusRequest = java.net.http.HttpRequest.newBuilder(STATUS_URI).build()
+		val initialStatusResponseBody = httpClient.sendAsync(statusRequest, java.net.http.HttpResponse.BodyHandlers.ofString()).await().body().replace(NEW_LINE_REGEX, "")
+		LOGGER.debug("Initial status response body:$initialStatusResponseBody:")
+		val initialProcessStateValue = extractValue(initialStatusResponseBody, PROCESS_STATE_TAG_START)
+		if (initialProcessStateValue != ProcessState.NONE.value) {
+			LOGGER.error("Invalid initial process state value:$initialProcessStateValue:")
+			displayMessage(MESSAGES_BUNDLE.getString("START_TEST_FAILED"))
+		} else {
+			val startTestRequest = java.net.http.HttpRequest.newBuilder(START_TEST_URI).build()
+			val startTestResponseBody = httpClient.sendAsync(startTestRequest, java.net.http.HttpResponse.BodyHandlers.ofString()).await().body().replace(NEW_LINE_REGEX, "")
+			LOGGER.debug("Start test response body:$startTestResponseBody:")
+			if (startTestResponseBody != START_TEST_RESPONSE) {
+				LOGGER.error("Invalid start test response body.")
+				displayMessage(MESSAGES_BUNDLE.getString("START_TEST_FAILED"))
+			} else {
+				do {
+					kotlinx.coroutines.delay(POLLING_DELAY)
+					val testStatusResponseBody = httpClient.sendAsync(statusRequest, java.net.http.HttpResponse.BodyHandlers.ofString()).await().body().replace(NEW_LINE_REGEX, "")
+					LOGGER.debug("Test status response body:$testStatusResponseBody:")
+					val processStateValue = extractValue(testStatusResponseBody, PROCESS_STATE_TAG_START)
+					val testStateValue = extractValue(testStatusResponseBody, TEST_STATE_TAG_START)
+					if (processStateValue != ProcessState.NORMAL_TEST.value) {
+						LOGGER.error("Process state has changed before the result has been read.")
+					} else if (testStateValue == TestState.OUTCOME_NOT_RETRIEVED.value) {
+						val outcomeValue = extractValue(testStatusResponseBody, OUTCOME_TAG_START)
+						if (outcomeValue != Outcome.TEST_SUCCESSFUL.value) {
+							LOGGER.info("Test not successful:$outcomeValue:")
+						} else {
+							val errorStateValue = extractValue(testStatusResponseBody, ERROR_STATE_TAG_START)
+							if (errorStateValue != ErrorState.NONE.value) {
+								LOGGER.info("Test error occurred:$outcomeValue:")
+							} else {
+								val result = extractValue(testStatusResponseBody, LAST_RESULT_TAG_START).toInt() / RESULT_CONVERSION_VALUE
+								// TODO: Get photo URLs.
+								return Result(result, null, null, null)
+							}
+						}
+					}
+				} while (processStateValue == ProcessState.NORMAL_TEST.value)
+			}
+		}
+		return null
 	}
 
 	private fun extractValue(body: String, tagStart: String): String {
@@ -99,6 +100,8 @@ enum class ProcessState(val value: String) {
 	NONE("None"),
 	NORMAL_TEST("Normal Test")
 }
+
+data class Result(val value: Double, val photo1Uri: java.net.URL?, val photo2Uri: java.net.URL?, val photo3Uri: java.net.URL?)
 
 @Suppress("unused")
 enum class TestState(val value: String) {

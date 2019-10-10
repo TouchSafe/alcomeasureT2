@@ -16,18 +16,17 @@ application {
 repositories {
 	jcenter()
 	mavenCentral()
-	maven { url = uri("https://repo.spring.io/plugins-release/") }
 }
 
-val kotlinxCoroutinesReactorVersion = "1.3.2"
+val javkartaMailVersion = "1.6.4"
+val kotlinxCoroutinesVersion = "1.3.2"
 val logbackVersion = "1.2.3"
-val r2dbcMssqlVersion = "0.8.0.M8"
 
 dependencies {
 	implementation(kotlin("stdlib"))
-	implementation("io.r2dbc", "r2dbc-mssql", r2dbcMssqlVersion)
-	implementation("org.jetbrains.kotlinx", "kotlinx-coroutines-jdk8",kotlinxCoroutinesReactorVersion)
-	implementation("org.jetbrains.kotlinx", "kotlinx-coroutines-reactor", kotlinxCoroutinesReactorVersion)
+	implementation("com.microsoft.sqlserver", "mssql-jdbc", "7.4.1.jre11")
+	implementation("com.sun.mail", "jakarta.mail", javkartaMailVersion)
+	implementation("org.jetbrains.kotlinx", "kotlinx-coroutines-jdk8", kotlinxCoroutinesVersion)
 
 	runtime("ch.qos.logback", "logback-classic", logbackVersion)
 }
@@ -36,7 +35,6 @@ tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
 	kotlinOptions.jvmTarget = "1.11"
 }
 
-// TODO: Remove once console testing has been completed:
 val run by tasks.getting(JavaExec::class) {
 	standardInput = System.`in`
 }

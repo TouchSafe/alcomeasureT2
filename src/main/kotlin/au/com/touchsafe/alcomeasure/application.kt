@@ -10,9 +10,7 @@ suspend fun main() {
 	while (true) {
 		try {
 			val id = Input.getId()
-			val connection = java.sql.DriverManager.getConnection(SqlServer.DB_CONNECTION_URI)
-			@Suppress("ConvertTryFinallyToUseCall")
-			try {
+			java.sql.DriverManager.getConnection(SqlServer.DB_CONNECTION_URI).use { connection ->
 				val user = SqlServer.validateId(connection, id)
 				when {
 					user != null -> AlcoMeasure.performTest(user)?.let { result ->
@@ -23,8 +21,6 @@ suspend fun main() {
 					id is Rfid -> AlcoMeasure.displayMessage(MESSAGES_BUNDLE.getString("INVALID_RFID"))
 					else -> throw UnsupportedOperationException("This cannot happen.")
 				}
-			} finally {
-				connection.close()
 			}
 		} catch (ex: Throwable) {
 			LOGGER.error("An unexpected error occurred:", ex)

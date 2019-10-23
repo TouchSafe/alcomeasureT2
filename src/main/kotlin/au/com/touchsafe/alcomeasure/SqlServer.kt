@@ -34,7 +34,7 @@ object SqlServer {
 			val photo1Id = result.photo1Uri?.let { downloadAndStorePhoto(connection, it) }
 			val photo2Id = result.photo2Uri?.let { downloadAndStorePhoto(connection, it) }
 			val photo3Id = result.photo3Uri?.let { downloadAndStorePhoto(connection, it) }
-			val statement = connection.prepareStatement("INSERT INTO AlcoMeasureResults (userId, result, photo1, photo2, photo3) VALUES (?, ?, ?, ?, ?);")
+			val statement = connection.prepareStatement("INSERT INTO AlcoMeasureResult (userId, result, photo1Id, photo2Id, photo3Id) VALUES (?, ?, ?, ?, ?);")
 			statement.setInt(1, user.id)
 			statement.setDouble(2, result.value)
 			if (photo1Id == null) statement.setNull(3, java.sql.Types.INTEGER) else statement.setInt(3, photo1Id)

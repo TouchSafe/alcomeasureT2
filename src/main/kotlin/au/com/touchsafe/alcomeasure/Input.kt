@@ -2,8 +2,12 @@ package au.com.touchsafe.alcomeasure
 
 object Input {
 
+	private val reader = java.util.Scanner(System.`in`)
+
 	fun getId(): Id {
-		val input = readLine()!!
+//		val input = readLine()!! // TODO: If you tap your card multiple times, the inputs are buffered, and multiple tests will be initiated!!!!!
+		reader.nextLine()
+		val input = reader.next()!!
 		val id = if (input.contains(':')) {
 			val parts = input.split(':')
 			Rfid(parts[0].toInt(), parts[1].toInt())

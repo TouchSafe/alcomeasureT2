@@ -24,6 +24,7 @@ val logbackVersion = "1.2.3"
 
 dependencies {
 	implementation(kotlin("stdlib"))
+	implementation(kotlin("stdlib-jdk8"))
 	implementation("com.microsoft.sqlserver", "mssql-jdbc", "7.4.1.jre11")
 	implementation("com.sun.mail", "jakarta.mail", javkartaMailVersion)
 	implementation("org.jetbrains.kotlinx", "kotlinx-coroutines-jdk8", kotlinxCoroutinesVersion)

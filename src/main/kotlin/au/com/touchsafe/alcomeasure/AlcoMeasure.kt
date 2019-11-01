@@ -83,7 +83,7 @@ object AlcoMeasure {
 								if (downloadLogParts.size != 11) {
 									LOGGER.error("Downloaded log does not have the correct number of parts:$downloadLogResponseBody:")
 								} else {
-									val result = downloadLogParts[5].toDouble()
+									val result = downloadLogParts[5].toDouble() / RESULT_CONVERSION_VALUE
 									val photo1Number = IMAGE_NUMBER_REGEX.matchEntire(downloadLogParts[8])?.groups?.get(1)?.value
 									val photo2Number = IMAGE_NUMBER_REGEX.matchEntire(downloadLogParts[9])?.groups?.get(1)?.value
 									val photo3Number = IMAGE_NUMBER_REGEX.matchEntire(downloadLogParts[10])?.groups?.get(1)?.value

@@ -18,13 +18,13 @@ object Input {
 
 	fun getId(): Rfid {
 		val input = readLine()
-//		val id = if (input.contains(':')) {
-//			val parts = input.split(':')
+//		val id = if (input.contains(';')) {
+//			val parts = input.split(';')
 //			Rfid(parts[0].toInt(), parts[1].toInt())
 //		} else {
 //			Pin(input)
 //		}
-		val parts = input.split(':')
+		val parts = input.split(';')
 		val id = Rfid(parts[0].toInt(), parts[1].toInt())
 		LOGGER.debug("Input detected: $id")
 		return id

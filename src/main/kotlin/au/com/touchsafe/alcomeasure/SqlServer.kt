@@ -6,21 +6,21 @@ object SqlServer {
 	internal val DB_CONNECTION_URI = "jdbc:sqlserver://${SETTINGS_BUNDLE.getString("dbHost")}:${SETTINGS_BUNDLE.getString("dbPort")};databaseName=${SETTINGS_BUNDLE.getString("dbDatabase")};user=${SETTINGS_BUNDLE.getString("dbUsername")};password=${SETTINGS_BUNDLE.getString("dbPassphrase")};applicationName=$APPLICATION_NAME;"
 	private const val VALIDATE_ID_SQL_START = "SELECT id, firstName, lastName FROM [User] WHERE deleted = 0 AND DATEDIFF(HOUR, GETDATE(), accessExpiry) > 0"
 
-	fun validateId(connection: java.sql.Connection, id: Id): User? {
+	fun validateId(connection: java.sql.Connection, id: Rfid): User? {
 		try {
-			val resultSet = when (id) {
-				is Pin -> {
-					val statement = connection.prepareStatement("$VALIDATE_ID_SQL_START AND pin = ?;")
-					statement.setString(1, id.pin)
-					statement.executeQuery()
-				}
-				is Rfid -> {
-					val statement = connection.prepareStatement("$VALIDATE_ID_SQL_START AND rfidFacilityId = ? AND rfid = ?;")
-					statement.setInt(1, id.facilityCode)
-					statement.setInt(2, id.cardNumber)
-					statement.executeQuery()
-				}
-			}
+//			val statement = when (id) {
+//				is Pin -> connection.prepareStatement("$VALIDATE_ID_SQL_START AND pin = ?;").apply {
+//					setString(1, id.pin)
+//				}
+//				is Rfid -> connection.prepareStatement("$VALIDATE_ID_SQL_START AND rfidFacilityId = ? AND rfid = ?;").apply {
+//					setInt(1, id.facilityCode)
+//					setInt(2, id.cardNumber)
+//				}
+//			}
+			val statement = connection.prepareStatement("$VALIDATE_ID_SQL_START AND rfidFacilityId = ? AND rfid = ?;")
+			statement.setInt(1, id.facilityCode)
+			statement.setInt(2, id.cardNumber)
+			val resultSet = statement.executeQuery()
 			if (!resultSet.next()) return null
 			return User(resultSet.getInt("id"), resultSet.getString("firstName"), resultSet.getString("lastName"))
 		} catch (ex: Throwable) {

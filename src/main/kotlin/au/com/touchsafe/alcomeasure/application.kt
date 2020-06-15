@@ -2,7 +2,9 @@ package au.com.touchsafe.alcomeasure
 
 internal val LOGGER = org.slf4j.LoggerFactory.getLogger(AlcoMeasure::class.java)
 internal val MESSAGES_BUNDLE: java.util.ResourceBundle = java.util.ResourceBundle.getBundle("messages", java.util.Locale.ENGLISH)
-internal val SETTINGS_BUNDLE: java.util.ResourceBundle = java.util.ResourceBundle.getBundle("settings")
+internal val SETTINGS_PROPERTIES: java.util.Properties = java.util.Properties().apply {
+	java.io.FileInputStream("./settings.properties").use { load(it) }
+}
 
 fun main() {
 	LOGGER.info("TouchSafe 2 AlcoMeasure Integration: STARTED")
@@ -23,7 +25,8 @@ fun main() {
 					} else {
 						AlcoMeasure.performTest(user)?.let { result ->
 							SqlServer.storeResult(connection, user, result)
-							if (result.value != 0.0) Email.send(Email.TO, "Non-zero breathalyser result", "Name: ${user.firstName} ${user.surname}\nResult: ${result.value}", "photo1" to result.photo1Uri, "photo2" to result.photo2Uri, "photo3" to result.photo3Uri)
+							val emailBody = java.text.MessageFormat.format(MESSAGES_BUNDLE.getString("EMAIL_BODY"), user.firstName, user.surname, "%.8f".format(result.value))
+							if (result.value != 0.0)Email.send(Email.TO, MESSAGES_BUNDLE.getString("EMAIL_SUBJECT"), emailBody, "photo1" to result.photo1Uri, "photo2" to result.photo2Uri, "photo3" to result.photo3Uri)
 						}
 					}
 				}

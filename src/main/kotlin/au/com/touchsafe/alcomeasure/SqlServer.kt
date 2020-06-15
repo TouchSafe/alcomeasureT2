@@ -3,7 +3,7 @@ package au.com.touchsafe.alcomeasure
 object SqlServer {
 
 	private const val APPLICATION_NAME = "AlcoMeasure Integration"
-	internal val DB_CONNECTION_URI = "jdbc:sqlserver://${SETTINGS_BUNDLE.getString("dbHost")}:${SETTINGS_BUNDLE.getString("dbPort")};databaseName=${SETTINGS_BUNDLE.getString("dbDatabase")};user=${SETTINGS_BUNDLE.getString("dbUsername")};password=${SETTINGS_BUNDLE.getString("dbPassphrase")};applicationName=$APPLICATION_NAME;"
+	internal val DB_CONNECTION_URI = "jdbc:sqlserver://${SETTINGS_PROPERTIES.getProperty("dbHost")}:${SETTINGS_PROPERTIES.getProperty("dbPort")};databaseName=${SETTINGS_PROPERTIES.getProperty("dbDatabase")};user=${SETTINGS_PROPERTIES.getProperty("dbUsername")};password=${SETTINGS_PROPERTIES.getProperty("dbPassphrase")};applicationName=$APPLICATION_NAME;"
 	private const val VALIDATE_ID_SQL_START = "SELECT id, firstName, lastName FROM [User] WHERE deleted = 0 AND DATEDIFF(HOUR, GETDATE(), accessExpiry) > 0"
 
 	fun validateId(connection: java.sql.Connection, id: Rfid): User? {

@@ -25,7 +25,6 @@ dependencies {
 	implementation("com.microsoft.sqlserver", "mssql-jdbc", "7.4.1.jre11")
 	implementation("lc.kra.system", "system-hook", "3.7")
 	implementation("com.sun.mail", "jakarta.mail", "1.6.4")
-	implementation("org.jetbrains.kotlinx", "kotlinx-coroutines-jdk8", "1.3.2")
 }
 
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
@@ -41,9 +40,8 @@ tasks {
 		description = "Generate the Application JAR for deployment."
 		archiveClassifier.set("")
 		destinationDirectory.set(project.buildDir.resolve("distributions"))
-		exclude("logback.xml", "settings.properties")
+		exclude("logback.xml", "settings.properties", "settings-deployment.properties")
 		rename("logback-deployment.xml", "logback.xml")
-		rename("settings-deployment.properties", "settings.properties")
 		mergeServiceFiles()
 		isZip64 = true
 	}

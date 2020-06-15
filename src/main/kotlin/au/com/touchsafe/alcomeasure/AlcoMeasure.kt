@@ -2,8 +2,8 @@ package au.com.touchsafe.alcomeasure
 
 object AlcoMeasure {
 
-	private val HOST = SETTINGS_BUNDLE.getString("alcomeasureHost")
-	private val PORT = SETTINGS_BUNDLE.getString("alcomeasurePort")
+	private val HOST = SETTINGS_PROPERTIES.getProperty("alcomeasureHost")
+	private val PORT = SETTINGS_PROPERTIES.getProperty("alcomeasurePort")
 	private val DISPLAY_MESSAGE_URI_ADDRESS = "http://$HOST:$PORT/status.cgi?display=" // Followed by an encoded message to scroll on the screen once.
 
 	// NOTE: Fixed display for a time: URI: "http://$HOST:$PORT/status.cgi?display=${encodedFixedMessage}&time=${displayForSeconds}" // The fixed message can only be up to 17 characters!

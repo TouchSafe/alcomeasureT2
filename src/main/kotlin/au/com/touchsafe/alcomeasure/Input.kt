@@ -25,7 +25,7 @@ object Input {
 //		}
 		val parts = input.split(';')
 		val id = Rfid(parts[0].toInt(), parts[1].toInt())
-		LOGGER.debug("Input detected: $id")
+		LOGGER.info("Input gotten: $id")
 		return id
 	}
 

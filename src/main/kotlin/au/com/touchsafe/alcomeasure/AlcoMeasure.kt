@@ -90,11 +90,13 @@ object AlcoMeasure {
 					LOGGER.error("Downloaded log does not have the correct number of parts:$downloadLogResponseBody:")
 					return null
 				}
-				val result = downloadLogParts[5].toDouble() / RESULT_CONVERSION_VALUE
+				val resultValue = downloadLogParts[5].toDouble() / RESULT_CONVERSION_VALUE
 				val photo1Number = IMAGE_NUMBER_REGEX.matchEntire(downloadLogParts[8])?.groups?.get(1)?.value
 				val photo2Number = IMAGE_NUMBER_REGEX.matchEntire(downloadLogParts[9])?.groups?.get(1)?.value
 				val photo3Number = IMAGE_NUMBER_REGEX.matchEntire(downloadLogParts[10])?.groups?.get(1)?.value
-				return Result(result, photo1Number?.let { java.net.URL(DOWNLOAD_PHOTO_URI_ADDRESS + it) }, photo2Number?.let { java.net.URL(DOWNLOAD_PHOTO_URI_ADDRESS + it) }, photo3Number?.let { java.net.URL(DOWNLOAD_PHOTO_URI_ADDRESS + it) })
+				val result = Result(resultValue, photo1Number?.let { java.net.URL(DOWNLOAD_PHOTO_URI_ADDRESS + it) }, photo2Number?.let { java.net.URL(DOWNLOAD_PHOTO_URI_ADDRESS + it) }, photo3Number?.let { java.net.URL(DOWNLOAD_PHOTO_URI_ADDRESS + it) })
+				LOGGER.info("Result retrieved: $result")
+				return result
 			}
 		}
 	}

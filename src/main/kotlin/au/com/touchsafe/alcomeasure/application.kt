@@ -26,7 +26,7 @@ fun main() {
 						AlcoMeasure.performTest(user)?.let { result ->
 							SqlServer.storeResult(connection, user, result)
 							val emailBody = java.text.MessageFormat.format(MESSAGES_BUNDLE.getString("EMAIL_BODY"), user.firstName, user.surname, "%.8f".format(result.value))
-							if (result.value != 0.0)Email.send(Email.TO, MESSAGES_BUNDLE.getString("EMAIL_SUBJECT"), emailBody, "photo1" to result.photo1Uri, "photo2" to result.photo2Uri, "photo3" to result.photo3Uri)
+							if (result.value != 0.0) Email.send(Email.TO, MESSAGES_BUNDLE.getString("EMAIL_SUBJECT"), emailBody, "photo1" to result.photo1Uri, "photo2" to result.photo2Uri, "photo3" to result.photo3Uri)
 						}
 					}
 				}

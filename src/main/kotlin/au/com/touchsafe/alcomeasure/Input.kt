@@ -36,7 +36,7 @@ object Input {
 			Thread.sleep(100)
 			newLineIndex = indexOfCarriageReturn()
 		}
-		return KEYBOARD_BUFFER.array().take(newLineIndex).joinToString("")
+		return KEYBOARD_BUFFER.array().take(newLineIndex).filter { it != '\u0000' }.joinToString("")
 	}
 
 	private fun indexOfCarriageReturn(): Int {

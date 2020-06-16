@@ -2,6 +2,7 @@ package au.com.touchsafe.alcomeasure
 
 object AlcoMeasure {
 
+	private val CONNECT_TIMEOUT = java.time.Duration.ofSeconds(15)
 	private val HOST = SETTINGS_PROPERTIES.getProperty("alcomeasureHost")
 	private val PORT = SETTINGS_PROPERTIES.getProperty("alcomeasurePort")
 	private val DISPLAY_MESSAGE_URI_ADDRESS = "http://$HOST:$PORT/status.cgi?display=" // Followed by an encoded message to scroll on the screen once.
@@ -32,7 +33,7 @@ object AlcoMeasure {
 
 	fun displayMessage(message: String) {
 		LOGGER.info("Display message:$message:")
-		val httpClient = java.net.http.HttpClient.newHttpClient()
+		val httpClient = java.net.http.HttpClient.newBuilder().apply { connectTimeout(CONNECT_TIMEOUT) }.build()
 		val statusRequest = java.net.http.HttpRequest.newBuilder(java.net.URI.create(DISPLAY_MESSAGE_URI_ADDRESS + java.net.URLEncoder.encode(message, java.nio.charset.StandardCharsets.UTF_8))).build()
 		val displayMessageResponseBody = httpClient.send(statusRequest, java.net.http.HttpResponse.BodyHandlers.ofString()).body().replace(NEW_LINE_REGEX, "")
 		if (displayMessageResponseBody != DISPLAY_MESSAGE_RESPONSE) {
@@ -41,7 +42,7 @@ object AlcoMeasure {
 	}
 
 	fun performTest(user: User): Result? {
-		val httpClient = java.net.http.HttpClient.newHttpClient()
+		val httpClient = java.net.http.HttpClient.newBuilder().apply { connectTimeout(CONNECT_TIMEOUT) }.build()
 		val statusRequest = java.net.http.HttpRequest.newBuilder(STATUS_URI).build()
 		val initialStatusResponseBody = httpClient.send(statusRequest, java.net.http.HttpResponse.BodyHandlers.ofString()).body().replace(NEW_LINE_REGEX, "")
 		LOGGER.debug("Initial status response body:$initialStatusResponseBody:")
@@ -65,11 +66,11 @@ object AlcoMeasure {
 			val testStatusResponseBody = httpClient.send(statusRequest, java.net.http.HttpResponse.BodyHandlers.ofString()).body().replace(NEW_LINE_REGEX, "")
 			LOGGER.debug("Test status response body:$testStatusResponseBody:")
 			val processStateValue = extractValue(testStatusResponseBody, PROCESS_STATE_TAG_START)
-			val testStateValue = extractValue(testStatusResponseBody, TEST_STATE_TAG_START)
 			if (processStateValue != ProcessState.NORMAL_TEST.value) {
 				LOGGER.error("Process state has changed before the result has been read.")
 				return null
 			}
+			val testStateValue = extractValue(testStatusResponseBody, TEST_STATE_TAG_START)
 			if (testStateValue == TestState.OUTCOME_NOT_RETRIEVED.value) {
 				val outcomeValue = extractValue(testStatusResponseBody, OUTCOME_TAG_START)
 				if (outcomeValue != Outcome.TEST_SUCCESSFUL.value) {
@@ -85,18 +86,29 @@ object AlcoMeasure {
 				val downloadLogUri = java.net.URI.create(java.text.MessageFormat.format(DOWNLOAD_LOG_URI_ADDRESS, lastLogNumber, 1))
 				val downloadLogRequest = java.net.http.HttpRequest.newBuilder(downloadLogUri).build()
 				val downloadLogResponseBody = httpClient.send(downloadLogRequest, java.net.http.HttpResponse.BodyHandlers.ofString()).body().replace(NEW_LINE_REGEX, "")
+				LOGGER.debug("Download log response body:$downloadLogResponseBody:")
 				val downloadLogParts = downloadLogResponseBody.split(',')
-				if (downloadLogParts.size != 11) {
-					LOGGER.error("Downloaded log does not have the correct number of parts:$downloadLogResponseBody:")
-					return null
+				return when (downloadLogParts.size) {
+					8 -> { // NOTE: Result has NO photos.
+						val resultValue = downloadLogParts[5].toDouble() / RESULT_CONVERSION_VALUE
+						val result = Result(resultValue)
+						LOGGER.info("Result retrieved: $result")
+						result
+					}
+					11 -> { // NOTE: Result has photos.
+						val resultValue = downloadLogParts[5].toDouble() / RESULT_CONVERSION_VALUE
+						val photo1Uri = IMAGE_NUMBER_REGEX.matchEntire(downloadLogParts[8])?.groups?.get(1)?.value?.let { java.net.URL(DOWNLOAD_PHOTO_URI_ADDRESS + it) }
+						val photo2Uri = IMAGE_NUMBER_REGEX.matchEntire(downloadLogParts[9])?.groups?.get(1)?.value?.let { java.net.URL(DOWNLOAD_PHOTO_URI_ADDRESS + it) }
+						val photo3Uri = IMAGE_NUMBER_REGEX.matchEntire(downloadLogParts[10])?.groups?.get(1)?.value?.let { java.net.URL(DOWNLOAD_PHOTO_URI_ADDRESS + it) }
+						val result = Result(resultValue, photo1Uri, photo2Uri, photo3Uri)
+						LOGGER.info("Result retrieved: $result")
+						result
+					}
+					else -> {
+						LOGGER.error("Downloaded log does not have the correct number of parts:$downloadLogResponseBody:")
+						null
+					}
 				}
-				val resultValue = downloadLogParts[5].toDouble() / RESULT_CONVERSION_VALUE
-				val photo1Number = IMAGE_NUMBER_REGEX.matchEntire(downloadLogParts[8])?.groups?.get(1)?.value
-				val photo2Number = IMAGE_NUMBER_REGEX.matchEntire(downloadLogParts[9])?.groups?.get(1)?.value
-				val photo3Number = IMAGE_NUMBER_REGEX.matchEntire(downloadLogParts[10])?.groups?.get(1)?.value
-				val result = Result(resultValue, photo1Number?.let { java.net.URL(DOWNLOAD_PHOTO_URI_ADDRESS + it) }, photo2Number?.let { java.net.URL(DOWNLOAD_PHOTO_URI_ADDRESS + it) }, photo3Number?.let { java.net.URL(DOWNLOAD_PHOTO_URI_ADDRESS + it) })
-				LOGGER.info("Result retrieved: $result")
-				return result
 			}
 		}
 	}
@@ -127,7 +139,7 @@ enum class ProcessState(val value: String) {
 	NORMAL_TEST("Normal Test")
 }
 
-data class Result(val value: Double, val photo1Uri: java.net.URL?, val photo2Uri: java.net.URL?, val photo3Uri: java.net.URL?)
+data class Result(val value: Double, val photo1Uri: java.net.URL? = null, val photo2Uri: java.net.URL? = null, val photo3Uri: java.net.URL? = null)
 
 @Suppress("unused")
 enum class TestState(val value: String) {

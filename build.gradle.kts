@@ -25,6 +25,10 @@ dependencies {
 	implementation("com.microsoft.sqlserver", "mssql-jdbc", "7.4.1.jre11")
 	implementation("lc.kra.system", "system-hook", "3.7")
 	implementation("com.sun.mail", "jakarta.mail", "1.6.4")
+
+	// Testing
+	testImplementation("org.junit.jupiter", "junit-jupiter-api", "5.6.2")
+	testRuntimeOnly("org.junit.jupiter", "junit-jupiter-engine", "5.6.2")
 }
 
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
@@ -45,4 +49,9 @@ tasks {
 		mergeServiceFiles()
 		isZip64 = true
 	}
+}
+
+// https://junit.org/junit5/docs/current/user-guide/#running-tests-build-gradle
+tasks.test {
+	useJUnitPlatform()
 }

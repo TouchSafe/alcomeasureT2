@@ -29,7 +29,8 @@ object AlcoMeasure {
 	private const val START_TEST_RESPONSE = """<status.cgi><startTest><success value="1"/></startTest></status.cgi>"""
 
 	private const val POLLING_DELAY = 500L
-	private const val RESULT_CONVERSION_VALUE = 44000.0
+	// AD 3/8/20: Change this as it appears to be causing incorrect results
+	private const val RESULT_CONVERSION_VALUE = 1 // 44000.0
 
 	fun displayMessage(message: String) {
 		LOGGER.info("Display message:$message:")

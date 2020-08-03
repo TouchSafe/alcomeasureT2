@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "au.com.touchsafe"
-version = "1.0.0-SNAPSHOT"
+version = "1.0.1-SNAPSHOT"
 description = "TouchSafe 2 AlcoMeasure Integration."
 
 application {

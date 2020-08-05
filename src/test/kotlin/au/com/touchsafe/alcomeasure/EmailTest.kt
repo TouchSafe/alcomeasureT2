@@ -11,15 +11,6 @@ class EmailTest {
 
     @Test
     fun testEmail() {
-        // This will enable FINEST logging for com.sun.mail, showing detailed steps of the email sending process
-        /*val logger = Logger.getLogger("com.sun.mail")
-        logger.level = Level.FINEST
-        val handler = ConsoleHandler()
-        handler.formatter = SimpleFormatter()
-        handler.level = Level.FINEST
-        logger.addHandler(handler)*/
-
-
         // Default GreenMail SMTP uses :25
         val testSmtpSetup = ServerSetup(3025, null, ServerSetup.PROTOCOL_SMTP)
         val greenMail = GreenMail(testSmtpSetup)

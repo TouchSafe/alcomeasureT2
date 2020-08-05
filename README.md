@@ -41,6 +41,12 @@ Contains the functions
   - downloadAndStorePhoto(connection: java.sql.Connection, photoUri: java.net.URL)
     - Stores the photo in the database
 
+##### [Util](src/main/kotlin/au/com/touchsafe/alcomeasure/Util.kt)
+
+Contains the function
+  - setMailLogLevel
+    - Sets the logging level for com.sun.mail from property emailLogLevel in settings.properties
+
 ##### [application.kt](src/main/kotlin/au/com/touchsafe/alcomeasure/application.kt)
 
 Contains the main function, which runs a loop which:

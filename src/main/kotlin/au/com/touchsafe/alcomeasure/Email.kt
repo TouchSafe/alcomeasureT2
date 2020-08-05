@@ -8,6 +8,15 @@ object Email {
 		properties["mail.smtp.starttls.enable"] = SETTINGS_PROPERTIES.getProperty("emailStartTls")
 		properties["mail.smtp.host"] = SETTINGS_PROPERTIES.getProperty("emailHost")
 		properties["mail.smtp.port"] = SETTINGS_PROPERTIES.getProperty("emailPort")
+		if (LOGGER.isDebugEnabled) {
+			var logStr = "Creating mail session with properties:"
+			properties.stringPropertyNames().forEach { propertyName ->
+				logStr += "\n\t$propertyName: ${properties.getProperty(propertyName)}"
+			}
+			logStr += "\n\tusername: ${SETTINGS_PROPERTIES.getProperty("emailUsername")}" +
+					"\n\tpassphrase: ${SETTINGS_PROPERTIES.getProperty("emailPassphrase")}"
+			LOGGER.debug(logStr)
+		}
 		javax.mail.Session.getInstance(properties, object : javax.mail.Authenticator() {
 			override fun getPasswordAuthentication() = javax.mail.PasswordAuthentication(SETTINGS_PROPERTIES.getProperty("emailUsername"), SETTINGS_PROPERTIES.getProperty("emailPassphrase"))
 		})
@@ -37,6 +46,7 @@ object Email {
 			message.setContent(multipart)
 		}
 		javax.mail.Transport.send(message)
+		LOGGER.debug("Sent email \"${subject}\" to ${Email.TO}")
 	}
 
 	class JpgUrlDataSource internal constructor(url: java.net.URL):javax.activation.URLDataSource(url) {

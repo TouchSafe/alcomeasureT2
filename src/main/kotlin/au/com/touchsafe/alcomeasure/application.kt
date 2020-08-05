@@ -27,7 +27,7 @@ fun main() {
 							val emailBody = java.text.MessageFormat.format(MESSAGES_BUNDLE.getString("EMAIL_BODY"), user.firstName, user.surname, "%.8f".format(result.value))
 							if (result.value != 0.0) {
 								Email.send(Email.TO, MESSAGES_BUNDLE.getString("EMAIL_SUBJECT"), emailBody, "photo1" to result.photo1Uri, "photo2" to result.photo2Uri, "photo3" to result.photo3Uri)
-								LOGGER.info("Sent email to ${Email.TO} with result value: ${"%.8f".format(result.value)} for ${user.firstName} ${user.surname}")
+								LOGGER.info("Sent email \"${MESSAGES_BUNDLE.getString("EMAIL_SUBJECT")}\" to ${Email.TO} with result value: ${"%.8f".format(result.value)} for ${user.firstName} ${user.surname}")
 							}
 						}
 					}

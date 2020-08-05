@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test
 class EmailTest {
 
     @Test
-    fun testEmail() {
+    fun testSend() {
         // Default GreenMail SMTP uses :25
         val testSmtpSetup = ServerSetup(3025, null, ServerSetup.PROTOCOL_SMTP)
         val greenMail = GreenMail(testSmtpSetup)

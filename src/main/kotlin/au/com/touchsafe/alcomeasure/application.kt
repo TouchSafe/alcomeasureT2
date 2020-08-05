@@ -7,6 +7,7 @@ internal val SETTINGS_PROPERTIES: java.util.Properties = java.util.Properties().
 fun main() {
 	LOGGER.info("TouchSafe 2 AlcoMeasure Integration: STARTED")
 	LOGGER.info("Connected keyboards:" + lc.kra.system.keyboard.GlobalKeyboardHook.listKeyboards().map { (key, value) -> " [$key:$value]" }.joinToString(""))
+	setMailLogLevel()
 
 	try {
 		while (true) {

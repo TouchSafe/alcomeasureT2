@@ -46,7 +46,7 @@ object Email {
 			message.setContent(multipart)
 		}
 		javax.mail.Transport.send(message)
-		LOGGER.debug("Sent email \"${subject}\" to ${Email.TO}")
+		LOGGER.debug("Sent email with Message-ID: ${message.messageID}")
 	}
 
 	class JpgUrlDataSource internal constructor(url: java.net.URL):javax.activation.URLDataSource(url) {

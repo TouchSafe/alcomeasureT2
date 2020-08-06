@@ -6,9 +6,6 @@
 	</appender>
 	<!-- For tests to read logs -->
 	<appender name="TEST" class="au.com.touchsafe.alcomeasure.TestAppender">
-		<encoder>
-			<pattern>%d{YYYY-MM-dd HH:mm:ss.SSS},[%thread],%level,%logger{36},%msg</pattern>
-		</encoder>
 	</appender>
 	<root level="DEBUG">
 		<appender-ref ref="STDOUT"/>

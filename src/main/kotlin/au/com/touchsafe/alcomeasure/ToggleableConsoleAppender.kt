@@ -7,7 +7,7 @@ import ch.qos.logback.core.ConsoleAppender
 // Need to use LoggingEvent explicitly in order to allow level setting
 open class ToggleableConsoleAppender : ConsoleAppender<LoggingEvent>() {
 
-    companion object Attributes {
+    companion object {
         // Enabled by default
         var enabled: Boolean = true
     }
@@ -18,9 +18,8 @@ open class ToggleableConsoleAppender : ConsoleAppender<LoggingEvent>() {
         }
     }
 
-    // Used by logback.xml when <enabled> attribute is used
-    @Suppress("unused")
-    fun setEnabled(enabled: Boolean) {
-        Attributes.enabled = enabled
-    }
+    /*
+        Don't create a setEnabled function to allow logback.xml to use an <enabled> attribute,
+        prevents ability to set enabled variable programmatically
+    */
 }

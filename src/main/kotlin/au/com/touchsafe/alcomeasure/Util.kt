@@ -34,7 +34,7 @@ fun setConsoleLoggingLevel() {
 
 	val level = ch.qos.logback.classic.Level.toLevel(consoleLogLevel)
 
-	LevellableConsoleAppender.level = level
+	ConfigurableConsoleAppender.level = level
 }
 
 fun setFileLoggingLevel() {
@@ -42,5 +42,5 @@ fun setFileLoggingLevel() {
 
 	val level = ch.qos.logback.classic.Level.toLevel(fileLogLevel)
 
-	LevellableRollingFileAppender.level = level
+	ConfigurableRollingFileAppender.level = level
 }

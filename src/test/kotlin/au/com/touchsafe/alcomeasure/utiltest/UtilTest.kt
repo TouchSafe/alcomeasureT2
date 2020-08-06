@@ -1,7 +1,7 @@
 package au.com.touchsafe.alcomeasure.utiltest
 
 import au.com.touchsafe.alcomeasure.SETTINGS_PROPERTIES
-import au.com.touchsafe.alcomeasure.LevellableConsoleAppender
+import au.com.touchsafe.alcomeasure.ConfigurableConsoleAppender
 import au.com.touchsafe.alcomeasure.setConsoleLoggingLevel
 import au.com.touchsafe.alcomeasure.setMailLogLevel
 import org.junit.jupiter.api.AfterAll
@@ -84,16 +84,16 @@ class UtilTest {
 
         setConsoleLoggingLevel()
 
-        assertEquals(level, LevellableConsoleAppender.level)
+        assertEquals(level, ConfigurableConsoleAppender.level)
     }
 
     @Test
     fun testSetNullConsoleDebugLogging() {
-        val level = LevellableConsoleAppender.level
+        val level = ConfigurableConsoleAppender.level
         assertNull(SETTINGS_PROPERTIES.getProperty("consoleLogLevel"))
 
         setConsoleLoggingLevel()
 
-        assertEquals(level, LevellableConsoleAppender.level)
+        assertEquals(level, ConfigurableConsoleAppender.level)
     }
 }

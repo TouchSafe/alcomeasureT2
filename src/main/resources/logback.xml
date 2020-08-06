@@ -8,7 +8,7 @@
 	<appender name="TEST" class="au.com.touchsafe.alcomeasure.utiltest.TestAppender">
 	</appender>
 	<!-- Toggleable debug console appender, used if consoleDebug = true in settings.properties -->
-	<appender name="DEBUGCONSOLE" class="au.com.touchsafe.alcomeasure.LevellableConsoleAppender">
+	<appender name="DEBUGCONSOLE" class="au.com.touchsafe.alcomeasure.ConfigurableConsoleAppender">
 		<encoder>
 			<pattern>%d{YYYY-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
 		</encoder>

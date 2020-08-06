@@ -3,7 +3,7 @@ package au.com.touchsafe.alcomeasure
 import ch.qos.logback.classic.Level
 import org.junit.jupiter.api.Test
 
-class LevellableConsoleAppenderTest {
+class ConfigurableConsoleAppenderTest {
 
     @Test
     // Haven't been able to figure out a way to do assertions on this yet
@@ -12,9 +12,9 @@ class LevellableConsoleAppenderTest {
         ToggleableConsoleAppender, and add it to logback.xml.
      */
     fun testDebugLevel() {
-        LevellableConsoleAppender.level = Level.INFO
+        ConfigurableConsoleAppender.level = Level.INFO
         LOGGER.debug("This message should not appear")
-        LevellableConsoleAppender.level = Level.DEBUG
+        ConfigurableConsoleAppender.level = Level.DEBUG
         LOGGER.debug("This message should appear")
     }
 }

@@ -1,5 +1,5 @@
 <configuration>
-	<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+	<appender name="FILE" class="au.com.touchsafe.alcomeasure.ToggleableRollingFileAppender">
 		<file>C:/touchsafe/logs/alcomeasure-service.log</file>
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 			<fileNamePattern>C:/touchsafe/logs/alcomeasure-service.%d.log</fileNamePattern>

@@ -24,7 +24,7 @@ fun setMailLogLevel() {
 	logger.addHandler(handler)
 }
 
-fun setDebugLogging() {
+fun setConsoleDebugLogging() {
 	val isDebugStr = SETTINGS_PROPERTIES.getProperty("consoleDebug")
 
 	if (isDebugStr == null) {

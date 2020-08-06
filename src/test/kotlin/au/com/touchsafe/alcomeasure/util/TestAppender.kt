@@ -1,4 +1,4 @@
-package au.com.touchsafe.alcomeasure.utiltest
+package au.com.touchsafe.alcomeasure.util
 
 import ch.qos.logback.classic.spi.LoggingEvent
 import ch.qos.logback.core.AppenderBase

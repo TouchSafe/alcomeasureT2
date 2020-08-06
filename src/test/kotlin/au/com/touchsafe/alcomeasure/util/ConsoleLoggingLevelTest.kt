@@ -1,8 +1,7 @@
-package au.com.touchsafe.alcomeasure.utiltest
+package au.com.touchsafe.alcomeasure.util
 
 import au.com.touchsafe.alcomeasure.ConfigurableConsoleAppender
 import au.com.touchsafe.alcomeasure.SETTINGS_PROPERTIES
-import au.com.touchsafe.alcomeasure.util.setConsoleLoggingLevel
 import ch.qos.logback.classic.Level
 import org.junit.jupiter.api.*
 import java.util.*

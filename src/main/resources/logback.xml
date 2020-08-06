@@ -5,7 +5,7 @@
 		</encoder>
 	</appender>-->
 	<!-- For tests to read logs -->
-	<appender name="TEST" class="au.com.touchsafe.alcomeasure.utiltest.TestAppender">
+	<appender name="TEST" class="au.com.touchsafe.alcomeasure.util.TestAppender">
 	</appender>
 	<!-- Toggleable debug console appender, used if consoleDebug = true in settings.properties -->
 	<appender name="DEBUGCONSOLE" class="au.com.touchsafe.alcomeasure.ConfigurableConsoleAppender">

@@ -1,7 +1,6 @@
-package au.com.touchsafe.alcomeasure.utiltest
+package au.com.touchsafe.alcomeasure.util
 
 import au.com.touchsafe.alcomeasure.SETTINGS_PROPERTIES
-import au.com.touchsafe.alcomeasure.util.setMailLogLevel
 import org.junit.jupiter.api.AfterAll
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertNull

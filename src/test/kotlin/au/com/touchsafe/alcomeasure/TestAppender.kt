@@ -6,11 +6,11 @@ import java.util.ArrayList
 
 // Log appender allowing tests to read logged events
 class TestAppender : AppenderBase<LoggingEvent>() {
-    override fun append(e: LoggingEvent) {
-        events.add(e)
+    override fun append(event: LoggingEvent) {
+        events.add(event)
     }
 
     companion object {
-        var events: MutableList<LoggingEvent> = ArrayList<LoggingEvent>()
+        val events = mutableListOf<LoggingEvent>()
     }
 }

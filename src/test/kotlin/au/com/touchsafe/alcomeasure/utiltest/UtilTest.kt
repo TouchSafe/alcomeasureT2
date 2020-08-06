@@ -1,8 +1,8 @@
 package au.com.touchsafe.alcomeasure.utiltest
 
 import au.com.touchsafe.alcomeasure.SETTINGS_PROPERTIES
-import au.com.touchsafe.alcomeasure.ToggleableConsoleAppender
-import au.com.touchsafe.alcomeasure.setConsoleDebugLogging
+import au.com.touchsafe.alcomeasure.LevellableConsoleAppender
+import au.com.touchsafe.alcomeasure.setConsoleLoggingLevel
 import au.com.touchsafe.alcomeasure.setMailLogLevel
 import org.junit.jupiter.api.AfterAll
 import org.junit.jupiter.api.Assertions.assertEquals
@@ -10,7 +10,8 @@ import org.junit.jupiter.api.Assertions.assertNull
 import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.Test
 import java.util.*
-import java.util.logging.Level
+import java.util.logging.Level as julLevel
+import ch.qos.logback.classic.Level as logbackLevel
 import java.util.logging.Logger
 
 class UtilTest {
@@ -38,7 +39,7 @@ class UtilTest {
 
     @Test
     fun testSetMailLogLevel() {
-        val level = Level.FINEST
+        val level = julLevel.FINEST
         SETTINGS_PROPERTIES.setProperty("emailLogLevel", level.name)
 
         setMailLogLevel()
@@ -77,29 +78,22 @@ class UtilTest {
     }
 
     @Test
-    fun testSetFalseConsoleDebugLogging() {
-        SETTINGS_PROPERTIES.setProperty("consoleDebug", "false")
+    fun testSetConsoleDebugLoggingLevelToDebug() {
+        val level = logbackLevel.DEBUG
+        SETTINGS_PROPERTIES.setProperty("consoleLogLevel", level.toString())
 
-        setConsoleDebugLogging()
+        setConsoleLoggingLevel()
 
-        assertEquals(false, ToggleableConsoleAppender.enabled)
-    }
-
-    @Test
-    fun testSetTrueConsoleDebugLogging() {
-        SETTINGS_PROPERTIES.setProperty("consoleDebug", "true")
-
-        setConsoleDebugLogging()
-
-        assertEquals(true, ToggleableConsoleAppender.enabled)
+        assertEquals(level, LevellableConsoleAppender.level)
     }
 
     @Test
     fun testSetNullConsoleDebugLogging() {
-        assertNull(SETTINGS_PROPERTIES.getProperty("consoleDebug"))
+        val level = LevellableConsoleAppender.level
+        assertNull(SETTINGS_PROPERTIES.getProperty("consoleLogLevel"))
 
-        setConsoleDebugLogging()
+        setConsoleLoggingLevel()
 
-        assertEquals(false, ToggleableConsoleAppender.enabled)
+        assertEquals(level, LevellableConsoleAppender.level)
     }
 }

@@ -1,19 +1,20 @@
 package au.com.touchsafe.alcomeasure
 
+import ch.qos.logback.classic.Level
 import ch.qos.logback.classic.spi.LoggingEvent
-import ch.qos.logback.core.ConsoleAppender
+import ch.qos.logback.core.rolling.RollingFileAppender
 
 // Toggleable ConsoleAppender, intending on using this for --debug flag
 // Need to use LoggingEvent explicitly in order to allow level setting
-open class ToggleableConsoleAppender : ConsoleAppender<LoggingEvent>() {
+open class LevellableRollingFileAppender : RollingFileAppender<LoggingEvent>() {
 
     companion object {
-        // Enabled by default
-        var enabled: Boolean = true
+        // INFO by default
+        var level: Level = Level.INFO
     }
 
     override fun subAppend(event: LoggingEvent) {
-        if (enabled) {
+        if (event.level.isGreaterOrEqual(level)) {
             super.subAppend(event)
         }
     }

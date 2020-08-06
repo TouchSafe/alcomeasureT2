@@ -24,12 +24,10 @@ fun setMailLogLevel() {
 	logger.addHandler(handler)
 }
 
-fun setConsoleDebugLogging() {
-	val isDebugStr = SETTINGS_PROPERTIES.getProperty("consoleDebug")
+fun setConsoleLoggingLevel() {
+	val consoleLogLevel = SETTINGS_PROPERTIES.getProperty("consoleLogLevel") ?: return
 
-	if (isDebugStr == null) {
-		ToggleableConsoleAppender.enabled = false
-	} else {
-	 	ToggleableConsoleAppender.enabled = isDebugStr.toBoolean()
-	}
+	val level = ch.qos.logback.classic.Level.toLevel(consoleLogLevel)
+
+	LevellableConsoleAppender.level = level
 }

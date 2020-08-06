@@ -43,4 +43,18 @@ class UtilTest {
         assertEquals(1, logger.handlers.size)
         assertEquals(level, logger.handlers[0].level)
     }
+
+    @Test
+    fun testSetUnparseableMailLogLevel() {
+        SETTINGS_PROPERTIES.setProperty("emailLogLevel", "INVALID LEVEL")
+        val level = Logger.getLogger("com.sun.mail").level
+        TestAppender.events.clear()
+
+        setMailLogLevel()
+
+        assertEquals(1, TestAppender.events.size)
+        assertEquals("Could not parse emailLogLevel \"INVALID LEVEL\"", TestAppender.events[0].message)
+        assertEquals(level, Logger.getLogger("com.sun.mail").level)
+        TestAppender.events.clear()
+    }
 }

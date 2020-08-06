@@ -1,6 +1,8 @@
 package au.com.touchsafe.alcomeasure.utiltest
 
 import au.com.touchsafe.alcomeasure.SETTINGS_PROPERTIES
+import au.com.touchsafe.alcomeasure.ToggleableConsoleAppender
+import au.com.touchsafe.alcomeasure.setConsoleDebugLogging
 import au.com.touchsafe.alcomeasure.setMailLogLevel
 import org.junit.jupiter.api.AfterAll
 import org.junit.jupiter.api.Assertions.assertEquals
@@ -72,5 +74,32 @@ class UtilTest {
         assertEquals("Could not parse emailLogLevel \"INVALID LEVEL\"", TestAppender.events[0].message)
         assertEquals(level, Logger.getLogger("com.sun.mail").level)
         TestAppender.events.clear()
+    }
+
+    @Test
+    fun testSetFalseConsoleDebugLogging() {
+        SETTINGS_PROPERTIES.setProperty("consoleDebug", "false")
+
+        setConsoleDebugLogging()
+
+        assertEquals(false, ToggleableConsoleAppender.enabled)
+    }
+
+    @Test
+    fun testSetTrueConsoleDebugLogging() {
+        SETTINGS_PROPERTIES.setProperty("consoleDebug", "true")
+
+        setConsoleDebugLogging()
+
+        assertEquals(true, ToggleableConsoleAppender.enabled)
+    }
+
+    @Test
+    fun testSetNullConsoleDebugLogging() {
+        assertNull(SETTINGS_PROPERTIES.getProperty("consoleDebug"))
+
+        setConsoleDebugLogging()
+
+        assertEquals(false, ToggleableConsoleAppender.enabled)
     }
 }

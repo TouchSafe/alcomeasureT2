@@ -1,7 +1,7 @@
 package au.com.touchsafe.alcomeasure.util
 
-import au.com.touchsafe.alcomeasure.ConfigurableConsoleAppender
-import au.com.touchsafe.alcomeasure.ConfigurableRollingFileAppender
+import au.com.touchsafe.alcomeasure.util.logging.ConfigurableConsoleAppender
+import au.com.touchsafe.alcomeasure.util.logging.ConfigurableRollingFileAppender
 import au.com.touchsafe.alcomeasure.SETTINGS_PROPERTIES
 
 fun setOutputLoggingLevels() {

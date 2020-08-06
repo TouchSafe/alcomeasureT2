@@ -1,5 +1,6 @@
-package au.com.touchsafe.alcomeasure
+package au.com.touchsafe.alcomeasure.util.logging
 
+import au.com.touchsafe.alcomeasure.LOGGER
 import ch.qos.logback.classic.Level
 import org.junit.jupiter.api.Test
 

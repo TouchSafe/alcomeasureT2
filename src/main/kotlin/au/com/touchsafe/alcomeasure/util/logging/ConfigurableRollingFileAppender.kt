@@ -1,12 +1,12 @@
-package au.com.touchsafe.alcomeasure
+package au.com.touchsafe.alcomeasure.util.logging
 
 import ch.qos.logback.classic.Level
 import ch.qos.logback.classic.spi.LoggingEvent
-import ch.qos.logback.core.ConsoleAppender
+import ch.qos.logback.core.rolling.RollingFileAppender
 
 // Toggleable ConsoleAppender, intending on using this for --debug flag
 // Need to use LoggingEvent explicitly in order to allow level setting
-open class ConfigurableConsoleAppender : ConsoleAppender<LoggingEvent>() {
+open class ConfigurableRollingFileAppender : RollingFileAppender<LoggingEvent>() {
 
     companion object {
         // INFO by default

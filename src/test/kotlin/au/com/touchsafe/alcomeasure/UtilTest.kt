@@ -2,6 +2,7 @@ package au.com.touchsafe.alcomeasure
 
 import org.junit.jupiter.api.AfterAll
 import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Assertions.assertNull
 import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.Test
 import java.util.*
@@ -42,6 +43,19 @@ class UtilTest {
         assertEquals(level, logger.level)
         assertEquals(1, logger.handlers.size)
         assertEquals(level, logger.handlers[0].level)
+    }
+
+    @Test
+    fun testSetNullMailLogLevel() {
+        assertNull(SETTINGS_PROPERTIES.getProperty("emailLogLevel"))
+        val level = Logger.getLogger("com.sun.mail").level
+        TestAppender.events.clear()
+
+        setMailLogLevel()
+
+        assertEquals(0, TestAppender.events.size)
+        assertEquals(level, Logger.getLogger("com.sun.mail").level)
+        TestAppender.events.clear()
     }
 
     @Test

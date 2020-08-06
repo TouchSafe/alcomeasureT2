@@ -1,5 +1,7 @@
-package au.com.touchsafe.alcomeasure
+package au.com.touchsafe.alcomeasure.util
 
+import au.com.touchsafe.alcomeasure.LOGGER
+import au.com.touchsafe.alcomeasure.SETTINGS_PROPERTIES
 import java.util.logging.ConsoleHandler
 import java.util.logging.Level
 import java.util.logging.Logger
@@ -22,25 +24,4 @@ fun setMailLogLevel() {
 	handler.formatter = SimpleFormatter()
 	handler.level = level
 	logger.addHandler(handler)
-}
-
-fun setOutputLoggingLevels() {
-	setConsoleLoggingLevel()
-	setFileLoggingLevel()
-}
-
-fun setConsoleLoggingLevel() {
-	val consoleLogLevel = SETTINGS_PROPERTIES.getProperty("consoleLogLevel") ?: return
-
-	val level = ch.qos.logback.classic.Level.toLevel(consoleLogLevel)
-
-	ConfigurableConsoleAppender.level = level
-}
-
-fun setFileLoggingLevel() {
-	val fileLogLevel = SETTINGS_PROPERTIES.getProperty("fileLogLevel") ?: return
-
-	val level = ch.qos.logback.classic.Level.toLevel(fileLogLevel)
-
-	ConfigurableRollingFileAppender.level = level
 }

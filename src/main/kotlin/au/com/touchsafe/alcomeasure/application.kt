@@ -1,5 +1,8 @@
 package au.com.touchsafe.alcomeasure
 
+import au.com.touchsafe.alcomeasure.util.setMailLogLevel
+import au.com.touchsafe.alcomeasure.util.setOutputLoggingLevels
+
 internal val LOGGER = org.slf4j.LoggerFactory.getLogger(AlcoMeasure::class.java)
 internal val MESSAGES_BUNDLE: java.util.ResourceBundle = java.util.ResourceBundle.getBundle("messages", java.util.Locale.ENGLISH)
 internal val SETTINGS_PROPERTIES: java.util.Properties = java.util.Properties().apply { java.io.FileInputStream("./settings.properties").use { load(it) } }

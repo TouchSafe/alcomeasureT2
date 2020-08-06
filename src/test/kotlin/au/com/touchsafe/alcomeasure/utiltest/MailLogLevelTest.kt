@@ -1,9 +1,7 @@
 package au.com.touchsafe.alcomeasure.utiltest
 
 import au.com.touchsafe.alcomeasure.SETTINGS_PROPERTIES
-import au.com.touchsafe.alcomeasure.ConfigurableConsoleAppender
-import au.com.touchsafe.alcomeasure.setConsoleLoggingLevel
-import au.com.touchsafe.alcomeasure.setMailLogLevel
+import au.com.touchsafe.alcomeasure.util.setMailLogLevel
 import org.junit.jupiter.api.AfterAll
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertNull
@@ -11,13 +9,12 @@ import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.Test
 import java.util.*
 import java.util.logging.Level as julLevel
-import ch.qos.logback.classic.Level as logbackLevel
 import java.util.logging.Logger
 
-class UtilTest {
+class MailLogLevelTest {
     companion object {
         private val settings_properties = Properties()
-        // This function is used
+
         @BeforeAll
         @JvmStatic
         fun beforeTests() {
@@ -27,6 +24,7 @@ class UtilTest {
             }
             SETTINGS_PROPERTIES.clear()
         }
+
         @AfterAll
         @JvmStatic
         fun afterTests() {
@@ -76,24 +74,5 @@ class UtilTest {
         assertEquals(level, Logger.getLogger("com.sun.mail").level)
         TestAppender.events.clear()
     }
-
-    @Test
-    fun testSetConsoleDebugLoggingLevelToDebug() {
-        val level = logbackLevel.DEBUG
-        SETTINGS_PROPERTIES.setProperty("consoleLogLevel", level.toString())
-
-        setConsoleLoggingLevel()
-
-        assertEquals(level, ConfigurableConsoleAppender.level)
-    }
-
-    @Test
-    fun testSetNullConsoleDebugLogging() {
-        val level = ConfigurableConsoleAppender.level
-        assertNull(SETTINGS_PROPERTIES.getProperty("consoleLogLevel"))
-
-        setConsoleLoggingLevel()
-
-        assertEquals(level, ConfigurableConsoleAppender.level)
-    }
 }
+

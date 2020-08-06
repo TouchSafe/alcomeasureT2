@@ -1,5 +1,6 @@
 package au.com.touchsafe.alcomeasure
 
+import au.com.touchsafe.alcomeasure.util.mailAllReports
 import au.com.touchsafe.alcomeasure.util.setMailLogLevel
 import au.com.touchsafe.alcomeasure.util.setOutputLoggingLevels
 
@@ -29,7 +30,7 @@ fun main() {
 						AlcoMeasure.performTest(user)?.let { result ->
 							SqlServer.storeResult(connection, user, result)
 							val emailBody = java.text.MessageFormat.format(MESSAGES_BUNDLE.getString("EMAIL_BODY"), user.firstName, user.surname, "%.8f".format(result.value))
-							if (result.value != 0.0) {
+							if (result.value != 0.0 || mailAllReports()) {
 								Email.send(Email.TO, MESSAGES_BUNDLE.getString("EMAIL_SUBJECT"), emailBody, "photo1" to result.photo1Uri, "photo2" to result.photo2Uri, "photo3" to result.photo3Uri)
 								LOGGER.info("Sent email \"${MESSAGES_BUNDLE.getString("EMAIL_SUBJECT")}\" to ${Email.TO} with result value: ${"%.8f".format(result.value)} for ${user.firstName} ${user.surname}")
 							}

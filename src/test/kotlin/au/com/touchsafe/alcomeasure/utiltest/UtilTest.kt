@@ -1,5 +1,7 @@
-package au.com.touchsafe.alcomeasure
+package au.com.touchsafe.alcomeasure.utiltest
 
+import au.com.touchsafe.alcomeasure.SETTINGS_PROPERTIES
+import au.com.touchsafe.alcomeasure.setMailLogLevel
 import org.junit.jupiter.api.AfterAll
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertNull
@@ -17,7 +19,7 @@ class UtilTest {
         @JvmStatic
         fun beforeTests() {
             settings_properties.clear()
-            SETTINGS_PROPERTIES.stringPropertyNames().forEach {propertyName ->
+            SETTINGS_PROPERTIES.stringPropertyNames().forEach { propertyName ->
                 settings_properties.setProperty(propertyName, SETTINGS_PROPERTIES.getProperty(propertyName))
             }
             SETTINGS_PROPERTIES.clear()
@@ -26,7 +28,7 @@ class UtilTest {
         @JvmStatic
         fun afterTests() {
             SETTINGS_PROPERTIES.clear()
-            settings_properties.stringPropertyNames().forEach {propertyName ->
+            settings_properties.stringPropertyNames().forEach { propertyName ->
                 SETTINGS_PROPERTIES.setProperty(propertyName, settings_properties.getProperty(propertyName))
             }
         }

@@ -1,8 +1,7 @@
-package au.com.touchsafe.alcomeasure
+package au.com.touchsafe.alcomeasure.utiltest
 
 import ch.qos.logback.classic.spi.LoggingEvent
 import ch.qos.logback.core.AppenderBase
-import java.util.ArrayList
 
 // Log appender allowing tests to read logged events
 class TestAppender : AppenderBase<LoggingEvent>() {

@@ -23,3 +23,13 @@ fun setMailLogLevel() {
 	handler.level = level
 	logger.addHandler(handler)
 }
+
+fun setDebugLogging() {
+	val isDebugStr = SETTINGS_PROPERTIES.getProperty("consoleDebug")
+
+	if (isDebugStr == null) {
+		ToggleableConsoleAppender.enabled = false
+	} else {
+	 	ToggleableConsoleAppender.enabled = isDebugStr.toBoolean()
+	}
+}

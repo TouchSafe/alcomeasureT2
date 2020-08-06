@@ -8,7 +8,14 @@
 			<pattern>%date %level [%thread] %logger{10} [%file:%line] %msg%n</pattern>
 		</encoder>
 	</appender>
+	<!-- Toggleable debug console appender, used if consoleDebug = true in settings.properties -->
+	<appender name="DEBUGCONSOLE" class="au.com.touchsafe.alcomeasure.ToggleableConsoleAppender">
+		<encoder>
+			<pattern>%date %level [%thread] %logger{10} [%file:%line] %msg%n</pattern>
+		</encoder>
+	</appender>
 	<root level="INFO">
 		<appender-ref ref="FILE"/>
+		<appender-ref ref="DEBUGCONSOLE"/>
 	</root>
 </configuration>

@@ -8,7 +8,7 @@ fun main() {
 	LOGGER.info("TouchSafe 2 AlcoMeasure Integration: STARTED")
 	LOGGER.info("Connected keyboards:" + lc.kra.system.keyboard.GlobalKeyboardHook.listKeyboards().map { (key, value) -> " [$key:$value]" }.joinToString(""))
 	setMailLogLevel()
-	setConsoleLoggingLevel()
+	setOutputLoggingLevels()
 
 	try {
 		while (true) {

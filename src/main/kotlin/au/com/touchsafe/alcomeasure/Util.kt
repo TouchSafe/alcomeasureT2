@@ -24,10 +24,23 @@ fun setMailLogLevel() {
 	logger.addHandler(handler)
 }
 
+fun setOutputLoggingLevels() {
+	setConsoleLoggingLevel()
+	setFileLoggingLevel()
+}
+
 fun setConsoleLoggingLevel() {
 	val consoleLogLevel = SETTINGS_PROPERTIES.getProperty("consoleLogLevel") ?: return
 
 	val level = ch.qos.logback.classic.Level.toLevel(consoleLogLevel)
 
 	LevellableConsoleAppender.level = level
+}
+
+fun setFileLoggingLevel() {
+	val fileLogLevel = SETTINGS_PROPERTIES.getProperty("fileLogLevel") ?: return
+
+	val level = ch.qos.logback.classic.Level.toLevel(fileLogLevel)
+
+	LevellableRollingFileAppender.level = level
 }

@@ -31,6 +31,8 @@ class MailLogLevelTest {
             settings_properties.stringPropertyNames().forEach { propertyName ->
                 SETTINGS_PROPERTIES.setProperty(propertyName, settings_properties.getProperty(propertyName))
             }
+            // Set mail log level to the one in settings.properties
+            setMailLogLevel()
         }
     }
 

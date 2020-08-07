@@ -156,5 +156,9 @@ enum class TestState(val value: String) {
 }
 
 enum class DebugMarkers(val marker: Marker) {
-	DEBUG1(MarkerFactory.getMarker("DEBUG1"))
+	DEBUG1(MarkerFactory.getMarker("DEBUG1")),
+	DEBUG2(MarkerFactory.getMarker("DEBUG2")),
+	DEBUG3(MarkerFactory.getMarker("DEBUG3")),
+	DEBUG4(MarkerFactory.getMarker("DEBUG4")),
+	DEBUG5(MarkerFactory.getMarker("DEBUG5"))
 }

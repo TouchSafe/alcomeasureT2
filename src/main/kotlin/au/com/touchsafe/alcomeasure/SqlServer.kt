@@ -9,6 +9,7 @@ object SqlServer {
 	private const val VALIDATE_ID_SQL_START = "SELECT id, firstName, lastName FROM [User] WHERE deleted = 0 AND DATEDIFF(HOUR, GETDATE(), accessExpiry) > 0"
 
 	fun validateId(connection: java.sql.Connection, id: Rfid): User? {
+		LOGGER.debug(DebugMarkers.DEBUG1.marker, "validateId {cardNo: ${id.cardNumber}, facilityCode: ${id.facilityCode}}")
 		try {
 //			val statement = when (id) {
 //				is Pin -> connection.prepareStatement("$VALIDATE_ID_SQL_START AND pin = ?;").apply {
@@ -22,6 +23,7 @@ object SqlServer {
 			val statement = connection.prepareStatement("$VALIDATE_ID_SQL_START AND rfidFacilityId = ? AND rfid = ?;")
 			statement.setInt(1, id.facilityCode)
 			statement.setInt(2, id.cardNumber)
+			LOGGER.debug(DebugMarkers.DEBUG2.marker, "Query: $statement")
 			val resultSet = statement.executeQuery()
 			if (!resultSet.next()) {
 				LOGGER.info("No user found for Rfid \"${id.cardNumber}\"")

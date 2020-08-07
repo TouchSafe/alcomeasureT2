@@ -1,5 +1,8 @@
 package au.com.touchsafe.alcomeasure
 
+import org.slf4j.Marker
+import org.slf4j.MarkerFactory
+
 object AlcoMeasure {
 
 	private val CONNECT_TIMEOUT = java.time.Duration.ofSeconds(15)
@@ -150,4 +153,8 @@ enum class TestState(val value: String) {
 	FINDING_RESULTS("Finding Results"),
 	RECOVERING("Recovering"),
 	OUTCOME_NOT_RETRIEVED("Outcome Not Retrieved")
+}
+
+enum class DebugMarkers(val marker: Marker) {
+	DEBUG1(MarkerFactory.getMarker("DEBUG1"))
 }

@@ -1,5 +1,7 @@
 package au.com.touchsafe.alcomeasure
 
+import org.slf4j.MarkerFactory
+
 object SqlServer {
 
 	private const val APPLICATION_NAME = "AlcoMeasure Integration"
@@ -21,7 +23,11 @@ object SqlServer {
 			statement.setInt(1, id.facilityCode)
 			statement.setInt(2, id.cardNumber)
 			val resultSet = statement.executeQuery()
-			if (!resultSet.next()) return null
+			if (!resultSet.next()) {
+				LOGGER.info("No user found for Rfid \"${id.cardNumber}\"")
+				return null
+			}
+			LOGGER.debug("Validated User \"${resultSet.getString("firstName")} ${resultSet.getString("lastName")}\" from Rfid \"${id.cardNumber}\"")
 			return User(resultSet.getInt("id"), resultSet.getString("firstName"), resultSet.getString("lastName"))
 		} catch (ex: Throwable) {
 			LOGGER.error("Error occurred while validating an Id:", ex)
@@ -30,6 +36,7 @@ object SqlServer {
 	}
 
 	fun storeResult(connection: java.sql.Connection, user: User, result: Result) {
+		LOGGER.debug(DebugMarkers.DEBUG1.marker, "storeResult ${result.value} for user ${user.firstName} ${user.surname}")
 		try {
 			val photo1Id = result.photo1Uri?.let { downloadAndStorePhoto(connection, it) }
 			val photo2Id = result.photo2Uri?.let { downloadAndStorePhoto(connection, it) }
@@ -48,10 +55,14 @@ object SqlServer {
 	}
 
 	private fun downloadAndStorePhoto(connection: java.sql.Connection, photoUri: java.net.URL): Int? {
+		LOGGER.debug(DebugMarkers.DEBUG1.marker, "downloadAndStorePhoto $photoUri")
 		val statement = connection.prepareStatement("INSERT INTO [File] (fileStreamId, fileContent) OUTPUT INSERTED.ID VALUES (NEWID(), ?);")
 		statement.setBlob(1, photoUri.openStream())
 		val resultSet = statement.executeQuery()
-		if (!resultSet.next()) return null
+		if (!resultSet.next()) {
+			LOGGER.debug("No result from query")
+			return null
+		}
 		return resultSet.getInt(1)
 	}
 }

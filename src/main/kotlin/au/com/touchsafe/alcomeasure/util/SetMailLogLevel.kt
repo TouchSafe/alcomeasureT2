@@ -7,7 +7,9 @@ import java.util.logging.Level
 import java.util.logging.Logger
 import java.util.logging.SimpleFormatter
 
-// Sets logging level for com.sun.mail from property emailLogLevel in SETTINGS_PROPERTIES
+/**
+ * Sets logging level for com.sun.mail from property emailLogLevel in [SETTINGS_PROPERTIES]
+ */
 fun setMailLogLevel() {
 	val logLevelStr = SETTINGS_PROPERTIES.getProperty("emailLogLevel") ?: return
 	val level: Level

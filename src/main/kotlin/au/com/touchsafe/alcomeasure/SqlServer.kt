@@ -1,13 +1,18 @@
 package au.com.touchsafe.alcomeasure
 
-import org.slf4j.MarkerFactory
-
 object SqlServer {
 
 	private const val APPLICATION_NAME = "AlcoMeasure Integration"
 	internal val DB_CONNECTION_URI = "jdbc:sqlserver://${SETTINGS_PROPERTIES.getProperty("dbHost")}:${SETTINGS_PROPERTIES.getProperty("dbPort")};databaseName=${SETTINGS_PROPERTIES.getProperty("dbDatabase")};user=${SETTINGS_PROPERTIES.getProperty("dbUsername")};password=${SETTINGS_PROPERTIES.getProperty("dbPassphrase")};applicationName=$APPLICATION_NAME;"
 	private const val VALIDATE_ID_SQL_START = "SELECT id, firstName, lastName FROM [User] WHERE deleted = 0 AND DATEDIFF(HOUR, GETDATE(), accessExpiry) > 0"
 
+	/**
+	 * Checks the RFID data against the database, and returns the user that the card was registered to,
+	 * or null if no user could be found
+	 * @param connection the connection to the TouchSafe SQL Server database
+	 * @param id the RFID data from the scanned card
+	 * @return The User that the card was registered to, or null if no user exists with the card
+	 */
 	fun validateId(connection: java.sql.Connection, id: Rfid): User? {
 		LOGGER.debug(DebugMarkers.DEBUG1.marker, "validateId {cardNo: ${id.cardNumber}, facilityCode: ${id.facilityCode}}")
 		try {
@@ -37,6 +42,12 @@ object SqlServer {
 		}
 	}
 
+	/**
+	 * Stores the [Result] in the database through [connection]
+	 * @param connection the connection to the TouchSafe SQL Server database
+	 * @param user the user that the result belongs to
+	 * @param result the result from the [AlcoMeasure] test
+	 */
 	fun storeResult(connection: java.sql.Connection, user: User, result: Result) {
 		LOGGER.debug(DebugMarkers.DEBUG1.marker, "storeResult ${result.value} for user ${user.firstName} ${user.surname}")
 		try {
@@ -56,6 +67,12 @@ object SqlServer {
 		}
 	}
 
+	//TODO @return
+	/**
+	 * Downloads and INSERTs the file from [photoUri] into the database through [connection]
+	 * @param connection the connection to the TouchSafe SQL Server database
+	 * @param photoUri the URI to the photo from the result from the [AlcoMeasure] test
+	 */
 	private fun downloadAndStorePhoto(connection: java.sql.Connection, photoUri: java.net.URL): Int? {
 		LOGGER.debug(DebugMarkers.DEBUG1.marker, "downloadAndStorePhoto $photoUri")
 		val statement = connection.prepareStatement("INSERT INTO [File] (fileStreamId, fileContent) OUTPUT INSERTED.ID VALUES (NEWID(), ?);")
@@ -69,4 +86,11 @@ object SqlServer {
 	}
 }
 
+/**
+ * The ID and name of a user from the TouchSafe database
+ *
+ * @param id the ID of the user in the database
+ * @param firstName the user's first name
+ * @param surname the user's surname
+ */
 data class User(val id: Int, val firstName: String, val surname: String)

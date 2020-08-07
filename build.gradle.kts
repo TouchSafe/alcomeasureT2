@@ -30,6 +30,7 @@ dependencies {
 	testImplementation("org.junit.jupiter", "junit-jupiter-api", "5.6.2")
 	testRuntimeOnly("org.junit.jupiter", "junit-jupiter-engine", "5.6.2")
 	testImplementation("com.icegreen", "greenmail", "1.5.14")
+	testImplementation("org.hsqldb", "hsqldb", "2.5.1")
 }
 
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {

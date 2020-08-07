@@ -6,8 +6,15 @@ import au.com.touchsafe.alcomeasure.util.setOutputLoggingLevels
 
 internal val LOGGER = org.slf4j.LoggerFactory.getLogger(AlcoMeasure::class.java)
 internal val MESSAGES_BUNDLE: java.util.ResourceBundle = java.util.ResourceBundle.getBundle("messages", java.util.Locale.ENGLISH)
+
+/**
+ * Properties imported from the file ./settings.properties
+ */
 internal val SETTINGS_PROPERTIES: java.util.Properties = java.util.Properties().apply { java.io.FileInputStream("./settings.properties").use { load(it) } }
 
+/**
+ * Main function of the application
+ */
 fun main() {
 	LOGGER.info("TouchSafe 2 AlcoMeasure Integration: STARTED")
 	LOGGER.info("Connected keyboards:" + lc.kra.system.keyboard.GlobalKeyboardHook.listKeyboards().map { (key, value) -> " [$key:$value]" }.joinToString(""))

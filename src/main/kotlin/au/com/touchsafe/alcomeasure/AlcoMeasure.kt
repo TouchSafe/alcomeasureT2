@@ -35,6 +35,10 @@ object AlcoMeasure {
 	// AD 3/8/20: Change this as it appears to be causing incorrect results
 	private const val RESULT_CONVERSION_VALUE = 1 // 44000.0
 
+	/**
+	 * Displays a message on the AlcoMeasure unit
+	 * @param message the message to be displayed
+	 */
 	fun displayMessage(message: String) {
 		LOGGER.info("Display message:$message:")
 		val httpClient = java.net.http.HttpClient.newBuilder().apply { connectTimeout(CONNECT_TIMEOUT) }.build()
@@ -45,6 +49,11 @@ object AlcoMeasure {
 		}
 	}
 
+	/**
+	 * Performs a test with the AlcoMeasure unit for the specified user
+	 * @param user the user that is being tested
+	 * @return a Result containing relevant data recieved from the unit after the test
+	 */
 	fun performTest(user: User): Result? {
 		val httpClient = java.net.http.HttpClient.newBuilder().apply { connectTimeout(CONNECT_TIMEOUT) }.build()
 		val statusRequest = java.net.http.HttpRequest.newBuilder(STATUS_URI).build()
@@ -117,6 +126,13 @@ object AlcoMeasure {
 		}
 	}
 
+	/**
+	 * Extracts a value from an XML body with the specified starting tag
+	 *
+	 * @param body the XML body to extract the value from
+	 * @param tagStart the opening tag of the tags that contain the value
+	 * @return the value contained by the tags started by [tagStart]
+	 */
 	private fun extractValue(body: String, tagStart: String): String {
 		val tagStartIndex = body.indexOf(tagStart)
 		require(tagStartIndex >= 0) { "`tagStart` not found: $tagStart: $body" }
@@ -143,6 +159,13 @@ enum class ProcessState(val value: String) {
 	NORMAL_TEST("Normal Test")
 }
 
+/**
+ * The result from an AlcoMeasure test
+ * @param value the value blown into the machine, in g/100ml
+ * @param photo1Uri the URI of the photo taken before the test was performed
+ * @param photo2Uri the URI of the photo taken while the test was performed
+ * @param photo3Uri the URI of the photo taken after the test was performed
+ */
 data class Result(val value: Double, val photo1Uri: java.net.URL? = null, val photo2Uri: java.net.URL? = null, val photo3Uri: java.net.URL? = null)
 
 @Suppress("unused")
@@ -155,6 +178,9 @@ enum class TestState(val value: String) {
 	OUTCOME_NOT_RETRIEVED("Outcome Not Retrieved")
 }
 
+/**
+ * Markers used to denote different levels of debug log (larger number = more verbose)
+ */
 enum class DebugMarkers(val marker: Marker) {
 	DEBUG1(MarkerFactory.getMarker("DEBUG1")),
 	DEBUG2(MarkerFactory.getMarker("DEBUG2")),

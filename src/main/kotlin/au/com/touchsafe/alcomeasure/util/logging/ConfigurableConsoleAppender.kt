@@ -4,7 +4,9 @@ import ch.qos.logback.classic.Level
 import ch.qos.logback.classic.spi.LoggingEvent
 import ch.qos.logback.core.ConsoleAppender
 
-// Toggleable ConsoleAppender, intending on using this for --debug flag
+/**
+ * Configurable ConsoleAppender, can change logging level programmatically
+ */
 // Need to use LoggingEvent explicitly in order to allow level setting
 open class ConfigurableConsoleAppender : ConsoleAppender<LoggingEvent>() {
 

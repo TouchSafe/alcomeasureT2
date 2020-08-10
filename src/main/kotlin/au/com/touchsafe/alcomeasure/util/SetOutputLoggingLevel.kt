@@ -4,6 +4,7 @@ import au.com.touchsafe.alcomeasure.util.logging.DebugMarker
 import au.com.touchsafe.alcomeasure.SETTINGS_PROPERTIES
 import au.com.touchsafe.alcomeasure.util.logging.appenders.ConfigurableConsoleAppender
 import au.com.touchsafe.alcomeasure.util.logging.appenders.ConfigurableRollingFileAppender
+import ch.qos.logback.classic.Level
 
 /**
  * Sets logging levels for Configurable Appenders
@@ -19,17 +20,10 @@ fun setOutputLoggingLevels() {
  */
 fun setConsoleLoggingLevel() {
 	val consoleLogLevel = SETTINGS_PROPERTIES.getProperty("consoleLogLevel") ?: return
+	val levelAndMarker = getLevelAndMarker(consoleLogLevel)
 
-	var level = ch.qos.logback.classic.Level.DEBUG
-	val marker = DebugMarker.parse(consoleLogLevel)
-	// If marker != null, Level is DEBUG
-	if (marker == null) {
-		// Level is not a DebugMarker, set level
-		level = ch.qos.logback.classic.Level.toLevel(consoleLogLevel)
-	}
-
-	ConfigurableConsoleAppender.debugMarker = marker
-	ConfigurableConsoleAppender.level = level
+	ConfigurableConsoleAppender.debugMarker = levelAndMarker.second
+	ConfigurableConsoleAppender.level = levelAndMarker.first
 }
 
 /**
@@ -37,15 +31,19 @@ fun setConsoleLoggingLevel() {
  */
 fun setFileLoggingLevel() {
 	val fileLogLevel = SETTINGS_PROPERTIES.getProperty("fileLogLevel") ?: return
+	val levelAndMarker = getLevelAndMarker(fileLogLevel)
 
-	var level = ch.qos.logback.classic.Level.DEBUG
-	val marker = DebugMarker.parse(fileLogLevel)
+	ConfigurableRollingFileAppender.debugMarker = levelAndMarker.second
+	ConfigurableRollingFileAppender.level = levelAndMarker.first
+}
+
+fun getLevelAndMarker(logLevelStr: String): Pair<Level, DebugMarker?> {
+	var level = Level.DEBUG
+	val marker = DebugMarker.parse(logLevelStr)
 	// If marker != null, Level is DEBUG
 	if (marker == null) {
 		// Level is not a DebugMarker, set level
-		level = ch.qos.logback.classic.Level.toLevel(fileLogLevel)
+		level = Level.toLevel(logLevelStr)
 	}
-
-	ConfigurableConsoleAppender.debugMarker = marker
-	ConfigurableRollingFileAppender.level = level
+	return Pair(level, marker)
 }

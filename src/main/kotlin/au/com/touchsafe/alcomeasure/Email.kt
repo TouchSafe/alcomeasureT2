@@ -1,5 +1,7 @@
 package au.com.touchsafe.alcomeasure
 
+import au.com.touchsafe.alcomeasure.util.logging.DebugMarker
+
 object Email {
 
 	private val FROM = SETTINGS_PROPERTIES.getProperty("emailFrom")
@@ -52,18 +54,23 @@ object Email {
 		message.subject = subject
 		@Suppress("UNCHECKED_CAST") val notNullAttachments = attachments.filter { it.second != null } as List<Pair<String, java.net.URL>>
 		if (notNullAttachments.isEmpty()) {
+			LOGGER.debug(DebugMarker.DEBUG1.marker, "No attachments")
 			message.setText(body)
 		} else {
+			LOGGER.debug(DebugMarker.DEBUG1.marker, "Adding attachments")
 			val multipart = javax.mail.internet.MimeMultipart()
 			val contentBodyPart = javax.mail.internet.MimeBodyPart()
 			contentBodyPart.setText(body)
 			multipart.addBodyPart(contentBodyPart)
 			notNullAttachments.forEach { (filename, attachmentUri) ->
+				LOGGER.debug(DebugMarker.DEBUG3.marker, "Attaching file $filename ($attachmentUri)")
 				val attachmentBodyPart = javax.mail.internet.MimeBodyPart()
 				attachmentBodyPart.dataHandler = javax.activation.DataHandler(JpgUrlDataSource(attachmentUri))
 				attachmentBodyPart.fileName = filename
 				attachmentBodyPart.disposition = javax.mail.Part.ATTACHMENT
 				multipart.addBodyPart(attachmentBodyPart)
+				LOGGER.debug(DebugMarker.DEBUG2.marker, "Attached file $filename ($attachmentUri)")
+
 			}
 			message.setContent(multipart)
 		}

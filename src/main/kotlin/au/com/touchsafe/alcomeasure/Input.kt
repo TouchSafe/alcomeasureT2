@@ -10,12 +10,14 @@ object Input {
 			override fun keyPressed(event: lc.kra.system.keyboard.event.GlobalKeyEvent) {}
 
 			override fun keyReleased(event: lc.kra.system.keyboard.event.GlobalKeyEvent) {
+				LOGGER.debug(DebugMarkers.DEBUG4.marker, "Key \"${event.keyChar}\" pressed on device with handle \"${event.deviceHandle}\"")
 				KEYBOARD_BUFFER.put(event.keyChar)
 			}
 		})
 	}
 
 	fun getId(): Rfid {
+		LOGGER.debug(DebugMarkers.DEBUG2.marker, "Input.getId called")
 		val input = readLine()
 //		val id = if (input.contains(';')) {
 //			val parts = input.split(';')
@@ -30,18 +32,24 @@ object Input {
 	}
 
 	private fun readLine(): String {
+		LOGGER.debug(DebugMarkers.DEBUG2.marker, "Input.readline called")
 		KEYBOARD_BUFFER.clear()
 		var newLineIndex = indexOfCarriageReturn()
 		while (newLineIndex == -1) {
 			Thread.sleep(100)
 			newLineIndex = indexOfCarriageReturn()
 		}
-		return KEYBOARD_BUFFER.array().take(newLineIndex).filter { it != '\u0000' }.joinToString("")
+		val line = KEYBOARD_BUFFER.array().take(newLineIndex).filter { it != '\u0000' }.joinToString("")
+		LOGGER.debug(DebugMarkers.DEBUG1.marker, "Read line \"$line\"")
+		return line
 	}
 
 	private fun indexOfCarriageReturn(): Int {
+		LOGGER.debug(DebugMarkers.DEBUG5.marker, "Input.indexOfCarriageReturn called")
 		val buffer = KEYBOARD_BUFFER.array().take(KEYBOARD_BUFFER.position())
-		return buffer.indexOf('\r')
+		val index = buffer.indexOf('\r')
+		LOGGER.debug(DebugMarkers.DEBUG5.marker, "Index of '\\r' in \"$buffer\" is $index")
+		return index
 	}
 }
 

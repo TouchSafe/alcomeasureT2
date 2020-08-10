@@ -14,7 +14,7 @@ object SqlServer {
 	 * @return The User that the card was registered to, or null if no user exists with the card
 	 */
 	fun validateId(connection: java.sql.Connection, id: Rfid): User? {
-		LOGGER.debug(DebugMarkers.DEBUG1.marker, "validateId {cardNo: ${id.cardNumber}, facilityCode: ${id.facilityCode}}")
+		LOGGER.debug(DebugMarker.DEBUG1.marker, "validateId {cardNo: ${id.cardNumber}, facilityCode: ${id.facilityCode}}")
 		try {
 //			val statement = when (id) {
 //				is Pin -> connection.prepareStatement("$VALIDATE_ID_SQL_START AND pin = ?;").apply {
@@ -28,7 +28,7 @@ object SqlServer {
 			val statement = connection.prepareStatement("$VALIDATE_ID_SQL_START AND rfidFacilityId = ? AND rfid = ?;")
 			statement.setInt(1, id.facilityCode)
 			statement.setInt(2, id.cardNumber)
-			LOGGER.debug(DebugMarkers.DEBUG2.marker, "Query: $statement")
+			LOGGER.debug(DebugMarker.DEBUG2.marker, "Query: $statement")
 			val resultSet = statement.executeQuery()
 			if (!resultSet.next()) {
 				LOGGER.info("No user found for Rfid \"${id.cardNumber}\"")
@@ -49,7 +49,7 @@ object SqlServer {
 	 * @param result the result from the [AlcoMeasure] test
 	 */
 	fun storeResult(connection: java.sql.Connection, user: User, result: Result) {
-		LOGGER.debug(DebugMarkers.DEBUG1.marker, "storeResult ${result.value} for user ${user.firstName} ${user.surname}")
+		LOGGER.debug(DebugMarker.DEBUG1.marker, "storeResult ${result.value} for user ${user.firstName} ${user.surname}")
 		try {
 			val photo1Id = result.photo1Uri?.let { downloadAndStorePhoto(connection, it) }
 			val photo2Id = result.photo2Uri?.let { downloadAndStorePhoto(connection, it) }
@@ -74,7 +74,7 @@ object SqlServer {
 	 * @return the ID of the INSERTed file
 	 */
 	private fun downloadAndStorePhoto(connection: java.sql.Connection, photoUri: java.net.URL): Int? {
-		LOGGER.debug(DebugMarkers.DEBUG1.marker, "downloadAndStorePhoto $photoUri")
+		LOGGER.debug(DebugMarker.DEBUG1.marker, "downloadAndStorePhoto $photoUri")
 		val statement = connection.prepareStatement("INSERT INTO [File] (fileStreamId, fileContent) OUTPUT INSERTED.ID VALUES (NEWID(), ?);")
 		statement.setBlob(1, photoUri.openStream())
 		val resultSet = statement.executeQuery()

@@ -1,8 +1,10 @@
 package au.com.touchsafe.alcomeasure.util
 
+import au.com.touchsafe.alcomeasure.DebugMarker
 import au.com.touchsafe.alcomeasure.util.logging.ConfigurableConsoleAppender
 import au.com.touchsafe.alcomeasure.util.logging.ConfigurableRollingFileAppender
 import au.com.touchsafe.alcomeasure.SETTINGS_PROPERTIES
+import java.lang.IllegalArgumentException
 
 /**
  * Sets logging levels for Configurable Appenders
@@ -19,8 +21,15 @@ fun setOutputLoggingLevels() {
 fun setConsoleLoggingLevel() {
 	val consoleLogLevel = SETTINGS_PROPERTIES.getProperty("consoleLogLevel") ?: return
 
-	val level = ch.qos.logback.classic.Level.toLevel(consoleLogLevel)
+	var level = ch.qos.logback.classic.Level.DEBUG
+	val marker = DebugMarker.parse(consoleLogLevel)
+	// If marker != null, Level is DEBUG
+	if (marker == null) {
+		// Level is not a DebugMarker, set level
+		level = ch.qos.logback.classic.Level.toLevel(consoleLogLevel)
+	}
 
+	ConfigurableConsoleAppender.debugMarker = marker
 	ConfigurableConsoleAppender.level = level
 }
 
@@ -30,7 +39,14 @@ fun setConsoleLoggingLevel() {
 fun setFileLoggingLevel() {
 	val fileLogLevel = SETTINGS_PROPERTIES.getProperty("fileLogLevel") ?: return
 
-	val level = ch.qos.logback.classic.Level.toLevel(fileLogLevel)
+	var level = ch.qos.logback.classic.Level.DEBUG
+	val marker = DebugMarker.parse(fileLogLevel)
+	// If marker != null, Level is DEBUG
+	if (marker == null) {
+		// Level is not a DebugMarker, set level
+		level = ch.qos.logback.classic.Level.toLevel(fileLogLevel)
+	}
 
+	ConfigurableConsoleAppender.debugMarker = marker
 	ConfigurableRollingFileAppender.level = level
 }

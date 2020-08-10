@@ -181,10 +181,39 @@ enum class TestState(val value: String) {
 /**
  * Markers used to denote different levels of debug log (larger number = more verbose)
  */
-enum class DebugMarkers(val marker: Marker) {
-	DEBUG1(MarkerFactory.getMarker("DEBUG1")), // Light logging, slightly more verbose than normal debug logging
-	DEBUG2(MarkerFactory.getMarker("DEBUG2")), // Moderate logging, contains function entrances & exits
-	DEBUG3(MarkerFactory.getMarker("DEBUG3")), // Bulky logging
-	DEBUG4(MarkerFactory.getMarker("DEBUG4")), // Heavy logging
-	DEBUG5(MarkerFactory.getMarker("DEBUG5"))  // Very heavy logging, not recommended
+class DebugMarker(val level: Int, val name: String) {
+	val marker: Marker = MarkerFactory.getMarker(name)
+
+	fun isGreaterOrEqual(other: DebugMarker): Boolean {
+		return level >= other.level
+	}
+
+	companion object {
+		val DEBUG1 = DebugMarker(1, "DEBUG1")  // Light logging, slightly more verbose than normal debug logging
+		val DEBUG2 = DebugMarker(2, "DEBUG2")  // Moderate logging, contains function entrances & exits
+		val DEBUG3 = DebugMarker(3, "DEBUG3")  // Bulky logging
+		val DEBUG4 = DebugMarker(4, "DEBUG4")  // Heavy logging
+		val DEBUG5 = DebugMarker(5, "DEBUG5")  // Very heavy logging, not recommended
+
+		fun parse(name: String): DebugMarker? {
+			when (name) {
+				"DEBUG1" -> {
+					return DEBUG1
+				}
+				"DEBUG2" -> {
+					return DEBUG2
+				}
+				"DEBUG3" -> {
+					return DEBUG3
+				}
+				"DEBUG4" -> {
+					return DEBUG4
+				}
+				"DEBUG5" -> {
+					return DEBUG5
+				}
+			}
+			return null
+		}
+	}
 }

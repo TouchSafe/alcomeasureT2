@@ -182,9 +182,9 @@ enum class TestState(val value: String) {
  * Markers used to denote different levels of debug log (larger number = more verbose)
  */
 enum class DebugMarkers(val marker: Marker) {
-	DEBUG1(MarkerFactory.getMarker("DEBUG1")),
-	DEBUG2(MarkerFactory.getMarker("DEBUG2")),
-	DEBUG3(MarkerFactory.getMarker("DEBUG3")),
-	DEBUG4(MarkerFactory.getMarker("DEBUG4")),
-	DEBUG5(MarkerFactory.getMarker("DEBUG5"))
+	DEBUG1(MarkerFactory.getMarker("DEBUG1")), // Light logging, slightly more verbose than normal debug logging
+	DEBUG2(MarkerFactory.getMarker("DEBUG2")), // Moderate logging, contains function entrances & exits
+	DEBUG3(MarkerFactory.getMarker("DEBUG3")), // Bulky logging
+	DEBUG4(MarkerFactory.getMarker("DEBUG4")), // Heavy logging
+	DEBUG5(MarkerFactory.getMarker("DEBUG5"))  // Very heavy logging, not recommended
 }

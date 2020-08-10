@@ -1,6 +1,6 @@
 package au.com.touchsafe.alcomeasure.util
 
-import au.com.touchsafe.alcomeasure.util.logging.ConfigurableConsoleAppender
+import au.com.touchsafe.alcomeasure.util.logging.appenders.ConfigurableConsoleAppender
 import au.com.touchsafe.alcomeasure.SETTINGS_PROPERTIES
 import ch.qos.logback.classic.Level
 import org.junit.jupiter.api.*

@@ -1,6 +1,6 @@
-package au.com.touchsafe.alcomeasure.util.logging
+package au.com.touchsafe.alcomeasure.util.logging.appenders
 
-import au.com.touchsafe.alcomeasure.DebugMarker
+import au.com.touchsafe.alcomeasure.util.logging.DebugMarker
 import ch.qos.logback.classic.Level
 import ch.qos.logback.classic.spi.LoggingEvent
 import ch.qos.logback.core.ConsoleAppender
@@ -20,8 +20,8 @@ open class ConfigurableConsoleAppender : ConsoleAppender<LoggingEvent>() {
     override fun subAppend(event: LoggingEvent) {
         if (event.level.isGreaterOrEqual(level)) {
             val eventDebugMarker = DebugMarker.parse(event.marker.name)
-            // If no debugMarker, or event marker is not a DebugMarker, or debugMarker >= eventDebugMarker
-            if (debugMarker == null || eventDebugMarker == null || debugMarker!!.isGreaterOrEqual(eventDebugMarker)) {
+            // If no debugMarker, or event marker is not a DebugMarker, or debugMarker <= eventDebugMarker
+            if (debugMarker == null || eventDebugMarker == null || debugMarker!!.isLesserOrEqual(eventDebugMarker)) {
                 super.subAppend(event)
             }
         }

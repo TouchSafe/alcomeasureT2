@@ -1,10 +1,9 @@
 package au.com.touchsafe.alcomeasure.util
 
-import au.com.touchsafe.alcomeasure.DebugMarker
-import au.com.touchsafe.alcomeasure.util.logging.ConfigurableConsoleAppender
-import au.com.touchsafe.alcomeasure.util.logging.ConfigurableRollingFileAppender
+import au.com.touchsafe.alcomeasure.util.logging.DebugMarker
 import au.com.touchsafe.alcomeasure.SETTINGS_PROPERTIES
-import java.lang.IllegalArgumentException
+import au.com.touchsafe.alcomeasure.util.logging.appenders.ConfigurableConsoleAppender
+import au.com.touchsafe.alcomeasure.util.logging.appenders.ConfigurableRollingFileAppender
 
 /**
  * Sets logging levels for Configurable Appenders

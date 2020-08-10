@@ -1,5 +1,7 @@
 package au.com.touchsafe.alcomeasure
 
+import au.com.touchsafe.alcomeasure.util.logging.DebugMarker
+
 object SqlServer {
 
 	private const val APPLICATION_NAME = "AlcoMeasure Integration"

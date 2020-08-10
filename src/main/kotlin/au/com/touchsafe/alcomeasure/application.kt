@@ -1,5 +1,6 @@
 package au.com.touchsafe.alcomeasure
 
+import au.com.touchsafe.alcomeasure.util.logging.DebugMarker
 import au.com.touchsafe.alcomeasure.util.mailAllReports
 import au.com.touchsafe.alcomeasure.util.setMailLogLevel
 import au.com.touchsafe.alcomeasure.util.setOutputLoggingLevels

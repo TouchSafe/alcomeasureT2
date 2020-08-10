@@ -1,5 +1,7 @@
 package au.com.touchsafe.alcomeasure
 
+import au.com.touchsafe.alcomeasure.util.logging.DebugMarker
+
 object Input {
 
 	private const val KEYBOARD_BUFFER_SIZE = 200

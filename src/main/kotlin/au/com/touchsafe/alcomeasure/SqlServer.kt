@@ -67,11 +67,11 @@ object SqlServer {
 		}
 	}
 
-	//TODO @return
 	/**
 	 * Downloads and INSERTs the file from [photoUri] into the database through [connection]
 	 * @param connection the connection to the TouchSafe SQL Server database
 	 * @param photoUri the URI to the photo from the result from the [AlcoMeasure] test
+	 * @return the ID of the INSERTed file
 	 */
 	private fun downloadAndStorePhoto(connection: java.sql.Connection, photoUri: java.net.URL): Int? {
 		LOGGER.debug(DebugMarkers.DEBUG1.marker, "downloadAndStorePhoto $photoUri")

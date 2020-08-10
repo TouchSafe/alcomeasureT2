@@ -2,6 +2,10 @@ package au.com.touchsafe.alcomeasure
 
 import au.com.touchsafe.alcomeasure.util.logging.DebugMarker
 
+/**
+ * Email contains an SMTP session, and functions and classes related to
+ * sending emails using that session
+ */
 object Email {
 
 	private val FROM = SETTINGS_PROPERTIES.getProperty("emailFrom")
@@ -42,10 +46,10 @@ object Email {
 	 *
 	 * Email is sent in the [SESSION] created with values from [SETTINGS_PROPERTIES]
 	 *
-	 * @param to the email address to send the email to
-	 * @param subject the subject of the email
-	 * @param body the body text of the email
-	 * @param attachments images to attach to the email, should be of type image/jpeg
+	 * @param to The email address to send the email to
+	 * @param subject The subject of the email
+	 * @param body The body text of the email
+	 * @param attachments Images to attach to the email, should be of type image/jpeg
 	 */
 	fun send(to: String, subject: String, body: String, vararg attachments: Pair<String, java.net.URL?>) {
 		val message = javax.mail.internet.MimeMessage(SESSION)
@@ -80,7 +84,7 @@ object Email {
 
 	/**
 	 * Data Source with ContentType "image/jpeg"
-	 * @param url URL to the image
+	 * @param url The URL to the image
 	 */
 	class JpgUrlDataSource internal constructor(url: java.net.URL):javax.activation.URLDataSource(url) {
 

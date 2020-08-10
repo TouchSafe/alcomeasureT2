@@ -11,8 +11,8 @@ object SqlServer {
 	/**
 	 * Checks the RFID data against the database, and returns the user that the card was registered to,
 	 * or null if no user could be found
-	 * @param connection the connection to the TouchSafe SQL Server database
-	 * @param id the RFID data from the scanned card
+	 * @param connection The connection to the TouchSafe SQL Server database
+	 * @param id The RFID data from the scanned card
 	 * @return The User that the card was registered to, or null if no user exists with the card
 	 */
 	fun validateId(connection: java.sql.Connection, id: Rfid): User? {
@@ -46,9 +46,9 @@ object SqlServer {
 
 	/**
 	 * Stores the [Result] in the database through [connection]
-	 * @param connection the connection to the TouchSafe SQL Server database
-	 * @param user the user that the result belongs to
-	 * @param result the result from the [AlcoMeasure] test
+	 * @param connection The connection to the TouchSafe SQL Server database
+	 * @param user The user that the result belongs to
+	 * @param result The result from the [AlcoMeasure] test
 	 */
 	fun storeResult(connection: java.sql.Connection, user: User, result: Result) {
 		LOGGER.debug(DebugMarker.DEBUG1.marker, "storeResult ${result.value} for user ${user.firstName} ${user.surname}")
@@ -71,9 +71,9 @@ object SqlServer {
 
 	/**
 	 * Downloads and INSERTs the file from [photoUri] into the database through [connection]
-	 * @param connection the connection to the TouchSafe SQL Server database
-	 * @param photoUri the URI to the photo from the result from the [AlcoMeasure] test
-	 * @return the ID of the INSERTed file
+	 * @param connection The connection to the TouchSafe SQL Server database
+	 * @param photoUri The URI to the photo from the result from the [AlcoMeasure] test
+	 * @return The ID of the INSERTed file
 	 */
 	private fun downloadAndStorePhoto(connection: java.sql.Connection, photoUri: java.net.URL): Int? {
 		LOGGER.debug(DebugMarker.DEBUG1.marker, "downloadAndStorePhoto $photoUri")
@@ -91,8 +91,8 @@ object SqlServer {
 /**
  * The ID and name of a user from the TouchSafe database
  *
- * @param id the ID of the user in the database
- * @param firstName the user's first name
- * @param surname the user's surname
+ * @param id The ID of the user in the database
+ * @param firstName The user's first name
+ * @param surname The user's surname
  */
 data class User(val id: Int, val firstName: String, val surname: String)

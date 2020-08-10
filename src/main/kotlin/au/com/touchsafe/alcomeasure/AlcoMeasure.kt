@@ -1,5 +1,8 @@
 package au.com.touchsafe.alcomeasure
 
+/**
+ * AlcoMeasure handles the functions that interface with the AlcoMeasure unit
+ */
 object AlcoMeasure {
 
 	private val CONNECT_TIMEOUT = java.time.Duration.ofSeconds(15)
@@ -34,7 +37,7 @@ object AlcoMeasure {
 
 	/**
 	 * Displays a message on the AlcoMeasure unit
-	 * @param message the message to be displayed
+	 * @param message The message to be displayed
 	 */
 	fun displayMessage(message: String) {
 		LOGGER.info("Display message:$message:")
@@ -48,7 +51,7 @@ object AlcoMeasure {
 
 	/**
 	 * Performs a test with the AlcoMeasure unit for the specified user
-	 * @param user the user that is being tested
+	 * @param user The user that is being tested
 	 * @return a Result containing relevant data recieved from the unit after the test
 	 */
 	fun performTest(user: User): Result? {
@@ -89,7 +92,7 @@ object AlcoMeasure {
 				}
 				val errorStateValue = extractValue(testStatusResponseBody, ERROR_STATE_TAG_START)
 				if (errorStateValue != ErrorState.NONE.value) {
-					LOGGER.info("Test error occurred:$outcomeValue:")
+					LOGGER.info("Test error occurred:$errorStateValue:")
 					return null
 				}
 				val lastLogNumber = extractValue(testStatusResponseBody, LAST_LOG_NUMBER_TAG_START)
@@ -126,8 +129,8 @@ object AlcoMeasure {
 	/**
 	 * Extracts a value from an XML body with the specified starting tag
 	 *
-	 * @param body the XML body to extract the value from
-	 * @param tagStart the opening tag of the tags that contain the value
+	 * @param body The XML body to extract the value from
+	 * @param tagStart The opening tag of the tags that contain the value
 	 * @return the value contained by the tags started by [tagStart]
 	 */
 	private fun extractValue(body: String, tagStart: String): String {
@@ -140,10 +143,16 @@ object AlcoMeasure {
 	}
 }
 
+/**
+ * Error states that may be returned in an AlcoMeasure test's status response body
+ */
 enum class ErrorState(val value: String) {
 	NONE("None")
 }
 
+/**
+ * Possible outcomes of an AlcoMeasure test, returned in it's status response body
+ */
 @Suppress("unused")
 enum class Outcome(val value: String) {
 	BLOW_STOPPED("Blow Stopped"),
@@ -151,6 +160,9 @@ enum class Outcome(val value: String) {
 	TEST_SUCCESSFUL("Test Successful")
 }
 
+/**
+ * Processing states that the AlcoMeasure unit may be in
+ */
 enum class ProcessState(val value: String) {
 	NONE("None"),
 	NORMAL_TEST("Normal Test")
@@ -158,13 +170,16 @@ enum class ProcessState(val value: String) {
 
 /**
  * The result from an AlcoMeasure test
- * @param value the value blown into the machine, in g/100ml
- * @param photo1Uri the URI of the photo taken before the test was performed
- * @param photo2Uri the URI of the photo taken while the test was performed
- * @param photo3Uri the URI of the photo taken after the test was performed
+ * @param value The value blown into the machine, in g/100ml
+ * @param photo1Uri The URI of the photo taken before the test was performed
+ * @param photo2Uri The URI of the photo taken while the test was performed
+ * @param photo3Uri The URI of the photo taken after the test was performed
  */
 data class Result(val value: Double, val photo1Uri: java.net.URL? = null, val photo2Uri: java.net.URL? = null, val photo3Uri: java.net.URL? = null)
 
+/**
+ * Test states that the AlcoMeasure unit may be in
+ */
 @Suppress("unused")
 enum class TestState(val value: String) {
 	NONE("None"),

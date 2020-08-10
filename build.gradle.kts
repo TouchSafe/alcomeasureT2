@@ -3,6 +3,7 @@ plugins {
 	`maven-publish`
 	application
 	id("com.github.johnrengelman.shadow") version "5.2.0"
+	id("org.jetbrains.dokka") version "1.4.0-rc"
 }
 
 group = "au.com.touchsafe"

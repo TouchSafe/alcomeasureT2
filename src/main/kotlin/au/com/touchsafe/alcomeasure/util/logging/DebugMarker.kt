@@ -12,8 +12,8 @@ class DebugMarker(val level: Int, val name: String) {
 	/**
 	 * Whether the DebugMarker is lesser than, or equal to the argument other
 	 * For example: [DEBUG1], [DEBUG2] and [DEBUG3] are lesser than or equal to [DEBUG3]
-	 * @param other the argument that the DebugLevel is compared against
-	 * @return true if the DebugMarker's level is less than or equal to the argument [other]'s level, otherwise false
+	 * @param other The argument that the DebugLevel is compared against
+	 * @return True if the DebugMarker's level is less than or equal to the argument [other]'s level, otherwise false
 	 */
 	fun isLesserOrEqual(other: DebugMarker): Boolean {
 		return level <= other.level

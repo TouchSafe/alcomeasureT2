@@ -22,22 +22,39 @@ fun main() {
 	setOutputLoggingLevels()
 
 	try {
+		LOGGER.debug(DebugMarkers.DEBUG1.marker, "Starting main loop")
 		while (true) {
 			try {
 				val id = Input.getId()
+				LOGGER.debug(DebugMarkers.DEBUG1.marker, "Got ID \"$id\"")
 				java.sql.DriverManager.getConnection(SqlServer.DB_CONNECTION_URI).use { connection ->
+					LOGGER.debug(DebugMarkers.DEBUG1.marker, "Connected to DB \"${SqlServer.DB_CONNECTION_URI}\"")
 					val user = SqlServer.validateId(connection, id)
 					if (user == null) {
+						LOGGER.info("No user found for the scanned RFID, displaying invalid RFID message")
 //						when (id) {
 //							is Pin -> AlcoMeasure.displayMessage(MESSAGES_BUNDLE.getString("INVALID_PIN"))
 //							is Rfid -> AlcoMeasure.displayMessage(MESSAGES_BUNDLE.getString("INVALID_RFID"))
 //						}
 						AlcoMeasure.displayMessage(MESSAGES_BUNDLE.getString("INVALID_RFID"))
 					} else {
+						LOGGER.debug(DebugMarkers.DEBUG1.marker, "User is valid, performing AlcoMeasure test")
 						AlcoMeasure.performTest(user)?.let { result ->
+							LOGGER.debug(DebugMarkers.DEBUG1.marker, "Test completed with result $result")
+							LOGGER.debug(DebugMarkers.DEBUG2.marker, "Storing result")
 							SqlServer.storeResult(connection, user, result)
-							val emailBody = java.text.MessageFormat.format(MESSAGES_BUNDLE.getString("EMAIL_BODY"), user.firstName, user.surname, "%.8f".format(result.value))
 							if (result.value != 0.0 || mailAllReports()) {
+								var subject = MESSAGES_BUNDLE.getString("EMAIL_SUBJECT")
+								if (result.value != 0.0) {
+									LOGGER.debug(DebugMarkers.DEBUG2.marker, "Result ${result.value} is over 0.0, sending email")
+								} else {
+									// Change email subject, as result is zero
+									subject = "Breathalyser result"
+									LOGGER.debug(DebugMarkers.DEBUG2.marker, "mailAllReports = true, sending email")
+								}
+								LOGGER.debug(DebugMarkers.DEBUG2.marker, "Creating email body for breathalyser notification email")
+								val emailBody = java.text.MessageFormat.format(MESSAGES_BUNDLE.getString("EMAIL_BODY"), user.firstName, user.surname, "%.8f".format(result.value))
+								LOGGER.debug(DebugMarkers.DEBUG3.marker, "Created email body \"$emailBody\"")
 								Email.send(Email.TO, MESSAGES_BUNDLE.getString("EMAIL_SUBJECT"), emailBody, "photo1" to result.photo1Uri, "photo2" to result.photo2Uri, "photo3" to result.photo3Uri)
 								LOGGER.info("Sent email \"${MESSAGES_BUNDLE.getString("EMAIL_SUBJECT")}\" to ${Email.TO} with result value: ${"%.8f".format(result.value)} for ${user.firstName} ${user.surname}")
 							}

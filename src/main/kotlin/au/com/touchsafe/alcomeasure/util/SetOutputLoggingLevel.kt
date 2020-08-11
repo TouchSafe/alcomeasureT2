@@ -37,6 +37,11 @@ fun setFileLoggingLevel() {
 	ConfigurableRollingFileAppender.level = levelAndMarker.first
 }
 
+/**
+ * Gets the Level and DebugMarker from the supplied logLevelStr
+ * @param logLevelStr The log level for a Configurable Appender, set in the settings.properties
+ * @return Pair containing the parsed Level and DebugMarker
+ */
 fun getLevelAndMarker(logLevelStr: String): Pair<Level, DebugMarker?> {
 	var level = Level.DEBUG
 	val marker = DebugMarker.parse(logLevelStr)

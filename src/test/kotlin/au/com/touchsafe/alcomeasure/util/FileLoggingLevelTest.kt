@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertNull
 import java.util.*
 
-class ConsoleLoggingLevelTest {
+class FileLoggingLevelTest {
     companion object {
         private val settings_properties = Properties()
 
@@ -45,32 +45,32 @@ class ConsoleLoggingLevelTest {
     }
 
     @Test
-    fun testSetConsoleLoggingLevelToLevels() {
+    fun testSetFileLoggingLevelToLevels() {
         val levels = listOf<Level>(Level.ALL, Level.DEBUG, Level.ERROR, Level.INFO, Level.OFF, Level.TRACE, Level.WARN)
         levels.forEach {level ->
-            SETTINGS_PROPERTIES.setProperty("consoleLogLevel", level.toString())
-            setConsoleLoggingLevel()
-            assertEquals(level, ConfigurableConsoleAppender.level)
+            SETTINGS_PROPERTIES.setProperty("fileLogLevel", level.toString())
+            setFileLoggingLevel()
+            assertEquals(level, ConfigurableRollingFileAppender.level)
         }
     }
 
     @Test
-    fun testSetConsoleLoggingLevelToNull() {
+    fun testSetFileLoggingLevelToNull() {
         //TODO: BeforeEach and AfterEach aren't running
         SETTINGS_PROPERTIES.clear()
-        val level = ConfigurableConsoleAppender.level
-        assertNull(SETTINGS_PROPERTIES.getProperty("consoleLogLevel"))
-        setConsoleLoggingLevel()
-        assertEquals(level, ConfigurableConsoleAppender.level)
+        val level = ConfigurableRollingFileAppender.level
+        assertNull(SETTINGS_PROPERTIES.getProperty("fileLogLevel"))
+        setFileLoggingLevel()
+        assertEquals(level, ConfigurableRollingFileAppender.level)
     }
 
     @Test
-    fun testSetConsoleDebugMarker() {
+    fun testSetFileDebugMarker() {
         val markers = listOf(DebugMarker.DEBUG1, DebugMarker.DEBUG2, DebugMarker.DEBUG3, DebugMarker.DEBUG4, DebugMarker.DEBUG5)
         markers.forEach {marker ->
-            SETTINGS_PROPERTIES.setProperty("consoleLogLevel", marker.name)
-            setConsoleLoggingLevel()
-            assertEquals(marker, ConfigurableConsoleAppender.debugMarker)
+            SETTINGS_PROPERTIES.setProperty("fileLogLevel", marker.name)
+            setFileLoggingLevel()
+            assertEquals(marker, ConfigurableRollingFileAppender.debugMarker)
         }
     }
 }

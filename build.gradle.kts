@@ -26,12 +26,14 @@ dependencies {
 	implementation("com.microsoft.sqlserver", "mssql-jdbc", "7.4.1.jre11")
 	implementation("lc.kra.system", "system-hook", "3.7")
 	implementation("com.sun.mail", "jakarta.mail", "1.6.4")
+	implementation("io.lettuce" ,"lettuce-core" ,"5.3.3.RELEASE")
 
 	// Testing
 	testImplementation("org.junit.jupiter", "junit-jupiter-api", "5.6.2")
 	testRuntimeOnly("org.junit.jupiter", "junit-jupiter-engine", "5.6.2")
 	testImplementation("com.icegreen", "greenmail", "1.5.14")
 	testImplementation("org.hsqldb", "hsqldb", "2.5.1")
+	testImplementation("io.lettuce" ,"lettuce-core" ,"5.3.3.RELEASE")
 }
 
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {

@@ -5,3 +5,5 @@
 **/out/
 *.hprof
 *.iml
+hs_err_pid*
+nohup.out

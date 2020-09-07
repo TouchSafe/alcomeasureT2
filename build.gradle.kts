@@ -27,6 +27,8 @@ dependencies {
 	implementation("lc.kra.system", "system-hook", "3.7")
 	implementation("com.sun.mail", "jakarta.mail", "1.6.4")
 	implementation("io.lettuce" ,"lettuce-core" ,"5.3.3.RELEASE")
+	implementation("org.jetbrains.kotlinx" ,"kotlinx-coroutines-core" ,"1.3.9")
+	implementation("com.github.kstyrc" ,"embedded-redis" ,"0.6")
 
 	// Testing
 	testImplementation("org.junit.jupiter", "junit-jupiter-api", "5.6.2")
@@ -34,6 +36,9 @@ dependencies {
 	testImplementation("com.icegreen", "greenmail", "1.5.14")
 	testImplementation("org.hsqldb", "hsqldb", "2.5.1")
 	testImplementation("io.lettuce" ,"lettuce-core" ,"5.3.3.RELEASE")
+	testImplementation("org.jetbrains.kotlinx" ,"kotlinx-coroutines-core" ,"1.3.9")
+	testImplementation("com.github.kstyrc" ,"embedded-redis" ,"0.6")
+
 }
 
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {

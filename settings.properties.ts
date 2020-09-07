@@ -11,11 +11,11 @@ dbPassphrase = iind
 
 emailAuth = false
 emailFrom = noreply@touchsafe.com.au
-emailHost = 192.168.1.52
+emailHost = 192.168.0.122
 emailPassphrase = passphrase
-emailPort = 1026
+emailPort = 25
 emailStartTls = false
-emailTo = gduffy@byteback.com
+emailTo = ebennett@touchsafe.com.au
 emailUsername = username
 
 emailLogLevel = FINEST

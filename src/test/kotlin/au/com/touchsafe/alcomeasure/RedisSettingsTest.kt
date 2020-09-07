@@ -1,8 +1,7 @@
 package au.com.touchsafe.alcomeasure
 
 import org.junit.jupiter.api.*
-import org.junit.jupiter.api.Assertions.assertEquals
-import org.junit.jupiter.api.Assertions.assertNotEquals
+import org.junit.jupiter.api.Assertions.*
 import java.util.*
 
 class RedisSettingsTest {
@@ -15,6 +14,7 @@ class RedisSettingsTest {
 
     companion object {
         private val settings_properties = Properties()
+        internal val SETTINGS_PROPERTIES: java.util.Properties = java.util.Properties().apply { java.io.FileInputStream("./settings.properties").use { load(it) } }
 
         // private val FROM = SETTINGS_PROPERTIES.getProperty("emailFrom")
 
@@ -98,4 +98,19 @@ class RedisSettingsTest {
         // @AfterEach isn't running
         afterEachTest()
     }
+
+    @Test
+    fun testApplicationID() {
+        // @BeforeEach isn't running
+        beforeEachTest()
+        println(SETTINGS_PROPERTIES.getProperty("applicationID"))
+        assertEquals(SETTINGS_PROPERTIES.getProperty("applicationID"), "e022520a-c7ae-49d7-b202-e7933fb83dcb")
+        //assertNotNull(settings_properties.getProperty("applicationID"))
+
+
+        // @AfterEach isn't running
+        afterEachTest()
+    }
+
+
 }

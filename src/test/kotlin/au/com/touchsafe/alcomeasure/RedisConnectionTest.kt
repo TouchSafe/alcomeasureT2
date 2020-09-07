@@ -3,6 +3,8 @@ package au.com.touchsafe.alcomeasure
 import io.lettuce.core.RedisClient
 import org.junit.jupiter.api.*
 import org.junit.jupiter.api.Assertions.assertEquals
+import kotlinx.coroutines.*
+import kotlinx.coroutines.channels.*
 
 class RedisConnectionTest {
 
@@ -95,6 +97,8 @@ class RedisConnectionTest {
         redisClient.shutdown()
 
                 // assertEquals(1, 2)
+
+
 
         // @AfterEach isn't running
         afterEachTest()

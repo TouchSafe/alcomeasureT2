@@ -12,6 +12,9 @@ These files are not covered by the documentation
 
 Config file for properties used in the program
 
+applicationUUID - Uniq identifier for the application. Generate on a Linux system using uuidgen utility. This was added
+for use by the Redis code to distinguish between instance of AlcoMeasure Units.
+
 #### resources
 ###### src/main/resources
 

@@ -52,7 +52,7 @@ object AlcoMeasure {
 	/**
 	 * Performs a test with the AlcoMeasure unit for the specified user
 	 * @param user The user that is being tested
-	 * @return a Result containing relevant data recieved from the unit after the test
+	 * @return a Result containing relevant data received from the unit after the test
 	 */
 	fun performTest(user: User): Result? {
 		val httpClient = java.net.http.HttpClient.newBuilder().apply { connectTimeout(CONNECT_TIMEOUT) }.build()

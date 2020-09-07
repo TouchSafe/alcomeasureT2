@@ -10,8 +10,8 @@ dbUsername = dev-touchsafe
 dbPassphrase = iind
 
 emailAuth = false
-emailFrom = noreply@touchsafe.com.au
-emailHost = 192.168.1.52
+emailFrom = noreply@byteback.com.au
+emailHost = 192.168.1.54
 emailPassphrase = passphrase
 emailPort = 1026
 emailStartTls = false

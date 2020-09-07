@@ -21,6 +21,8 @@ fun main() {
 	LOGGER.info("Connected keyboards:" + lc.kra.system.keyboard.GlobalKeyboardHook.listKeyboards().map { (key, value) -> " [$key:$value]" }.joinToString(""))
 	setMailLogLevel()
 	setOutputLoggingLevels()
+	// TODO Need to handle connection error here.
+	Redis.applicationStarted()
 
 	try {
 		LOGGER.debug(DebugMarker.DEBUG1.marker, "Starting main loop")
@@ -40,10 +42,13 @@ fun main() {
 						AlcoMeasure.displayMessage(MESSAGES_BUNDLE.getString("INVALID_RFID"))
 					} else {
 						LOGGER.debug(DebugMarker.DEBUG1.marker, "User is valid, performing AlcoMeasure test")
+						// TODO Push user info to Redis with timestamp
+						Redis.cardScanned(user.id, user.firstName, user.surname)
 						AlcoMeasure.performTest(user)?.let { result ->
 							LOGGER.debug(DebugMarker.DEBUG1.marker, "Test completed with result $result")
 							LOGGER.debug(DebugMarker.DEBUG2.marker, "Storing result")
 							SqlServer.storeResult(connection, user, result)
+							// TODO Push test to Redis
 							if (result.value != 0.0 || mailAllReports()) {
 								var subject = MESSAGES_BUNDLE.getString("EMAIL_SUBJECT")
 								if (result.value != 0.0) {

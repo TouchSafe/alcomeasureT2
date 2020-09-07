@@ -1,4 +1,5 @@
 package au.com.touchsafe.alcomeasure
+
 import java.util.*
 import kotlin.concurrent.schedule
 
@@ -18,6 +19,7 @@ class RedisTest {
         Redis.pushMessage("hello there")
         Redis.cardScanned(id = 1234, firstname = "Greg", surname = "Duffy")
         Redis.cardScanned(id = 3212, firstname = "Aidan", surname = "Davies")
+        Redis.cardScanned(id = 2312, firstname = "Ryan", surname = "Carrier")
     }
 
     @Test
@@ -39,8 +41,8 @@ class RedisTest {
     @Test
     fun testAlcoholTestTTL() {
         println(Redis.alcoGetTTL(1234))
-        println(Redis.alcoGetTTL(2312) )
-                println(Redis.alcoGetTTL(3212))
+        println(Redis.alcoGetTTL(2312))
+        println(Redis.alcoGetTTL(3212))
     }
 
     @Test

@@ -5,7 +5,7 @@ import io.lettuce.core.ScanArgs
 import io.lettuce.core.ScanIterator
 import java.time.LocalDateTime
 
-internal const val EMAIL_COUNTDOWN_SECONDS = 120L
+internal const val EMAIL_COUNTDOWN_SECONDS = 60L
 
 object Redis {
     // pull out all keys with pending tests. A key will get deleted once a test is done

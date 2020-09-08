@@ -41,6 +41,10 @@ object Email {
 	}
 	internal val TO = SETTINGS_PROPERTIES.getProperty("emailTo")
 
+	internal val emailHost = SETTINGS_PROPERTIES.getProperty("emailHost")
+	internal val emailPort = SETTINGS_PROPERTIES.getProperty("emailPort")
+	internal val emailTo = SETTINGS_PROPERTIES.getProperty("emailTo")
+
 	/**
 	 * Sends an email to [to] with the provided subject, body and attachments from the address specified under *emailFrom* in [SETTINGS_PROPERTIES].
 	 *

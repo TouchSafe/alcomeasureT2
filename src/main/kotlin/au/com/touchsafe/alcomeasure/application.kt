@@ -15,13 +15,15 @@ internal val SETTINGS_PROPERTIES: java.util.Properties = java.util.Properties().
 
 /**
  * Main function of the application
+ *
+ * TODO Modifications are needed to get this to show some output on start. At the moment it's not showing anything and it's hard to tell if the program has even started up properly
  */
 fun main() {
 	LOGGER.info("TouchSafe 2 AlcoMeasure Integration: STARTED")
 	LOGGER.info("Connected keyboards:" + lc.kra.system.keyboard.GlobalKeyboardHook.listKeyboards().map { (key, value) -> " [$key:$value]" }.joinToString(""))
 	setMailLogLevel()
 	setOutputLoggingLevels()
-	// TODO Need to handle connection error here.
+	// TODO Need to handle connection error here with Redis
 	Redis.applicationStarted()
 
 	try {
@@ -48,7 +50,7 @@ fun main() {
 							LOGGER.debug(DebugMarker.DEBUG1.marker, "Test completed with result $result")
 							LOGGER.debug(DebugMarker.DEBUG2.marker, "Storing result")
 							SqlServer.storeResult(connection, user, result)
-							// TODO Push test to Redis
+							// TODO Push test result and email details to Redis
 							if (result.value != 0.0 || mailAllReports()) {
 								var subject = MESSAGES_BUNDLE.getString("EMAIL_SUBJECT")
 								if (result.value != 0.0) {

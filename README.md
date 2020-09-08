@@ -40,3 +40,11 @@ This file doesn't appear to be used, unlike the file with the same name in the p
 ##### [alcomeasure.sql](src/main/sql/alcomeasure.sql)
 
 SQL for creating the AlcoMeasure result table
+
+### Building
+
+gradle shadowJar
+
+Output will be in the build/distributions/ dir in the form of a single jar
+
+ 

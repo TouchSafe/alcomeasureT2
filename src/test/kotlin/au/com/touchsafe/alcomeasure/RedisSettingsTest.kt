@@ -107,10 +107,26 @@ class RedisSettingsTest {
         assertEquals(SETTINGS_PROPERTIES.getProperty("applicationID"), "e022520a-c7ae-49d7-b202-e7933fb83dcb")
         //assertNotNull(settings_properties.getProperty("applicationID"))
 
-
         // @AfterEach isn't running
         afterEachTest()
     }
 
+    @Test
+    fun testEmailHostSetting() {
+        println(Email.emailHost)
+        assertEquals(SETTINGS_PROPERTIES.getProperty("emailHost"), Email.emailHost)
+    }
+
+    @Test
+    fun testEmailPortSetting() {
+        println(Email.emailPort)
+        assertEquals(SETTINGS_PROPERTIES.getProperty("emailPort"), Email.emailPort)
+    }
+
+    @Test
+    fun testEmailToSetting() {
+        println(Email.emailTo)
+        assertEquals(SETTINGS_PROPERTIES.getProperty("emailTo"), Email.emailTo)
+    }
 
 }

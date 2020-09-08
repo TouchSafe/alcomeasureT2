@@ -61,6 +61,10 @@ object Redis {
         val syncCommands = connection.sync()
         syncCommands["alcomeasureT2:$applicationID"] = applicationID
         syncCommands["alcomeasureT2:$applicationID:applicationstarted:datetime"] = currentDateTime.toString()
+        syncCommands["alcomeasureT2:$applicationID:email:emailHost"] = Email.emailHost
+        syncCommands["alcomeasureT2:$applicationID:email:emailPort"] = Email.emailPort
+        syncCommands["alcomeasureT2:$applicationID:email:emailTo"] = Email.emailTo
+
     }
 
     fun alcoholTestsPending() {
@@ -107,6 +111,12 @@ object Redis {
         }
     }
 
+    fun alcoGetTTL(id : Int) : Long {
+        val value: Long = connection.sync().ttl("alcomeasureT2:$applicationID:cardscanned:user:$id:alcoholtestpendingexpire")
+        // println("$id - $value")
+        return value
+    }
+
     fun alcoTestDone() {
         val keys: List<String> = connection.sync().keys("*alcoholtestdone*")
         var index = 1
@@ -116,13 +126,6 @@ object Redis {
             index++
         }
     }
-
-    fun alcoGetTTL(id : Int) : Long {
-        val value: Long = connection.sync().ttl("alcomeasureT2:$applicationID:cardscanned:user:$id:alcoholtestpendingexpire")
-        // println("$id - $value")
-        return value
-    }
-
 
 }
 

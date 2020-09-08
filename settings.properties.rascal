@@ -1,0 +1,27 @@
+applicationID = e022520a-c7ae-49d7-b202-e7933fb83dcb
+
+alcomeasureHost = 192.168.0.164
+alcomeasurePort = 26000
+
+dbHost = 192.168.0.15
+dbPort = 1433
+dbDatabase = prod-mackenzie
+dbUsername = dev-touchsafe
+dbPassphrase = iind
+
+emailAuth = false
+emailFrom = noreply@byteback.com.au
+emailHost = 192.168.1.54
+emailPassphrase = passphrase
+emailPort = 1026
+emailStartTls = false
+emailTo = gduffy@byteback.com
+emailUsername = username
+
+emailLogLevel = FINEST
+consoleLogLevel = INFO
+fileLogLevel = INFO
+mailAllReports = false
+
+redisServer = 10.11.0.22
+redisPort = 6379

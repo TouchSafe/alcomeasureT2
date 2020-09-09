@@ -19,7 +19,11 @@ open class ConfigurableConsoleAppender : ConsoleAppender<LoggingEvent>() {
 
     override fun subAppend(event: LoggingEvent) {
         if (event.level.isGreaterOrEqual(level)) {
-            val eventDebugMarker = DebugMarker.parse(event.marker.name)
+            val eventDebugMarker = if (event.marker != null) {
+                DebugMarker.parse(event.marker.name)
+            } else {
+                null
+            }
             // If no debugMarker, or event marker is not a DebugMarker, or debugMarker <= eventDebugMarker
             if (debugMarker == null || eventDebugMarker == null || debugMarker!!.isLesserOrEqual(eventDebugMarker)) {
                 super.subAppend(event)

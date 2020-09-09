@@ -19,10 +19,10 @@ internal val SETTINGS_PROPERTIES: java.util.Properties = java.util.Properties().
  * TODO Modifications are needed to get this to show some output on start. At the moment it's not showing anything and it's hard to tell if the program has even started up properly
  */
 fun main() {
-	LOGGER.info("TouchSafe 2 AlcoMeasure Integration: STARTED")
-	LOGGER.info("Connected keyboards:" + lc.kra.system.keyboard.GlobalKeyboardHook.listKeyboards().map { (key, value) -> " [$key:$value]" }.joinToString(""))
 	setMailLogLevel()
 	setOutputLoggingLevels()
+	LOGGER.info("TouchSafe 2 AlcoMeasure Integration: STARTED")
+	LOGGER.info("Connected keyboards:" + lc.kra.system.keyboard.GlobalKeyboardHook.listKeyboards().map { (key, value) -> " [$key:$value]" }.joinToString(""))
 	// TODO Need to handle connection error here with Redis
 	Redis.applicationStarted()
 

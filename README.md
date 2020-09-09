@@ -1,9 +1,25 @@
-# AlcoMeasure Program
+# AlcoMeasure Program T2 - Working against the TouchSafe2 database
 
 Program that interfaces with the AlcoMeasure unit to perform tests and import them into the TouchSafe database.
 
 There is also a companion application called alcomeasureT2emailer that currently handled sending out reminder emails if
 a user signs in but doesn't blow an Alcohol test in a reasonable time.
+
+### Coding Guidelines
+
+All dependencies should be managed fully by Gradle. It should be possible to check the project out of GitHub and
+build it immediately with Gragle. (gradle build). The build.gradle.kts should take care of everything. Note that the
+Kotlin Gradle DSL is being used, this the kts extension on the build file. Refer to https://gradle.org if in any doubt
+on how to use Gradle.
+
+Use TODO statements liberally in the code. Most IDE's can pick these up automatically and grep is your friend. If in
+any doubt, write a TODO if you think of something while writing code. These can be reviewed from time to time and a
+full issue or feature request created in GitHub and / or Jira at a later time.
+
+Given this is Kotlin application there should be documentation done that conforms to the KDoc conventions.
+See: https://kotlinlang.org/docs/reference/kotlin-doc.html. Remember, there can never be too many comments in code.
+
+Code Smell is bad. https://en.wikipedia.org/wiki/Code_smell
 
 
 ### Miscellaneous Files

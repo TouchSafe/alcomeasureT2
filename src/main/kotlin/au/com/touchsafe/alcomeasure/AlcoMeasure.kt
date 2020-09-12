@@ -32,7 +32,7 @@ object AlcoMeasure {
 	private const val START_TEST_RESPONSE = """<status.cgi><startTest><success value="1"/></startTest></status.cgi>"""
 
 	private const val POLLING_DELAY = 500L
-	// AD 3/8/20: Change this as it appears to be causing incorrect results
+	// AD 3/8/20: TSALMT2-14 - Change this constant as it appears to be causing incorrect results
 	private const val RESULT_CONVERSION_VALUE = 1 // 44000.0
 
 	/**

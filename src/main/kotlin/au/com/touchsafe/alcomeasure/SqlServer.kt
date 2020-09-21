@@ -17,6 +17,7 @@ object SqlServer {
 	 */
 	fun validateId(connection: java.sql.Connection, id: Rfid): User? {
 		LOGGER.debug(DebugMarker.DEBUG1.marker, "validateId {cardNo: ${id.cardNumber}, facilityCode: ${id.facilityCode}}")
+		LOGGER.info(DebugMarker.DEBUG1.marker, "validateId {cardNo: ${id.cardNumber}, facilityCode: ${id.facilityCode}}")
 		try {
 //			val statement = when (id) {
 //				is Pin -> connection.prepareStatement("$VALIDATE_ID_SQL_START AND pin = ?;").apply {
@@ -30,16 +31,19 @@ object SqlServer {
 			val statement = connection.prepareStatement("$VALIDATE_ID_SQL_START AND rfidFacilityId = ? AND rfid = ?;")
 			statement.setInt(1, id.facilityCode)
 			statement.setInt(2, id.cardNumber)
-			LOGGER.debug(DebugMarker.DEBUG2.marker, "Query: $statement")
+			// LOGGER.debug(DebugMarker.DEBUG2.marker, "Query: $statement")
+			LOGGER.info(DebugMarker.DEBUG2.marker, "Query: $statement")
 			val resultSet = statement.executeQuery()
 			if (!resultSet.next()) {
 				LOGGER.info("No user found for Rfid \"${id.cardNumber}\"")
 				return null
 			}
 			LOGGER.debug("Validated User \"${resultSet.getString("firstName")} ${resultSet.getString("lastName")}\" from Rfid \"${id.cardNumber}\"")
+			LOGGER.info("Validated User \"${resultSet.getString("firstName")} ${resultSet.getString("lastName")}\" from Rfid \"${id.cardNumber}\"")
 			return User(resultSet.getInt("id"), resultSet.getString("firstName"), resultSet.getString("lastName"))
 		} catch (ex: Throwable) {
 			LOGGER.error("Error occurred while validating an Id:", ex)
+			LOGGER.info("Error occurred while validating an Id:", ex)
 			return null
 		}
 	}

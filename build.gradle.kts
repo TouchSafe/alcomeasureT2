@@ -17,6 +17,8 @@ application {
 repositories {
 	jcenter()
 	mavenCentral()
+
+
 }
 
 dependencies {
@@ -29,6 +31,9 @@ dependencies {
 	implementation("io.lettuce" ,"lettuce-core" ,"5.3.3.RELEASE")
 	implementation("org.jetbrains.kotlinx" ,"kotlinx-coroutines-core" ,"1.3.9")
 	implementation("com.github.kstyrc" ,"embedded-redis" ,"0.6")
+	implementation("org.apache.commons" ,"commons-lang3" ,"3.11")
+	implementation("com.1stleg" ,"jnativehook" ,"2.1.0")
+	// implementation("com.github.kwhat", "jnativehook", "2.2-SNAPSHOT")
 
 	// Testing
 	testImplementation("org.junit.jupiter", "junit-jupiter-api", "5.6.2")
@@ -38,6 +43,9 @@ dependencies {
 	testImplementation("io.lettuce" ,"lettuce-core" ,"5.3.3.RELEASE")
 	testImplementation("org.jetbrains.kotlinx" ,"kotlinx-coroutines-core" ,"1.3.9")
 	testImplementation("com.github.kstyrc" ,"embedded-redis" ,"0.6")
+	testImplementation("com.1stleg" ,"jnativehook" ,"2.1.0")
+	testImplementation("org.apache.commons" ,"commons-lang3" ,"3.11")
+	// testImplementation("com.github.kwhat", "jnativehook", "2.2-SNAPSHOT")
 
 }
 

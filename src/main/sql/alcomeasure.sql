@@ -7,3 +7,13 @@ CREATE TABLE AlcoMeasureResult (
 	photo3Id INT CONSTRAINT FK_AlcoMeasureResult_Photo3Id REFERENCES [File] (Id),
 	created DATETIME NOT NULL DEFAULT (GETDATE())
 );
+
+
+CREATE TABLE AlcoMeasureDevice (
+        id INT IDENTITY NOT NULL PRIMARY KEY,
+        created DATETIME NOT NULL DEFAULT (GETDATE()),
+         LocationId    int           not null
+           constraint FK_AlcoMeasure_Location
+             references Location
+
+);

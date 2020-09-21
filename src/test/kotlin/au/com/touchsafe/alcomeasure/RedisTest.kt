@@ -70,10 +70,29 @@ class RedisTest {
         Redis.alcoTestPendingEmailCheck()
     }
 
-
     @Test
     fun testAlcoTestDone() {
         Redis.alcoTestDone()
+    }
+
+    @Test
+    fun testCardScanned() {
+        LOGGER.info("testCardScanned()")
+        Redis.cardScanned(9999, "Joe", "Blogs")
+    }
+
+    @Test
+    fun testAppPrefix() {
+     var s = Redis.appPrefix()
+        println(s)
+
+    }
+
+    @Test
+    fun testUserPrefix() {
+        var s = Redis.userPrefix(9999)
+        println(s)
+
     }
 
 }

@@ -2,6 +2,7 @@ applicationID = e022520a-c7ae-49d7-b202-e7933fb83dcb
 
 alcomeasureHost = 192.168.0.164
 alcomeasurePort = 26000
+alcomeasureLocationId = 1
 
 dbHost = 192.168.0.15
 dbPort = 1433

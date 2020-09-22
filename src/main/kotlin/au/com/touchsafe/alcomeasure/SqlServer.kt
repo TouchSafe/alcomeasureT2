@@ -7,6 +7,7 @@ object SqlServer {
 	private const val APPLICATION_NAME = "AlcoMeasure Integration"
 	internal val DB_CONNECTION_URI = "jdbc:sqlserver://${SETTINGS_PROPERTIES.getProperty("dbHost")}:${SETTINGS_PROPERTIES.getProperty("dbPort")};databaseName=${SETTINGS_PROPERTIES.getProperty("dbDatabase")};user=${SETTINGS_PROPERTIES.getProperty("dbUsername")};password=${SETTINGS_PROPERTIES.getProperty("dbPassphrase")};applicationName=$APPLICATION_NAME;"
 	private const val VALIDATE_ID_SQL_START = "SELECT id, firstName, lastName FROM [User] WHERE deleted = 0 AND DATEDIFF(HOUR, GETDATE(), accessExpiry) > 0"
+	private const val VALIDATE_ALCODEVICE_SQL_START = "SELECT id, LocationId FROM [AlcoMeasureDevice]"
 
 	/**
 	 * Checks the RFID data against the database, and returns the user that the card was registered to,
@@ -54,18 +55,22 @@ object SqlServer {
 	 * @param user The user that the result belongs to
 	 * @param result The result from the [AlcoMeasure] test
 	 */
+	// TODO Add extra fields for the AlcoMeasureResult Table
 	fun storeResult(connection: java.sql.Connection, user: User, result: Result) {
 		LOGGER.debug(DebugMarker.DEBUG1.marker, "storeResult ${result.value} for user ${user.firstName} ${user.surname}")
 		try {
 			val photo1Id = result.photo1Uri?.let { downloadAndStorePhoto(connection, it) }
 			val photo2Id = result.photo2Uri?.let { downloadAndStorePhoto(connection, it) }
 			val photo3Id = result.photo3Uri?.let { downloadAndStorePhoto(connection, it) }
-			val statement = connection.prepareStatement("INSERT INTO AlcoMeasureResult (userId, result, photo1Id, photo2Id, photo3Id) VALUES (?, ?, ?, ?, ?);")
+			val statement = connection.prepareStatement("INSERT INTO AlcoMeasureResult (userId, result, photo1Id, photo2Id, photo3Id, alcoMeasureDeviceId) VALUES (?, ?, ?, ?, ?, ?);")
 			statement.setInt(1, user.id)
 			statement.setDouble(2, result.value)
 			if (photo1Id == null) statement.setNull(3, java.sql.Types.INTEGER) else statement.setInt(3, photo1Id)
 			if (photo2Id == null) statement.setNull(4, java.sql.Types.INTEGER) else statement.setInt(4, photo2Id)
 			if (photo3Id == null) statement.setNull(5, java.sql.Types.INTEGER) else statement.setInt(5, photo3Id)
+
+			statement.setInt(6, 1)		// TODO AlcoMeasureDeviceID needs to be set to actual ID - this is VERY hard-coded at the moment
+
 			statement.executeUpdate()
 			LOGGER.debug("Stored Result:${user.id}:$result:$photo1Id:$photo2Id:$photo3Id:")
 		} catch (ex: Throwable) {
@@ -90,6 +95,26 @@ object SqlServer {
 		}
 		return resultSet.getInt(1)
 	}
+
+	fun validateAlcoMeasureDevice(connection: java.sql.Connection, locationId: Int): AlcoMeasureDevice? {
+		LOGGER.debug("validateAlcoMeasureDevice")
+		try {
+			val statement = connection.prepareStatement("$VALIDATE_ALCODEVICE_SQL_START WHERE LocationId = ?;")
+			statement.setInt(1, locationId)
+			LOGGER.info(DebugMarker.DEBUG2.marker, "Query: $statement")
+			val resultSet = statement.executeQuery()
+			if (!resultSet.next()) {
+				LOGGER.info("No Alco Mesaure Device found for LocationId \"${locationId}\"")
+				return null
+			}
+			return AlcoMeasureDevice(resultSet.getInt("id"), resultSet.getInt("LocationId"))
+		} catch (ex: Throwable) {
+			LOGGER.error("Error occurred while validating an Id:", ex)
+			LOGGER.info("Error occurred while validating an Id:", ex)
+			return null
+		}
+	}
+
 }
 
 /**
@@ -100,3 +125,9 @@ object SqlServer {
  * @param surname The user's surname
  */
 data class User(val id: Int, val firstName: String, val surname: String)
+
+/**
+ * TODO document function and params
+ */
+data class AlcoMeasureDevice(val id: Int, val locationId: Int)
+

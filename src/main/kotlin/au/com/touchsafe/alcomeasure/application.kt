@@ -53,7 +53,7 @@ fun main() {
 					id = Input.getId()
 				} else {
 					LOGGER.info("Running on Linux: can't handle keyboard currently, using a dummy Rfid for code testing")
-					id = Rfid(15, 3420)
+					id = Rfid(15, 3420)			// Lachlan's Card
 					LOGGER.info("Dummy Input gotten: $id")
 					// exitProcess(1)
 				}
@@ -67,7 +67,7 @@ fun main() {
 					LOGGER.info(DebugMarker.DEBUG1.marker, "Connected to DB \"${SqlServer.DB_CONNECTION_URI}\"")
 
 					// TODO Load information from the AlcoMeasureDevice table and store somewhere
-					val alcoDevice = SqlServer.validateAlcoMeasureDevice(connection, 1)    // TODO get rid of the hard-coded locationid (should come from settings file)
+					val alcoDevice = SqlServer.validateAlcoMeasureDevice(connection, 1)    // TODO get rid of the hard-coded locationid (should come from settings.properties file)
 
 					if (alcoDevice == null) {
 						LOGGER.info("No Alco Measure Device found for this location. Unable to run a test at this location")

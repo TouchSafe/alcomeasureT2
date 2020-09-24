@@ -109,8 +109,8 @@ object SqlServer {
 			}
 			return AlcoMeasureDevice(resultSet.getInt("id"), resultSet.getInt("LocationId"))
 		} catch (ex: Throwable) {
-			LOGGER.error("Error occurred while validating an Id:", ex)
-			LOGGER.info("Error occurred while validating an Id:", ex)
+			LOGGER.error("Error occurred while validating an AlcoMeasureDevice Id:", ex)
+			LOGGER.info("Error occurred while validating an AlcoMeasureDevice Id:", ex)
 			return null
 		}
 	}

@@ -1,0 +1,18 @@
+2020-08-16 05:22:57,492 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-08-16 05:22:58,068 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65597:\\?\HID#VID_076B&PID_5428&MI_00#7&2f84c138&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-08-16 05:55:40,500 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=9132)
+2020-08-16 05:55:55,622 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-08-16 06:03:51,228 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10928)
+2020-08-16 06:04:08,761 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-08-16 06:07:06,643 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=7267)
+2020-08-16 06:07:36,875 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-08-16 07:18:00,226 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10146)
+2020-08-16 07:18:14,571 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-08-16 10:53:37,350 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11428)
+2020-08-16 10:53:50,662 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-08-16 15:01:16,088 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-08-16 15:01:16,711 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65597:\\?\HID#VID_076B&PID_5428&MI_00#7&2f84c138&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-08-16 19:40:11,968 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10975)
+2020-08-16 19:40:33,184 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-08-16 23:13:13,077 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10878)
+2020-08-16 23:13:26,435 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)

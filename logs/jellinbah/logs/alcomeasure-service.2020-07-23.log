@@ -1,0 +1,609 @@
+2020-07-23 15:22:28,809 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-07-23 15:22:29,356 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65597:\\?\HID#VID_076B&PID_5428&MI_00#7&2f84c138&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-07-23 15:22:36,547 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:22:36,655 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:22:36,856 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:22:37,459 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "dir"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:22:38,664 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "dir"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:22:39,769 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "dir"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:22:40,773 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:22:40,975 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:22:41,778 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "dir"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:23:41,180 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:23:41,382 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:23:42,186 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:23:43,591 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:23:50,114 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:23:54,269 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "cmd"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:23:57,191 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "cd\"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:23:57,393 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:23:58,899 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "cd tou	"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:23:59,502 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "dir"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:24:01,812 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "cd al	"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:24:02,315 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "dfir"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:24:03,219 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:24:03,721 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "ir"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:24:10,745 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "type se	"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:24:21,279 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:24:21,481 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:24:21,783 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:24:32,218 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:24:33,525 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:24:51,886 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:24:52,087 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:24:52,288 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:24:53,794 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "dir"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:24:54,797 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:24:54,999 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:24:59,615 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "typew  e sett	"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:25:08,747 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "ping 192.168.14.232"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:25:23,094 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "ctelnet 192.168.14.232 26000"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:25:24,399 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:25:24,600 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:25:24,702 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:25:25,004 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:25:25,807 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "quit"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:25:26,210 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:25:26,411 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:25:27,516 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "cc"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:25:27,717 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:25:32,534 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:25:32,635 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:25:33,238 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "dir"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:25:35,145 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "dir"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:25:49,697 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:25:49,898 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:25:50,100 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:25:50,302 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:25:51,306 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "dir"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:25:53,415 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:25:55,924 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "type alc	"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:26:00,741 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:26:01,745 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:26:10,775 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "lll"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:26:11,879 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:26:17,398 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "pppp"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:26:18,710 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:26:32,958 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:26:33,461 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:26:34,064 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:26:35,871 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:26:46,707 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:28:10,401 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10379)
+2020-07-23 15:34:03,365 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-07-23 15:34:03,930 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65597:\\?\HID#VID_076B&PID_5428&MI_00#7&2f84c138&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-07-23 15:34:23,637 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "cmd"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:34:28,656 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "cd\15"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:34:28,858 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:34:29,060 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:34:30,173 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-23 15:35:24,655 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10379)
+2020-07-23 15:35:50,416 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:95] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-07-23 15:44:03,694 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=8457)
+2020-07-23 15:44:42,571 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:95] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-07-23 15:45:16,185 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=8457)
+2020-07-23 15:45:44,809 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:95] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-07-23 15:46:30,565 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=8457)
+2020-07-23 15:46:50,502 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:95] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-07-23 16:44:35,275 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-07-23 16:44:36,852 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65597:\\?\HID#VID_076B&PID_5428&MI_00#7&2f84c138&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-07-23 16:45:01,356 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=8457)
+2020-07-23 16:45:35,950 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:95] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)

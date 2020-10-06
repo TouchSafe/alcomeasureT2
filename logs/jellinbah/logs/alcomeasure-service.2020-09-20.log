@@ -1,0 +1,38 @@
+2020-09-20 00:07:30,445 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-09-20 00:07:32,510 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65597:\\?\HID#VID_076B&PID_5428&MI_00#7&2f84c138&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-09-20 05:10:24,807 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11246)
+2020-09-20 05:10:44,659 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-09-20 05:39:04,763 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11267)
+2020-09-20 05:39:25,315 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-09-20 05:43:32,724 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11135)
+2020-09-20 05:43:57,308 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-09-20 05:46:23,990 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11134)
+2020-09-20 05:46:24,058 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:36] Display message:Unrecognised RFID card.:
+2020-09-20 05:46:34,403 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11134)
+2020-09-20 05:46:34,454 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:36] Display message:Unrecognised RFID card.:
+2020-09-20 05:46:42,191 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=9132)
+2020-09-20 05:47:00,626 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-09-20 05:47:16,984 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11134)
+2020-09-20 05:47:17,027 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:36] Display message:Unrecognised RFID card.:
+2020-09-20 05:49:48,033 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11293)
+2020-09-20 05:50:05,934 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:78] Test not successful:Blow Stopped:
+2020-09-20 05:50:18,676 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11293)
+2020-09-20 05:50:32,495 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-09-20 05:56:49,547 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=7145)
+2020-09-20 05:57:15,576 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-09-20 05:57:17,387 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11414)
+2020-09-20 05:57:47,506 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-09-20 06:12:33,208 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=7267)
+2020-09-20 06:12:57,696 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-09-20 07:52:01,507 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11281)
+2020-09-20 07:52:24,458 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-09-20 08:18:39,046 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10003)
+2020-09-20 08:19:15,241 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-09-20 08:45:23,971 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-09-20 08:45:24,611 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65597:\\?\HID#VID_076B&PID_5428&MI_00#7&2f84c138&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-09-20 10:03:33,343 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11290)
+2020-09-20 10:03:54,670 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-09-20 10:14:57,855 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11292)
+2020-09-20 10:15:31,618 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-09-20 10:16:34,929 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11402)
+2020-09-20 10:16:56,931 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)

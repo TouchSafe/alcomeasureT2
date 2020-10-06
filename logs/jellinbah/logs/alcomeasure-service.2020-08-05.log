@@ -1,0 +1,69 @@
+2020-08-05 09:03:48,785 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "c"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-08-05 09:05:29,826 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "cdir"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-08-05 09:05:30,929 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-08-05 09:05:31,131 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-08-05 09:05:38,356 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "ctype settin	"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-08-05 11:17:58,113 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-08-05 11:17:58,716 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65597:\\?\HID#VID_076B&PID_5428&MI_00#7&2f84c138&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-08-05 11:29:09,774 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10794)
+2020-08-05 11:30:40,062 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-08-05 11:30:40,635 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65597:\\?\HID#VID_076B&PID_5428&MI_00#7&2f84c138&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-08-05 11:31:49,817 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10794)
+2020-08-05 11:33:27,189 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-08-05 11:33:28,042 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-08-05 11:33:28,225 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [131187:\\?\HID#VID_076B&PID_5428&MI_00#7&2f84c138&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-08-05 11:33:28,908 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [131187:\\?\HID#VID_076B&PID_5428&MI_00#7&2f84c138&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-08-05 11:33:35,125 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-08-05 11:33:35,616 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [131187:\\?\HID#VID_076B&PID_5428&MI_00#7&2f84c138&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-08-05 11:33:42,386 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10794)
+2020-08-05 11:34:13,319 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-08-05 11:34:41,271 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10794)
+2020-08-05 11:35:41,498 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:78] Test not successful:Blow Timeout:
+2020-08-05 11:54:08,035 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-08-05 11:54:08,627 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [131187:\\?\HID#VID_076B&PID_5428&MI_00#7&2f84c138&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-08-05 13:21:53,761 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11149)
+2020-08-05 16:13:41,407 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-08-05 16:13:42,258 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65597:\\?\HID#VID_076B&PID_5428&MI_00#7&2f84c138&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-08-05 16:13:56,054 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11431)
+2020-08-05 16:14:26,455 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-08-05 16:14:35,806 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11431)
+2020-08-05 16:15:34,997 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:78] Test not successful:Blow Timeout:
+2020-08-05 16:16:51,204 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11431)
+2020-08-05 16:17:51,359 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:78] Test not successful:Blow Timeout:
+2020-08-05 20:38:06,285 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10878)
+2020-08-05 20:38:31,296 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)

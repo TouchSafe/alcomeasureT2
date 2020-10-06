@@ -1,0 +1,1492 @@
+2020-08-04 03:49:42,079 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10773)
+2020-08-04 03:49:57,154 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 03:49:58,164 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10773)
+2020-08-04 03:50:13,228 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 03:50:17,141 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10773)
+2020-08-04 03:50:32,197 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 03:50:33,804 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10773)
+2020-08-04 03:50:48,882 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 05:35:38,365 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10610)
+2020-08-04 05:35:53,413 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 05:36:06,859 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10610)
+2020-08-04 05:36:21,928 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 05:36:23,135 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10610)
+2020-08-04 05:36:38,197 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 05:36:51,542 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10610)
+2020-08-04 05:37:06,593 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 05:37:16,827 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10610)
+2020-08-04 05:37:31,887 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 05:37:35,100 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=9042)
+2020-08-04 05:37:50,164 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 05:37:57,388 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=9042)
+2020-08-04 05:38:12,453 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 05:46:52,548 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10897)
+2020-08-04 05:47:07,607 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 05:47:11,521 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10897)
+2020-08-04 05:47:26,581 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 05:47:27,486 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10897)
+2020-08-04 05:47:42,545 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 05:47:58,799 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11106)
+2020-08-04 05:48:13,862 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 05:52:39,227 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=2484)
+2020-08-04 05:52:54,312 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 05:55:02,931 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11437)
+2020-08-04 05:55:17,988 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 05:55:24,010 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11437)
+2020-08-04 05:55:39,079 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 05:56:58,547 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=7788)
+2020-08-04 05:57:13,615 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 05:57:13,718 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.base/java.util.Collections$SingletonList.get(Collections.java:4847)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-08-04 05:57:21,946 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=7788)
+2020-08-04 05:57:37,000 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 05:57:40,614 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=7788)
+2020-08-04 05:57:55,667 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 05:57:59,681 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=7788)
+2020-08-04 05:58:14,750 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 05:58:20,269 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=7788)
+2020-08-04 05:58:35,346 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 05:58:44,577 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=7788)
+2020-08-04 05:58:59,643 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 05:59:03,958 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=7028)
+2020-08-04 05:59:19,004 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 06:05:02,222 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=7001)
+2020-08-04 06:05:17,279 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 06:07:21,083 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11547)
+2020-08-04 06:07:36,148 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 06:07:43,974 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11547)
+2020-08-04 06:07:59,037 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 06:08:03,854 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11547)
+2020-08-04 06:08:18,921 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 06:08:21,229 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11547)
+2020-08-04 06:08:36,297 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 06:10:17,427 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=7145)
+2020-08-04 06:10:32,487 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 06:10:35,899 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=7145)
+2020-08-04 06:10:50,965 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 06:10:55,581 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11414)
+2020-08-04 06:11:10,644 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 06:11:11,850 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=7145)
+2020-08-04 06:11:26,907 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 06:11:31,723 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11414)
+2020-08-04 06:11:46,777 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 06:11:50,290 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=7145)
+2020-08-04 06:12:05,361 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 06:16:13,369 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10928)
+2020-08-04 06:16:28,420 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 06:16:30,628 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10928)
+2020-08-04 06:16:45,691 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 06:16:51,110 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10928)
+2020-08-04 06:17:06,175 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 06:17:11,393 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10928)
+2020-08-04 06:17:26,455 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 06:32:07,008 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=9494)
+2020-08-04 06:32:22,058 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 06:32:22,159 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.base/java.util.Collections$SingletonList.get(Collections.java:4847)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-08-04 06:32:24,370 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10652)
+2020-08-04 06:32:39,437 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 06:32:42,247 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=7914)
+2020-08-04 06:32:57,306 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 06:33:08,544 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11640)
+2020-08-04 06:33:23,603 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 06:50:42,950 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11105)
+2020-08-04 06:50:58,004 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 06:51:33,119 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=8457)
+2020-08-04 06:51:48,183 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 06:51:49,589 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=8457)
+2020-08-04 06:52:04,646 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 06:52:04,948 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=8457)
+2020-08-04 06:52:20,012 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 06:52:31,651 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3251)
+2020-08-04 06:52:46,700 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 06:58:29,629 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10018)
+2020-08-04 06:58:44,677 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 06:58:55,313 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10018)
+2020-08-04 06:59:10,363 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 07:01:31,937 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10905)
+2020-08-04 07:01:47,002 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 07:01:49,010 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10905)
+2020-08-04 07:02:04,062 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 07:03:34,959 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10379)
+2020-08-04 07:03:50,028 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 07:31:18,818 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=1776)
+2020-08-04 07:31:33,868 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 07:35:52,420 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11433)
+2020-08-04 07:36:07,485 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:48)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-08-04 09:42:05,840 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "cmd"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-08-04 09:42:12,406 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "pingh  192.168.14.233"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-08-04 09:42:14,915 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "c2"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-08-04 09:42:18,427 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "cip config"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-08-04 09:42:22,040 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "config"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:638)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-08-04 09:42:25,753 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: " c"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:638)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-08-04 09:45:45,919 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "cdir"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-08-04 09:45:47,435 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-08-04 09:45:49,242 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "cd\"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-08-04 09:45:49,444 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-08-04 09:45:50,047 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "dir"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-08-04 09:45:52,254 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "cd tou	"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-08-04 09:45:52,857 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "dir"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-08-04 09:45:55,667 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "cd al	"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-08-04 09:45:56,270 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "dir"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-08-04 09:46:00,785 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "type se	"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-08-04 10:09:27,186 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "ping 192192.168.14.234"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-08-04 11:35:07,191 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-08-04 13:54:41,446 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "c"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-08-04 13:57:23,184 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "c"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-08-04 13:57:23,385 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-08-04 13:57:24,589 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-08-04 13:57:36,230 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "ccipconfig"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-08-04 13:57:41,354 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "ping 192.168.14.232"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)

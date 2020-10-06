@@ -1,0 +1,90 @@
+2020-12-06 11:39:54,404 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-12-06 11:39:55,099 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65601:\\?\HID#IrDeviceV2&Col05#2&2818a073&0&0004#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65603:\\?\HID#IrDeviceV2&Col06#2&2818a073&0&0005#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65605:\\?\HID#IrDeviceV2&Col07#2&2818a073&0&0006#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65607:\\?\HID#VID_046D&PID_C313&MI_00#7&1d5d010e&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-06-30 11:14:54,723 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "tabtab chrome os sleepstartlachlan2interactivedisplays.net23wesdxcldc2"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-06-30 11:12:26,471 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-06-30 11:12:27,205 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65601:\\?\HID#IrDeviceV2&Col05#2&2818a073&0&0004#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65603:\\?\HID#IrDeviceV2&Col06#2&2818a073&0&0005#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65605:\\?\HID#IrDeviceV2&Col07#2&2818a073&0&0006#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65607:\\?\HID#VID_046D&PID_C313&MI_00#7&1d5d010e&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-06-30 16:10:46,012 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-06-30 16:10:46,846 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65601:\\?\HID#IrDeviceV2&Col05#2&2818a073&0&0004#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65603:\\?\HID#IrDeviceV2&Col06#2&2818a073&0&0005#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65605:\\?\HID#IrDeviceV2&Col07#2&2818a073&0&0006#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65607:\\?\HID#VID_046D&PID_C313&MI_00#7&1d5d010e&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-06-30 16:16:53,586 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-06-30 16:16:54,333 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65601:\\?\HID#IrDeviceV2&Col05#2&2818a073&0&0004#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65603:\\?\HID#IrDeviceV2&Col06#2&2818a073&0&0005#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65605:\\?\HID#IrDeviceV2&Col07#2&2818a073&0&0006#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65607:\\?\HID#VID_046D&PID_C313&MI_00#7&1d5d010e&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-06-30 16:19:08,235 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-06-30 16:19:08,845 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65601:\\?\HID#IrDeviceV2&Col05#2&2818a073&0&0004#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65603:\\?\HID#IrDeviceV2&Col06#2&2818a073&0&0005#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65605:\\?\HID#IrDeviceV2&Col07#2&2818a073&0&0006#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65607:\\?\HID#VID_046D&PID_C313&MI_00#7&1d5d010e&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-06-30 16:20:41,715 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-06-30 16:20:42,474 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65601:\\?\HID#IrDeviceV2&Col05#2&2818a073&0&0004#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65603:\\?\HID#IrDeviceV2&Col06#2&2818a073&0&0005#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65605:\\?\HID#IrDeviceV2&Col07#2&2818a073&0&0006#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65607:\\?\HID#VID_046D&PID_C313&MI_00#7&1d5d010e&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-06-30 16:26:44,937 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-06-30 16:26:45,657 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65601:\\?\HID#IrDeviceV2&Col05#2&2818a073&0&0004#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65603:\\?\HID#IrDeviceV2&Col06#2&2818a073&0&0005#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65605:\\?\HID#IrDeviceV2&Col07#2&2818a073&0&0006#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65607:\\?\HID#VID_046D&PID_C313&MI_00#7&1d5d010e&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-07-01 09:19:48,697 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-07-01 09:19:49,413 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65601:\\?\HID#IrDeviceV2&Col05#2&2818a073&0&0004#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65603:\\?\HID#IrDeviceV2&Col06#2&2818a073&0&0005#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65605:\\?\HID#IrDeviceV2&Col07#2&2818a073&0&0006#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65607:\\?\HID#VID_046D&PID_C313&MI_00#7&1d5d010e&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-07-01 09:52:58,727 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-07-01 09:52:59,537 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65601:\\?\HID#IrDeviceV2&Col05#2&2818a073&0&0004#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65603:\\?\HID#IrDeviceV2&Col06#2&2818a073&0&0005#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65605:\\?\HID#IrDeviceV2&Col07#2&2818a073&0&0006#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65607:\\?\HID#VID_046D&PID_C313&MI_00#7&1d5d010e&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-07-01 13:02:39,552 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-07-01 13:02:40,610 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65601:\\?\HID#IrDeviceV2&Col05#2&2818a073&0&0004#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65603:\\?\HID#IrDeviceV2&Col06#2&2818a073&0&0005#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65605:\\?\HID#IrDeviceV2&Col07#2&2818a073&0&0006#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65607:\\?\HID#VID_046D&PID_C313&MI_00#7&1d5d010e&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-07-01 14:01:56,150 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-07-01 14:01:56,798 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65601:\\?\HID#IrDeviceV2&Col05#2&2818a073&0&0004#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65603:\\?\HID#IrDeviceV2&Col06#2&2818a073&0&0005#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65605:\\?\HID#IrDeviceV2&Col07#2&2818a073&0&0006#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65607:\\?\HID#VID_046D&PID_C313&MI_00#7&1d5d010e&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-07-01 14:02:26,518 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "updates"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-01 14:05:30,834 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "run"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-01 14:05:32,189 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "v"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-01 14:07:41,419 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "run"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-01 14:07:43,356 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "v"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-01 14:12:32,229 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-07-01 14:12:33,015 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65601:\\?\HID#IrDeviceV2&Col05#2&2818a073&0&0004#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65603:\\?\HID#IrDeviceV2&Col06#2&2818a073&0&0005#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65605:\\?\HID#IrDeviceV2&Col07#2&2818a073&0&0006#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65607:\\?\HID#VID_046D&PID_C313&MI_00#7&1d5d010e&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-07-01 14:43:00,565 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-07-01 14:43:01,296 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65601:\\?\HID#IrDeviceV2&Col06#2&2818a073&0&0005#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65603:\\?\HID#IrDeviceV2&Col07#2&2818a073&0&0006#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65605:\\?\HID#VID_076B&PID_5428&MI_00#7&1ac5f9dd&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65599:\\?\HID#IrDeviceV2&Col05#2&2818a073&0&0004#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-07-01 14:45:56,035 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=28)
+2020-07-01 14:45:59,159 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:35] Display message:Unrecognised RFID card.:
+2020-07-01 14:47:20,527 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3420)
+2020-07-01 14:47:40,988 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:104] Result retrieved: Result(value=0.0, photo1Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=022001, photo2Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=022002, photo3Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=022003)
+2020-07-01 14:47:51,696 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3461)
+2020-07-01 14:48:15,035 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:104] Result retrieved: Result(value=0.0, photo1Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=022004, photo2Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=022005, photo3Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=022006)
+2020-07-01 15:21:43,850 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: ",lcampbell2touchsafe.com.au16"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:638)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-01 16:07:36,382 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-07-01 16:07:37,148 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65601:\\?\HID#IrDeviceV2&Col05#2&2818a073&0&0004#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65603:\\?\HID#IrDeviceV2&Col06#2&2818a073&0&0005#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65605:\\?\HID#IrDeviceV2&Col07#2&2818a073&0&0006#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65599:\\?\HID#VID_076B&PID_5428&MI_00#7&1ac5f9dd&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]

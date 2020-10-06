@@ -1,0 +1,2 @@
+2020-08-30 06:50:22,151 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10097)
+2020-08-30 06:51:21,712 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:78] Test not successful:Blow Timeout:

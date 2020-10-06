@@ -1,0 +1,4 @@
+2020-07-03 09:23:39,406 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3420)
+2020-07-03 09:24:41,037 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:77] Test not successful:Blow Timeout:
+2020-07-03 15:16:34,683 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-07-03 15:16:35,548 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65601:\\?\HID#IrDeviceV2&Col05#2&2818a073&0&0004#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65603:\\?\HID#IrDeviceV2&Col06#2&2818a073&0&0005#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65605:\\?\HID#IrDeviceV2&Col07#2&2818a073&0&0006#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65607:\\?\HID#VID_046D&PID_C313&MI_00#7&202dcdb4&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]

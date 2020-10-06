@@ -1,0 +1,18 @@
+2020-07-06 17:19:32,475 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-07-06 17:19:33,174 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65601:\\?\HID#VID_04D9&PID_A09F&MI_01&Col01#7&3b02690b&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65599:\\?\HID#VID_046D&PID_C313&MI_00#7&21b5baea&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-07-06 17:23:16,285 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-07-06 17:23:16,727 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65599:\\?\HID#VID_046D&PID_C31C&MI_00#7&1f40875b&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-07-06 17:23:36,438 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3420)
+2020-07-06 17:24:38,646 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:77] Test not successful:Blow Timeout:
+2020-07-06 17:28:54,230 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-07-06 17:28:54,686 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65599:\\?\HID#VID_046D&PID_C31C&MI_00#7&1f40875b&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-07-06 17:29:22,694 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-07-06 17:29:23,153 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65599:\\?\HID#VID_046D&PID_C31C&MI_00#7&1f40875b&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-07-06 17:29:36,453 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3420)
+2020-07-06 17:31:03,103 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-07-06 17:31:03,672 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [3015383:\\?\HID#VID_076B&PID_5428&MI_00#7&2f84c138&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65599:\\?\HID#VID_046D&PID_C31C&MI_00#7&1f40875b&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-07-06 17:31:26,708 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-07-06 17:31:27,251 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [3015383:\\?\HID#VID_076B&PID_5428&MI_00#7&2f84c138&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65599:\\?\HID#VID_046D&PID_C31C&MI_00#7&1f40875b&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-07-06 17:31:34,140 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-07-06 17:31:34,670 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [3015383:\\?\HID#VID_076B&PID_5428&MI_00#7&2f84c138&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65599:\\?\HID#VID_046D&PID_C31C&MI_00#7&1f40875b&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-07-06 17:31:37,145 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3420)

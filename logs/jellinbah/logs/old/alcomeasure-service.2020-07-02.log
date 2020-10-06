@@ -1,0 +1,130 @@
+2020-07-02 09:13:00,090 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3461)
+2020-07-02 09:13:15,629 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:77] Test not successful:Blow Stopped:
+2020-07-02 09:13:25,851 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3461)
+2020-07-02 09:14:06,230 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:104] Result retrieved: Result(value=0.0, photo1Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=023003, photo2Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=023004, photo3Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=023005)
+2020-07-02 09:14:10,175 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3420)
+2020-07-02 09:14:38,049 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:104] Result retrieved: Result(value=0.0, photo1Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=023006, photo2Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=023007, photo3Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=023008)
+2020-07-02 09:14:49,422 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3420)
+2020-07-02 09:15:05,045 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:104] Result retrieved: Result(value=0.0, photo1Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=023009, photo2Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=023010, photo3Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=023011)
+2020-07-02 09:15:07,708 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3420)
+2020-07-02 09:15:29,144 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:104] Result retrieved: Result(value=0.0, photo1Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=023012, photo2Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=023013, photo3Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=023014)
+2020-07-02 09:15:36,595 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3420)
+2020-07-02 09:15:54,196 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:77] Test not successful:Blow Stopped:
+2020-07-02 09:16:01,016 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3420)
+2020-07-02 09:16:13,932 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:104] Result retrieved: Result(value=0.0, photo1Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=023017, photo2Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=023018, photo3Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=023019)
+2020-07-02 09:16:18,091 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3420)
+2020-07-02 09:16:29,056 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:77] Test not successful:Blow Stopped:
+2020-07-02 09:16:36,072 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3420)
+2020-07-02 09:16:51,766 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:104] Result retrieved: Result(value=0.0, photo1Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=023022, photo2Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=023023, photo3Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=023024)
+2020-07-02 09:16:54,939 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3420)
+2020-07-02 09:17:08,932 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:77] Test not successful:Blow Stopped:
+2020-07-02 09:17:13,747 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3420)
+2020-07-02 09:17:30,814 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:104] Result retrieved: Result(value=0.0, photo1Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=023027, photo2Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=023028, photo3Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=023029)
+2020-07-02 09:18:05,250 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3420)
+2020-07-02 09:18:10,492 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:77] Test not successful:Blow Stopped:
+2020-07-02 09:18:23,106 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3420)
+2020-07-02 09:18:27,195 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:77] Test not successful:Blow Stopped:
+2020-07-02 09:18:32,805 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3420)
+2020-07-02 09:18:38,860 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:77] Test not successful:Blow Stopped:
+2020-07-02 09:19:39,426 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3420)
+2020-07-02 09:20:09,715 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:77] Test not successful:Blow Stopped:
+2020-07-02 09:20:39,744 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3461)
+2020-07-02 09:20:45,841 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:77] Test not successful:Blow Stopped:
+2020-07-02 09:21:10,390 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3420)
+2020-07-02 09:21:21,237 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:77] Test not successful:Blow Stopped:
+2020-07-02 09:21:26,244 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3420)
+2020-07-02 09:21:42,398 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:77] Test not successful:Blow Stopped:
+2020-07-02 09:21:47,611 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3420)
+2020-07-02 09:21:48,204 ERROR [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:51] Invalid initial process state value:Error:
+2020-07-02 09:21:48,206 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:35] Display message:The test failed to start. Please try again.:
+2020-07-02 09:21:48,232 ERROR [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:40] Display message response body:<status.cgi><display><error value="Unable to set custom message"/><success value="0"/></display></status.cgi>:
+2020-07-02 09:21:54,439 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3461)
+2020-07-02 09:22:06,301 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:77] Test not successful:Blow Stopped:
+2020-07-02 09:24:47,963 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3461)
+2020-07-02 09:25:49,062 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:77] Test not successful:Blow Timeout:
+2020-07-02 09:29:39,486 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3461)
+2020-07-02 09:29:59,174 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:555)
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:119)
+	at au.com.touchsafe.alcomeasure.AlcoMeasure.performTest(AlcoMeasure.kt:66)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:24)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+Caused by: java.net.http.HttpConnectTimeoutException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:462)
+	at java.net.http/jdk.internal.net.http.MultiExchange.getExceptionalCF(MultiExchange.java:412)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:339)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:930)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:907)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at java.net.http/jdk.internal.net.http.Http1Exchange.lambda$cancelImpl$9(Http1Exchange.java:473)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: HTTP connect timed out
+	at java.net.http/jdk.internal.net.http.MultiExchange.toTimeoutException(MultiExchange.java:463)
+	... 10 common frames omitted
+2020-07-02 09:30:30,817 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3461)
+2020-07-02 09:30:53,828 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:104] Result retrieved: Result(value=0.0, photo1Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=023001, photo2Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=023002, photo3Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=023003)
+2020-07-02 09:31:16,975 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3461)
+2020-07-02 09:31:29,994 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:77] Test not successful:Blow Stopped:
+2020-07-02 09:31:36,805 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3461)
+2020-07-02 09:31:49,578 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:104] Result retrieved: Result(value=0.0, photo1Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=023006, photo2Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=023007, photo3Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=023008)
+2020-07-02 09:31:54,505 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3420)
+2020-07-02 09:32:13,643 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:104] Result retrieved: Result(value=0.0, photo1Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=023009, photo2Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=023010, photo3Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=023011)
+2020-07-02 09:32:20,338 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3461)
+2020-07-02 09:32:24,204 ERROR [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:60] Invalid start test response body.
+2020-07-02 09:32:24,205 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:35] Display message:The test failed to start. Please try again.:
+2020-07-02 09:32:24,227 ERROR [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:40] Display message response body:<status.cgi><display><error value="Unable to set custom message"/><success value="0"/></display></status.cgi>:
+2020-07-02 09:32:29,534 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3461)
+2020-07-02 09:32:40,635 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:104] Result retrieved: Result(value=0.0, photo1Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=023012, photo2Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=023013, photo3Uri=http://192.168.0.93:26000/log.cgi?downloadPhoto&photoNo=023014)
+2020-07-02 09:32:45,667 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3461)
+2020-07-02 09:32:57,381 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:77] Test not successful:Blow Stopped:
+2020-07-02 09:33:03,691 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3461)
+2020-07-02 09:33:11,731 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:77] Test not successful:Blow Stopped:
+2020-07-02 09:33:18,241 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3461)
+2020-07-02 09:33:25,171 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:77] Test not successful:Blow Stopped:
+2020-07-02 11:39:59,901 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-07-02 11:40:00,716 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65601:\\?\HID#IrDeviceV2&Col06#2&2818a073&0&0005#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65603:\\?\HID#IrDeviceV2&Col07#2&2818a073&0&0006#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65605:\\?\HID#VID_076B&PID_5428&MI_00#7&2f84c138&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65599:\\?\HID#IrDeviceV2&Col05#2&2818a073&0&0004#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-07-02 11:41:17,691 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3401)
+2020-07-02 11:42:22,978 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:77] Test not successful:Blow Timeout:
+2020-07-02 11:56:01,243 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3401)
+2020-07-02 11:57:02,500 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:77] Test not successful:Blow Timeout:
+2020-07-02 14:07:33,181 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-07-02 14:07:33,996 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65601:\\?\HID#IrDeviceV2&Col05#2&2818a073&0&0004#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65603:\\?\HID#IrDeviceV2&Col06#2&2818a073&0&0005#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65605:\\?\HID#IrDeviceV2&Col07#2&2818a073&0&0006#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65599:\\?\HID#VID_076B&PID_5428&MI_00#7&1ac5f9dd&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-07-02 14:10:45,898 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3401)
+2020-07-02 14:11:50,360 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:77] Test not successful:Blow Timeout:
+2020-07-02 14:11:55,771 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3461)
+2020-07-02 14:40:16,645 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-07-02 14:40:17,296 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65601:\\?\HID#IrDeviceV2&Col06#2&2818a073&0&0005#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65603:\\?\HID#IrDeviceV2&Col07#2&2818a073&0&0006#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65599:\\?\HID#IrDeviceV2&Col05#2&2818a073&0&0004#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-07-02 14:42:47,750 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "vlachlan2interactivedisplays.net"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-02 14:43:41,118 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "lachlan2interactivedisplays.net"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-02 14:43:48,932 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "23wesdxcldc2"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-07-02 15:16:22,101 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3420)
+2020-07-02 15:17:26,403 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:77] Test not successful:Blow Timeout:
+2020-07-02 19:05:18,029 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-07-02 19:05:18,978 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65601:\\?\HID#IrDeviceV2&Col05#2&2818a073&0&0004#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65603:\\?\HID#IrDeviceV2&Col06#2&2818a073&0&0005#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65605:\\?\HID#IrDeviceV2&Col07#2&2818a073&0&0006#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65599:\\?\HID#VID_076B&PID_5428&MI_00#7&2f84c138&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-07-02 19:05:26,012 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=3420)
+2020-07-02 19:06:30,937 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:77] Test not successful:Blow Timeout:

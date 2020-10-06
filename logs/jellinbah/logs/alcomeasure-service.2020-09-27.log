@@ -1,0 +1,16 @@
+2020-09-27 05:49:24,850 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=9132)
+2020-09-27 05:49:36,070 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-09-27 06:00:40,817 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11373)
+2020-09-27 06:00:59,121 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-09-27 06:00:59,832 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10928)
+2020-09-27 06:00:59,871 ERROR [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:52] Invalid initial process state value:Normal Test:
+2020-09-27 06:00:59,871 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:36] Display message:The test failed to start. Please try again.:
+2020-09-27 06:00:59,880 ERROR [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:41] Display message response body:<status.cgi><display><error value="Unable to set custom message"/><success value="0"/></display></status.cgi>:
+2020-09-27 06:01:04,295 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10928)
+2020-09-27 06:01:22,097 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-09-27 06:01:25,009 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=7401)
+2020-09-27 06:01:37,240 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:78] Test not successful:Blow Stopped:
+2020-09-27 06:01:44,966 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=7401)
+2020-09-27 06:01:57,212 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-09-27 06:10:19,470 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11232)
+2020-09-27 06:10:36,241 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)

@@ -1,0 +1,36 @@
+2020-09-19 05:17:37,643 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11246)
+2020-09-19 05:17:54,452 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-09-19 05:38:44,406 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10506)
+2020-09-19 05:39:07,263 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-09-19 05:47:41,606 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=9132)
+2020-09-19 05:47:51,285 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-09-19 05:52:06,920 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=7145)
+2020-09-19 05:52:26,754 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-09-19 05:52:48,528 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11414)
+2020-09-19 05:53:05,807 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-09-19 06:00:51,742 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=6519)
+2020-09-19 06:01:07,506 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-09-19 06:02:45,034 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=7267)
+2020-09-19 06:03:03,385 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-09-19 06:04:04,388 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11640)
+2020-09-19 06:04:17,630 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-09-19 08:22:29,018 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11358)
+2020-09-19 08:23:07,582 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-09-19 12:49:29,466 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11357)
+2020-09-19 12:49:53,330 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:96] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)
+2020-09-19 16:43:42,914 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11288)
+2020-09-19 16:43:42,956 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:36] Display message:Unrecognised RFID card.:
+2020-09-19 16:43:48,185 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11282)
+2020-09-19 16:43:48,232 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:36] Display message:Unrecognised RFID card.:
+2020-09-19 16:43:53,256 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11402)
+2020-09-19 16:43:53,308 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:36] Display message:Unrecognised RFID card.:
+2020-09-19 16:43:58,333 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11355)
+2020-09-19 16:43:58,359 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:36] Display message:Unrecognised RFID card.:
+2020-09-19 16:44:24,253 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11292)
+2020-09-19 16:44:24,301 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:36] Display message:Unrecognised RFID card.:
+2020-09-19 16:44:29,226 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11290)
+2020-09-19 16:44:29,268 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:36] Display message:Unrecognised RFID card.:
+2020-09-19 16:44:33,289 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11281)
+2020-09-19 16:44:33,341 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:36] Display message:Unrecognised RFID card.:
+2020-09-19 16:44:37,462 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=11293)
+2020-09-19 16:44:37,508 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:36] Display message:Unrecognised RFID card.:

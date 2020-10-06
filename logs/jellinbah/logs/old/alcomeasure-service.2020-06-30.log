@@ -1,0 +1,60 @@
+2020-06-30 07:51:48,985 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-06-30 07:51:49,679 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65604:\\?\HID#IrDeviceV2&Col05#2&2818a073&0&0004#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65606:\\?\HID#IrDeviceV2&Col06#2&2818a073&0&0005#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65608:\\?\HID#IrDeviceV2&Col07#2&2818a073&0&0006#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65610:\\?\HID#VID_046D&PID_C313&MI_00#7&1d5d010e&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-06-30 07:54:13,749 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-06-30 07:54:14,482 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65601:\\?\HID#IrDeviceV2&Col05#2&2818a073&0&0004#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65603:\\?\HID#IrDeviceV2&Col06#2&2818a073&0&0005#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65605:\\?\HID#IrDeviceV2&Col07#2&2818a073&0&0006#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65607:\\?\HID#VID_046D&PID_C313&MI_00#7&1d5d010e&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-06-30 07:54:22,841 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-06-30 07:54:23,837 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65601:\\?\HID#IrDeviceV2&Col05#2&2818a073&0&0004#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65603:\\?\HID#IrDeviceV2&Col06#2&2818a073&0&0005#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65605:\\?\HID#IrDeviceV2&Col07#2&2818a073&0&0006#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65607:\\?\HID#VID_046D&PID_C313&MI_00#7&1d5d010e&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-06-30 08:27:34,682 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "cmd"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-06-30 07:54:23,868 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-06-30 07:54:24,798 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65601:\\?\HID#IrDeviceV2&Col05#2&2818a073&0&0004#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65603:\\?\HID#IrDeviceV2&Col06#2&2818a073&0&0005#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65605:\\?\HID#IrDeviceV2&Col07#2&2818a073&0&0006#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65607:\\?\HID#VID_046D&PID_C313&MI_00#7&1d5d010e&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-06-30 08:39:42,422 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-06-30 08:39:43,297 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65601:\\?\HID#IrDeviceV2&Col05#2&2818a073&0&0004#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65603:\\?\HID#IrDeviceV2&Col06#2&2818a073&0&0005#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65605:\\?\HID#IrDeviceV2&Col07#2&2818a073&0&0006#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65607:\\?\HID#VID_046D&PID_C313&MI_00#7&1d5d010e&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-06-30 09:27:59,952 INFO [main] a.c.t.a.AlcoMeasure [application.kt:8] TouchSafe 2 AlcoMeasure Integration: STARTED
+2020-06-30 09:28:01,470 INFO [main] a.c.t.a.AlcoMeasure [application.kt:9] Connected keyboards: [65604:\\?\HID#IrDeviceV2&Col05#2&2818a073&0&0004#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65622:\\?\HID#VID_046D&PID_C313&MI_00#7&1d5d010e&0&0000#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65606:\\?\HID#IrDeviceV2&Col06#2&2818a073&0&0005#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}] [65608:\\?\HID#IrDeviceV2&Col07#2&2818a073&0&0006#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}]
+2020-06-30 09:28:19,239 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "https"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-06-30 09:36:04,454 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "tab."
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-06-30 09:36:30,845 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "controlcentre2tabdigital.com.au"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-06-30 09:36:44,974 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "11234control"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)
+2020-06-30 10:11:53,314 ERROR [main] a.c.t.a.AlcoMeasure [application.kt:32] An unexpected error occurred:
+java.lang.NumberFormatException: For input string: "testtab135300test unit 11tab13673673test22"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at au.com.touchsafe.alcomeasure.Input.getId(Input.kt:27)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt:14)
+	at au.com.touchsafe.alcomeasure.ApplicationKt.main(application.kt)

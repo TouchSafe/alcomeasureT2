@@ -1,0 +1,2 @@
+2020-07-25 08:51:53,810 INFO [main] a.c.t.a.AlcoMeasure [Input.kt:28] Input gotten: Rfid(facilityCode=15, cardNumber=10751)
+2020-07-25 08:52:20,344 INFO [main] a.c.t.a.AlcoMeasure [AlcoMeasure.kt:95] Result retrieved: Result(value=0.0, photo1Uri=null, photo2Uri=null, photo3Uri=null)

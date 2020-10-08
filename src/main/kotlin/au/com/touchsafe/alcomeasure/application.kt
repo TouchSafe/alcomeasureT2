@@ -42,6 +42,8 @@ fun main() {
 	// TODO Need to handle connection error here with Redis
 	Redis.applicationStarted()
 
+	// TODO Add a database connection and critical setting check on program start. See TSALMT2-26
+
 	try {
 		LOGGER.debug(DebugMarker.DEBUG1.marker, "Starting main loop")
 		while (true) {
@@ -67,7 +69,7 @@ fun main() {
 					LOGGER.info(DebugMarker.DEBUG1.marker, "Connected to DB \"${SqlServer.DB_CONNECTION_URI}\"")
 
 					// TODO Load information from the AlcoMeasureDevice table and store somewhere
-					val alcoDevice = SqlServer.validateAlcoMeasureDevice(connection, 1)    // TODO get rid of the hard-coded locationid (should come from settings.properties file)
+					val alcoDevice = SqlServer.validateAlcoMeasureDevice(connection, 2)    // TODO get rid of the hard-coded locationid (should come from settings.properties file)
 
 					if (alcoDevice == null) {
 						LOGGER.info("No Alco Measure Device found for this location. Unable to run a test at this location")

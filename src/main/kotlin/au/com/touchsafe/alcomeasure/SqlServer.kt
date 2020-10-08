@@ -99,7 +99,7 @@ object SqlServer {
 	fun validateAlcoMeasureDevice(connection: java.sql.Connection, locationId: Int): AlcoMeasureDevice? {
 		LOGGER.debug("validateAlcoMeasureDevice")
 		try {
-			val statement = connection.prepareStatement("$VALIDATE_ALCODEVICE_SQL_START WHERE LocationId = ?;")
+			val statement = connection.prepareStatement("$VALIDATE_ALCODEVICE_SQL_START WHERE LocationId = ?;")			// TODO run an check on this LocationId query when the application starts up
 			statement.setInt(1, locationId)
 			LOGGER.info(DebugMarker.DEBUG2.marker, "Query: $statement")
 			val resultSet = statement.executeQuery()

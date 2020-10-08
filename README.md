@@ -108,6 +108,8 @@ From the command line:
 
 From the Gradle plugin window in IntelliJ:
 
+    alcomeasure/Tasks/shadow/shadowJar
+
 Output will be in the build/distributions/ dir in the form of a single jar with the version number included in the
 name. This Jar is all that needs to be copied to a live site. All jars and dependencies are bundled into the one jar
 by the shadowJar plugin.

@@ -1,25 +1,27 @@
 package au.com.touchsafe.alcomeasure
 
 import au.com.touchsafe.alcomeasure.util.logging.DebugMarker
+import org.jnativehook.keyboard.NativeKeyEvent
+import org.jnativehook.keyboard.NativeKeyListener
 
 object InputV2 {
 
 	private const val KEYBOARD_BUFFER_SIZE = 200
 	private val KEYBOARD_BUFFER = java.nio.CharBuffer.allocate(KEYBOARD_BUFFER_SIZE)
-	internal val KEYBOARD_HOOK = lc.kra.system.keyboard.GlobalKeyboardHook(true).apply {
-		addKeyListener(object : lc.kra.system.keyboard.event.GlobalKeyAdapter() {
+	internal val KEYBOARD_HOOK = object : NativeKeyListener {
+		override fun nativeKeyTyped(event: NativeKeyEvent) {
+			// event.keyChar only works for nativeKeyTyped. event.keyCode works for nativeKeyPressed and nativeKeyReleased15;3420x
+			LOGGER.debug(DebugMarker.DEBUG4.marker, "Key \"${event.keyChar}\" typed")
+			KEYBOARD_BUFFER.put(event.keyChar)
+		}
 
-			override fun keyPressed(event: lc.kra.system.keyboard.event.GlobalKeyEvent) {}
+		override fun nativeKeyPressed(event: NativeKeyEvent) {}
 
-			override fun keyReleased(event: lc.kra.system.keyboard.event.GlobalKeyEvent) {
-				LOGGER.debug(DebugMarker.DEBUG4.marker, "Key \"${event.keyChar}\" pressed on device with handle \"${event.deviceHandle}\"")
-				KEYBOARD_BUFFER.put(event.keyChar)
-			}
-		})
+		override fun nativeKeyReleased(event: NativeKeyEvent) {}
 	}
 
 	fun getId(): Rfid {
-		LOGGER.debug(DebugMarker.DEBUG2.marker, "Input.getId called")
+		LOGGER.debug(DebugMarker.DEBUG2.marker, "InputV2.getId called")
 		val input = readLine()
 //		val id = if (input.contains(';')) {
 //			val parts = input.split(';')
@@ -34,7 +36,7 @@ object InputV2 {
 	}
 
 	private fun readLine(): String {
-		LOGGER.debug(DebugMarker.DEBUG2.marker, "Input.readline called")
+		LOGGER.debug(DebugMarker.DEBUG2.marker, "InputV2.readline called")
 		KEYBOARD_BUFFER.clear()
 		var newLineIndex = indexOfCarriageReturn()
 		while (newLineIndex == -1) {
@@ -47,10 +49,10 @@ object InputV2 {
 	}
 
 	private fun indexOfCarriageReturn(): Int {
-		LOGGER.debug(DebugMarker.DEBUG5.marker, "Input.indexOfCarriageReturn called")
+		LOGGER.debug(DebugMarker.DEBUG5.marker, "InputV2.indexOfCarriageReturn called")
 		val buffer = KEYBOARD_BUFFER.array().take(KEYBOARD_BUFFER.position())
-		val index = buffer.indexOf('\r')
-		LOGGER.debug(DebugMarker.DEBUG5.marker, "Index of '\\r' in \"$buffer\" is $index")
+		val index = buffer.indexOf('r')
+		LOGGER.debug(DebugMarker.DEBUG5.marker, "Index of 'r' in \"$buffer\" is $index")
 		return index
 	}
 }

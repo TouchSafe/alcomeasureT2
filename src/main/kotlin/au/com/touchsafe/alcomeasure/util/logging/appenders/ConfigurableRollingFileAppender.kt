@@ -24,8 +24,8 @@ open class ConfigurableRollingFileAppender : RollingFileAppender<LoggingEvent>()
             } else {
                 null
             }
-            // If no debugMarker, or event marker is not a DebugMarker, or debugMarker >= eventDebugMarker
-            if (debugMarker == null || eventDebugMarker == null || debugMarker!!.isLesserOrEqual(eventDebugMarker)) {
+            // If no debugMarker, or event marker is not a DebugMarker, or eventDebugMarker <= debugMarker
+            if (debugMarker == null || eventDebugMarker == null || eventDebugMarker.isLesserOrEqual(debugMarker!!)) {
                 super.subAppend(event)
             }
         }

@@ -5,7 +5,7 @@ import au.com.touchsafe.alcomeasure.util.mailAllReports
 import au.com.touchsafe.alcomeasure.util.setMailLogLevel
 import au.com.touchsafe.alcomeasure.util.setOutputLoggingLevels
 import org.apache.commons.lang3.SystemUtils
-import kotlin.system.exitProcess
+import org.jnativehook.GlobalScreen
 
 internal val LOGGER = org.slf4j.LoggerFactory.getLogger(AlcoMeasure::class.java)
 internal val MESSAGES_BUNDLE: java.util.ResourceBundle = java.util.ResourceBundle.getBundle("messages", java.util.Locale.ENGLISH)
@@ -37,10 +37,15 @@ fun main() {
 	if (os != "Linux") {
 		LOGGER.info("Connected keyboards:" + lc.kra.system.keyboard.GlobalKeyboardHook.listKeyboards().map { (key, value) -> " [$key:$value]" }.joinToString(""))
 	} else {
-		LOGGER.info("Running on Linux: can't handle keyboard currently")
+		LOGGER.debug("Registering JNativeHook native hook")
+		GlobalScreen.registerNativeHook()
+		LOGGER.debug("Registered JNativeHook native hook")
+		LOGGER.debug("Adding JNativeHook key listener")
+		GlobalScreen.addNativeKeyListener(InputV2.KEYBOARD_HOOK)
+		LOGGER.info("Added JNativeHook key listener")
 	}
 	// TODO Need to handle connection error here with Redis
-	Redis.applicationStarted()
+	//Redis.applicationStarted()
 
 	// TODO Add a database connection and critical setting check on program start. See TSALMT2-26
 
@@ -54,9 +59,8 @@ fun main() {
 					LOGGER.info("os: " + os)
 					id = Input.getId()
 				} else {
-					LOGGER.info("Running on Linux: can't handle keyboard currently, using a dummy Rfid for code testing")
-					id = Rfid(15, 3420)			// Lachlan's Card
-					LOGGER.info("Dummy Input gotten: $id")
+					LOGGER.info("Running on Linux: getting input from JNativeHook")
+					id = InputV2.getId()
 					// exitProcess(1)
 				}
 
@@ -146,14 +150,12 @@ fun main() {
 				LOGGER.error("An unexpected error occurred:", ex)
 				LOGGER.info("An unexpected error occurred:", ex)
 			}
-
-			if (os == "Linux") {
-				LOGGER.info("os: " + os)
-				exitProcess(1)
-			}
-
 		}
 	} finally {
-		Input.KEYBOARD_HOOK.shutdownHook()
+		if (os != "Linux") {
+			Input.KEYBOARD_HOOK.shutdownHook()
+		} else {
+			GlobalScreen.unregisterNativeHook()
+		}
 	}
 }

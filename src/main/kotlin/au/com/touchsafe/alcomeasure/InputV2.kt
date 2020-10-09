@@ -51,8 +51,8 @@ object InputV2 {
 	private fun indexOfCarriageReturn(): Int {
 		LOGGER.debug(DebugMarker.DEBUG5.marker, "InputV2.indexOfCarriageReturn called")
 		val buffer = KEYBOARD_BUFFER.array().take(KEYBOARD_BUFFER.position())
-		val index = buffer.indexOf('r')
-		LOGGER.debug(DebugMarker.DEBUG5.marker, "Index of 'r' in \"$buffer\" is $index")
+		val index = buffer.indexOf('\r')
+		LOGGER.debug(DebugMarker.DEBUG5.marker, "Index of '\\r' in \"$buffer\" is $index")
 		return index
 	}
 }

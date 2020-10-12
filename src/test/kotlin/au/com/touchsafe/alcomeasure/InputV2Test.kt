@@ -19,7 +19,7 @@ class InputV2Test {
         GlobalScope.launch {
             // Wait a couple of seconds before sending the keys
             delay(2000L)
-            GlobalScreen.postNativeEvent(NativeKeyEvent(NativeKeyEvent.NATIVE_KEY_PRESSED, 0, 0, NativeKeyEvent.VC_UNDEFINED, '3'))
+            GlobalScreen.postNativeEvent(NativeKeyEvent(NativeKeyEvent.NATIVE_KEY_PRESSED, 0, 0, NativeKeyEvent.VC_3, '3'))
             GlobalScreen.postNativeEvent(NativeKeyEvent(NativeKeyEvent.NATIVE_KEY_RELEASED, 0, 0, NativeKeyEvent.VC_3, '3'))
             GlobalScreen.postNativeEvent(NativeKeyEvent(NativeKeyEvent.NATIVE_KEY_PRESSED, 0, 0, NativeKeyEvent.VC_SEMICOLON, ';'))
             GlobalScreen.postNativeEvent(NativeKeyEvent(NativeKeyEvent.NATIVE_KEY_RELEASED, 0, 0, NativeKeyEvent.VC_SEMICOLON, ';'))

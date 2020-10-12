@@ -20,6 +20,8 @@ fun getOperatingSystemSystemUtils(): String? {
 	return SystemUtils.OS_NAME
 }
 
+data class RequiredSettingsProperty(val name: String, val notFoundMessage: String = "Setting $name not found in settings.properties")
+
 /**
  * Main function of the application
  *
@@ -28,8 +30,51 @@ fun getOperatingSystemSystemUtils(): String? {
 fun main() {
 	setMailLogLevel()
 	setOutputLoggingLevels()
+
 	println("TouchSafe 2 AlcoMeasure Integration: STARTED")
 	LOGGER.info("TouchSafe 2 AlcoMeasure Integration: STARTED")   // TODO output the version number here
+
+	// Settings that are required for the program to run correctly
+	val requiredSettingsProperties = listOf(
+			// Redis settings
+			RequiredSettingsProperty("applicationID"),
+			RequiredSettingsProperty("redisServer"),
+			RequiredSettingsProperty("redisPort"),
+
+			// AlcoMeasure device details - required to connect to the device
+			RequiredSettingsProperty("alcomeasureHost"),
+			RequiredSettingsProperty("alcomeasurePort"),
+
+			// RequiredSettingsProperty("alcomeasureLocationId"), // Not used
+
+			// Database settings - these are all required to create the connection uri
+			RequiredSettingsProperty("dbHost"),
+			RequiredSettingsProperty("dbPort"),
+			RequiredSettingsProperty("dbDatabase"),
+			RequiredSettingsProperty("dbUsername"),
+			RequiredSettingsProperty("dbPassphrase"),
+
+			// These settings are required to send emails - should we make email sending optional?
+			RequiredSettingsProperty("emailAuth"),
+			RequiredSettingsProperty("emailFrom"),
+			RequiredSettingsProperty("emailHost"),
+			RequiredSettingsProperty("emailPassphrase"),
+			RequiredSettingsProperty("emailPort"),
+			RequiredSettingsProperty("emailStartTls"),
+			RequiredSettingsProperty("emailTo"),
+			RequiredSettingsProperty("emailUsername")
+	)
+
+	// Check that the required settings are present
+	requiredSettingsProperties.forEach { requiredSettingsProperty ->
+		if (SETTINGS_PROPERTIES.getProperty(requiredSettingsProperty.name) == null) {
+			LOGGER.error(requiredSettingsProperty.notFoundMessage)
+		}
+	}
+
+	LOGGER.debug(DebugMarker.DEBUG2.marker, "All required settings successfully loaded from settings.properties")
+
+	LOGGER.debug("All required settings successfully loaded from settings.properties")
 
 	// TODO: lc.kra.system.* is Windows specific - https://github.com/kristian/system-hook/issues/20
 	val os = getOperatingSystemSystemUtils()

@@ -45,7 +45,7 @@ fun main() {
 		LOGGER.info("Added JNativeHook key listener")
 	}
 	// TODO Need to handle connection error here with Redis
-	//Redis.applicationStarted()
+	Redis.applicationStarted()
 
 	// TODO Add a database connection and critical setting check on program start. See TSALMT2-26
 

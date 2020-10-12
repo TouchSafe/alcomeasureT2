@@ -1,9 +1,7 @@
 package au.com.touchsafe.alcomeasure
 
+import au.com.touchsafe.alcomeasure.util.*
 import au.com.touchsafe.alcomeasure.util.logging.DebugMarker
-import au.com.touchsafe.alcomeasure.util.mailAllReports
-import au.com.touchsafe.alcomeasure.util.setMailLogLevel
-import au.com.touchsafe.alcomeasure.util.setOutputLoggingLevels
 import org.apache.commons.lang3.SystemUtils
 import kotlin.system.exitProcess
 
@@ -19,8 +17,6 @@ fun getOperatingSystemSystemUtils(): String? {
 	// System.out.println("Using SystemUtils: " + SystemUtils.OS_NAME);
 	return SystemUtils.OS_NAME
 }
-
-data class RequiredSettingsProperty(val name: String, val notFoundMessage: String = "Setting $name not found in settings.properties")
 
 /**
  * Main function of the application
@@ -66,15 +62,9 @@ fun main() {
 	)
 
 	// Check that the required settings are present
-	requiredSettingsProperties.forEach { requiredSettingsProperty ->
-		if (SETTINGS_PROPERTIES.getProperty(requiredSettingsProperty.name) == null) {
-			LOGGER.error(requiredSettingsProperty.notFoundMessage)
-		}
+	if (!requiredSettingsProperties.checkPresent()) {
+		exitProcess(1)
 	}
-
-	LOGGER.debug(DebugMarker.DEBUG2.marker, "All required settings successfully loaded from settings.properties")
-
-	LOGGER.debug("All required settings successfully loaded from settings.properties")
 
 	// TODO: lc.kra.system.* is Windows specific - https://github.com/kristian/system-hook/issues/20
 	val os = getOperatingSystemSystemUtils()
@@ -87,7 +77,7 @@ fun main() {
 	// TODO Need to handle connection error here with Redis
 	Redis.applicationStarted()
 
-	// TODO Add a database connection and critical setting check on program start. See TSALMT2-26
+	// TODO Add a database connection on program start. See TSALMT2-26
 
 	try {
 		LOGGER.debug(DebugMarker.DEBUG1.marker, "Starting main loop")

@@ -7,17 +7,17 @@ import org.jnativehook.keyboard.NativeKeyListener
 object InputV2 {
 
 	private const val KEYBOARD_BUFFER_SIZE = 200
-	private val KEYBOARD_BUFFER = java.nio.CharBuffer.allocate(KEYBOARD_BUFFER_SIZE)
+	private val KEYBOARD_BUFFER = java.nio.IntBuffer.allocate(KEYBOARD_BUFFER_SIZE)
 	internal val KEYBOARD_HOOK = object : NativeKeyListener {
-		override fun nativeKeyTyped(event: NativeKeyEvent) {
-			// event.keyChar only works for nativeKeyTyped. event.keyCode works for nativeKeyPressed and nativeKeyReleased15;3420x
-			LOGGER.debug(DebugMarker.DEBUG4.marker, "Key \"${event.keyChar}\" typed")
-			KEYBOARD_BUFFER.put(event.keyChar)
-		}
+		override fun nativeKeyTyped(event: NativeKeyEvent) {}
 
 		override fun nativeKeyPressed(event: NativeKeyEvent) {}
 
-		override fun nativeKeyReleased(event: NativeKeyEvent) {}
+		override fun nativeKeyReleased(event: NativeKeyEvent) {
+			// event.keyChar only works for nativeKeyTyped. event.keyCode works for nativeKeyPressed and nativeKeyReleased
+			LOGGER.debug(DebugMarker.DEBUG4.marker, "Key ${event.keyCode} (\"${NativeKeyEvent.getKeyText(event.keyCode)}\") released")
+			KEYBOARD_BUFFER.put(event.keyCode)
+		}
 	}
 
 	fun getId(): Rfid {
@@ -38,21 +38,22 @@ object InputV2 {
 	private fun readLine(): String {
 		LOGGER.debug(DebugMarker.DEBUG2.marker, "InputV2.readline called")
 		KEYBOARD_BUFFER.clear()
-		var newLineIndex = indexOfCarriageReturn()
+		var newLineIndex = indexOfEnterKey()
 		while (newLineIndex == -1) {
 			Thread.sleep(100)
-			newLineIndex = indexOfCarriageReturn()
+			newLineIndex = indexOfEnterKey()
 		}
-		val line = KEYBOARD_BUFFER.array().take(newLineIndex).filter { it != '\u0000' }.joinToString("")
+		val line = KEYBOARD_BUFFER.array().take(newLineIndex).map { NativeKeyEvent.getKeyText(it) }.joinToString("").replace("Semicolon", ";")
 		LOGGER.debug(DebugMarker.DEBUG1.marker, "Read line \"$line\"")
 		return line
 	}
 
-	private fun indexOfCarriageReturn(): Int {
-		LOGGER.debug(DebugMarker.DEBUG5.marker, "InputV2.indexOfCarriageReturn called")
+	private fun indexOfEnterKey(): Int {
+		LOGGER.debug(DebugMarker.DEBUG5.marker, "InputV2.indexOfEnterKey called")
 		val buffer = KEYBOARD_BUFFER.array().take(KEYBOARD_BUFFER.position())
-		val index = buffer.indexOf('\r')
-		LOGGER.debug(DebugMarker.DEBUG5.marker, "Index of '\\r' in \"$buffer\" is $index")
+		// Index of Enter keyCode
+		val index = buffer.indexOf(NativeKeyEvent.VC_ENTER)
+		LOGGER.debug(DebugMarker.DEBUG5.marker, "Index of ${NativeKeyEvent.VC_ENTER} in \"$buffer\" is $index")
 		return index
 	}
 }

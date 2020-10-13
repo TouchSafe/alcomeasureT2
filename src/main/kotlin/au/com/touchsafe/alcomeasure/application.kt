@@ -31,7 +31,6 @@ fun main() {
 	println("TouchSafe 2 AlcoMeasure Integration: STARTED")
 	LOGGER.info("TouchSafe 2 AlcoMeasure Integration: STARTED")   // TODO output the version number here
 
-	// TODO: lc.kra.system.* is Windows specific - https://github.com/kristian/system-hook/issues/20
 	val os = getOperatingSystemSystemUtils()
 	LOGGER.info("OS: $os")
 	if (os != "Linux") {

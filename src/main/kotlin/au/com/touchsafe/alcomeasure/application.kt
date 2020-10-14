@@ -59,12 +59,18 @@ fun main() {
 					id = Input.getId()
 				} else {
 					LOGGER.info("Running on Linux: getting input from JNativeHook")
-					id = InputV2.getId()
+					val possibleId = InputV2.getId()
+					if (possibleId == null) {
+						// Show "Invalid RFID" message on AlcoMeasure unit and skip loop
+						AlcoMeasure.displayMessage(MESSAGES_BUNDLE.getString("INVALID_RFID"))
+						continue
+					}
+					id = possibleId
 					// exitProcess(1)
 				}
 
 				// LOGGER.debug(DebugMarker.DEBUG1.marker, "Got ID \"$id\"")
-				LOGGER.info(DebugMarker.DEBUG1.marker, "Got ID " + id)
+				LOGGER.info(DebugMarker.DEBUG1.marker, "Got ID $id")
 				// TODO database connection error is not being handled here
 				LOGGER.debug(DebugMarker.DEBUG1.marker, "DB URI: " + SqlServer.DB_CONNECTION_URI)
 				java.sql.DriverManager.getConnection(SqlServer.DB_CONNECTION_URI).use { connection ->

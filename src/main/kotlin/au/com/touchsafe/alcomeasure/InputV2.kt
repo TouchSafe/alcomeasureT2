@@ -20,7 +20,7 @@ object InputV2 {
 		}
 	}
 
-	fun getId(): Rfid {
+	fun getId(): Rfid? {
 		LOGGER.debug(DebugMarker.DEBUG2.marker, "InputV2.getId called")
 		val input = readLine()
 //		val id = if (input.contains(';')) {
@@ -29,8 +29,25 @@ object InputV2 {
 //		} else {
 //			Pin(input)
 //		}
+		if (!input.contains(';')) {
+			LOGGER.error("Input \"$input\" invalid, does not contain ';'")
+			return null
+		} else if (input.count { it == ';' } > 1) {
+			LOGGER.error("Input \"$input\" invalid, contains more than 1 ';'")
+			return null
+		}
 		val parts = input.split(';')
-		val id = Rfid(parts[0].toInt(), parts[1].toInt())
+		val facilityCode = parts[0].toIntOrNull()
+		if (facilityCode == null) {
+			LOGGER.error("Facility Code \"${parts[0]}\" could not be parsed as an integer")
+			return null
+		}
+		val cardNumber = parts[1].toIntOrNull()
+		if (cardNumber == null) {
+			LOGGER.error("Card Number \"${parts[1]}\" could not be parsed as an integer")
+			return null
+		}
+		val id = Rfid(facilityCode, cardNumber)
 		LOGGER.info("Input gotten: $id")
 		return id
 	}

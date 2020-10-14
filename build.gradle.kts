@@ -1,5 +1,5 @@
 plugins {
-	kotlin("jvm") version "1.3.72"
+	kotlin("jvm") version "1.4.0"
 	`maven-publish`
 	application
 	id("com.github.johnrengelman.shadow") version "5.2.0"
@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "au.com.touchsafe"
-version = "1.0.5-SNAPSHOT"
+version = "1.0.6-SNAPSHOT"
 description = "TouchSafe 2 AlcoMeasure Integration."
 
 application {
@@ -17,8 +17,6 @@ application {
 repositories {
 	jcenter()
 	mavenCentral()
-
-
 }
 
 dependencies {

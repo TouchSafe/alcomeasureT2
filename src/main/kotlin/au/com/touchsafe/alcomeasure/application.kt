@@ -3,7 +3,9 @@ package au.com.touchsafe.alcomeasure
 import au.com.touchsafe.alcomeasure.util.*
 import au.com.touchsafe.alcomeasure.util.logging.DebugMarker
 import org.apache.commons.lang3.SystemUtils
-import kotlin.system.exitProcess
+import org.jnativehook.GlobalScreen
+import java.util.logging.Level
+import java.util.logging.Logger
 
 internal val LOGGER = org.slf4j.LoggerFactory.getLogger(AlcoMeasure::class.java)
 internal val MESSAGES_BUNDLE: java.util.ResourceBundle = java.util.ResourceBundle.getBundle("messages", java.util.Locale.ENGLISH)
@@ -26,6 +28,8 @@ fun getOperatingSystemSystemUtils(): String? {
 fun main() {
 	setMailLogLevel()
 	setOutputLoggingLevels()
+	// Disable JNativeHook logging
+	Logger.getLogger(GlobalScreen::class.java.`package`.name).level = Level.OFF
 
 	println("TouchSafe 2 AlcoMeasure Integration: STARTED")
 	LOGGER.info("TouchSafe 2 AlcoMeasure Integration: STARTED")   // TODO output the version number here
@@ -66,13 +70,17 @@ fun main() {
 		exitProcess(1)
 	}
 
-	// TODO: lc.kra.system.* is Windows specific - https://github.com/kristian/system-hook/issues/20
 	val os = getOperatingSystemSystemUtils()
 	LOGGER.info("OS: $os")
 	if (os != "Linux") {
 		LOGGER.info("Connected keyboards:" + lc.kra.system.keyboard.GlobalKeyboardHook.listKeyboards().map { (key, value) -> " [$key:$value]" }.joinToString(""))
 	} else {
-		LOGGER.info("Running on Linux: can't handle keyboard currently")
+		LOGGER.debug("Registering JNativeHook native hook")
+		GlobalScreen.registerNativeHook()
+		LOGGER.debug("Registered JNativeHook native hook")
+		LOGGER.debug("Adding JNativeHook key listener")
+		GlobalScreen.addNativeKeyListener(InputV2.KEYBOARD_HOOK)
+		LOGGER.info("Added JNativeHook key listener")
 	}
 	// TODO Need to handle connection error here with Redis
 	Redis.applicationStarted()
@@ -86,17 +94,23 @@ fun main() {
 
 				val id: Rfid
 				if (os != "Linux") {
-					LOGGER.info("os: " + os)
+					LOGGER.info("os: $os")
 					id = Input.getId()
 				} else {
-					LOGGER.info("Running on Linux: can't handle keyboard currently, using a dummy Rfid for code testing")
-					id = Rfid(15, 3420)			// Lachlan's Card
-					LOGGER.info("Dummy Input gotten: $id")
+					LOGGER.info("Running on Linux: getting input from JNativeHook")
+					val possibleId = InputV2.getId()
+					if (possibleId == null) {
+						LOGGER.info("Invalid RFID processed, displaying message on AlcoMeasure unit and skipping loop")
+						// Show "Invalid RFID" message on AlcoMeasure unit and skip loop
+						AlcoMeasure.displayMessage(MESSAGES_BUNDLE.getString("INVALID_RFID"))
+						continue
+					}
+					id = possibleId
 					// exitProcess(1)
 				}
 
 				// LOGGER.debug(DebugMarker.DEBUG1.marker, "Got ID \"$id\"")
-				LOGGER.info(DebugMarker.DEBUG1.marker, "Got ID " + id)
+				LOGGER.info(DebugMarker.DEBUG1.marker, "Got ID $id")
 				// TODO database connection error is not being handled here
 				LOGGER.debug(DebugMarker.DEBUG1.marker, "DB URI: " + SqlServer.DB_CONNECTION_URI)
 				java.sql.DriverManager.getConnection(SqlServer.DB_CONNECTION_URI).use { connection ->
@@ -181,14 +195,12 @@ fun main() {
 				LOGGER.error("An unexpected error occurred:", ex)
 				LOGGER.info("An unexpected error occurred:", ex)
 			}
-
-			if (os == "Linux") {
-				LOGGER.info("os: " + os)
-				exitProcess(1)
-			}
-
 		}
 	} finally {
-		Input.KEYBOARD_HOOK.shutdownHook()
+		if (os != "Linux") {
+			Input.KEYBOARD_HOOK.shutdownHook()
+		} else {
+			GlobalScreen.unregisterNativeHook()
+		}
 	}
 }

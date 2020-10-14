@@ -1,9 +1,7 @@
 package au.com.touchsafe.alcomeasure
 
+import au.com.touchsafe.alcomeasure.util.*
 import au.com.touchsafe.alcomeasure.util.logging.DebugMarker
-import au.com.touchsafe.alcomeasure.util.mailAllReports
-import au.com.touchsafe.alcomeasure.util.setMailLogLevel
-import au.com.touchsafe.alcomeasure.util.setOutputLoggingLevels
 import org.apache.commons.lang3.SystemUtils
 import org.jnativehook.GlobalScreen
 import java.util.logging.Level
@@ -32,8 +30,45 @@ fun main() {
 	setOutputLoggingLevels()
 	// Disable JNativeHook logging
 	Logger.getLogger(GlobalScreen::class.java.`package`.name).level = Level.OFF
+
 	println("TouchSafe 2 AlcoMeasure Integration: STARTED")
 	LOGGER.info("TouchSafe 2 AlcoMeasure Integration: STARTED")   // TODO output the version number here
+
+	// Settings that are required for the program to run correctly
+	val requiredSettingsProperties = listOf(
+			// Redis settings
+			RequiredSettingsProperty("applicationID"),
+			RequiredSettingsProperty("redisServer"),
+			RequiredSettingsProperty("redisPort"),
+
+			// AlcoMeasure device details - required to connect to the device
+			RequiredSettingsProperty("alcomeasureHost"),
+			RequiredSettingsProperty("alcomeasurePort"),
+
+			// RequiredSettingsProperty("alcomeasureLocationId"), // Not used
+
+			// Database settings - these are all required to create the connection uri
+			RequiredSettingsProperty("dbHost"),
+			RequiredSettingsProperty("dbPort"),
+			RequiredSettingsProperty("dbDatabase"),
+			RequiredSettingsProperty("dbUsername"),
+			RequiredSettingsProperty("dbPassphrase"),
+
+			// These settings are required to send emails - should we make email sending optional?
+			RequiredSettingsProperty("emailAuth"),
+			RequiredSettingsProperty("emailFrom"),
+			RequiredSettingsProperty("emailHost"),
+			RequiredSettingsProperty("emailPassphrase"),
+			RequiredSettingsProperty("emailPort"),
+			RequiredSettingsProperty("emailStartTls"),
+			RequiredSettingsProperty("emailTo"),
+			RequiredSettingsProperty("emailUsername")
+	)
+
+	// Check that the required settings are present
+	if (!requiredSettingsProperties.checkPresent()) {
+		exitProcess(1)
+	}
 
 	val os = getOperatingSystemSystemUtils()
 	LOGGER.info("OS: $os")
@@ -50,7 +85,7 @@ fun main() {
 	// TODO Need to handle connection error here with Redis
 	Redis.applicationStarted()
 
-	// TODO Add a database connection and critical setting check on program start. See TSALMT2-26
+	// TODO Add a database connection on program start. See TSALMT2-26
 
 	try {
 		LOGGER.debug(DebugMarker.DEBUG1.marker, "Starting main loop")

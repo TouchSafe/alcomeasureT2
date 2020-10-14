@@ -6,6 +6,7 @@ import org.apache.commons.lang3.SystemUtils
 import org.jnativehook.GlobalScreen
 import java.util.logging.Level
 import java.util.logging.Logger
+import kotlin.system.exitProcess
 
 internal val LOGGER = org.slf4j.LoggerFactory.getLogger(AlcoMeasure::class.java)
 internal val MESSAGES_BUNDLE: java.util.ResourceBundle = java.util.ResourceBundle.getBundle("messages", java.util.Locale.ENGLISH)
@@ -137,7 +138,7 @@ fun main() {
 							// LOGGER.debug(DebugMarker.DEBUG1.marker, "User is valid, performing AlcoMeasure test")
 							LOGGER.info(DebugMarker.DEBUG1.marker, "User is valid, performing AlcoMeasure test")
 							// TODO Push user info to Redis with timestamp
-							LOGGER.info(DebugMarker.DEBUG1.marker, "id " + id)
+							LOGGER.info(DebugMarker.DEBUG1.marker, "id $id")
 							// LOGGER.info(DebugMarker.DEBUG1.marker, "user.id " + user.id)
 
 							// data class Rfid(val facilityCode: Int, val cardNumber: Int) // : Id()

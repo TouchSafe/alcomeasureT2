@@ -1,9 +1,8 @@
 package au.com.touchsafe.alcomeasure.util
 
-import au.com.touchsafe.alcomeasure.util.logging.appenders.ConfigurableConsoleAppender
 import au.com.touchsafe.alcomeasure.SETTINGS_PROPERTIES
 import au.com.touchsafe.alcomeasure.util.logging.DebugMarker
-import au.com.touchsafe.alcomeasure.util.logging.appenders.ConfigurableRollingFileAppender
+import au.com.touchsafe.alcomeasure.util.logging.appenders.ConfigurableConsoleAppender
 import ch.qos.logback.classic.Level
 import org.junit.jupiter.api.*
 import org.junit.jupiter.api.Assertions.assertEquals

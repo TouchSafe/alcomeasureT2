@@ -1,6 +1,5 @@
 package au.com.touchsafe.alcomeasure.util
 
-import au.com.touchsafe.alcomeasure.util.logging.appenders.ConfigurableConsoleAppender
 import au.com.touchsafe.alcomeasure.SETTINGS_PROPERTIES
 import au.com.touchsafe.alcomeasure.util.logging.DebugMarker
 import au.com.touchsafe.alcomeasure.util.logging.appenders.ConfigurableRollingFileAppender

@@ -1,7 +1,6 @@
 package au.com.touchsafe.alcomeasure
 
 import au.com.touchsafe.alcomeasure.util.logging.DebugMarker
-import kotlin.system.exitProcess
 
 object Input {
 

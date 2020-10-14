@@ -6,6 +6,8 @@ import au.com.touchsafe.alcomeasure.util.setMailLogLevel
 import au.com.touchsafe.alcomeasure.util.setOutputLoggingLevels
 import org.apache.commons.lang3.SystemUtils
 import org.jnativehook.GlobalScreen
+import java.util.logging.Level
+import java.util.logging.Logger
 
 internal val LOGGER = org.slf4j.LoggerFactory.getLogger(AlcoMeasure::class.java)
 internal val MESSAGES_BUNDLE: java.util.ResourceBundle = java.util.ResourceBundle.getBundle("messages", java.util.Locale.ENGLISH)
@@ -28,6 +30,8 @@ fun getOperatingSystemSystemUtils(): String? {
 fun main() {
 	setMailLogLevel()
 	setOutputLoggingLevels()
+	// Disable JNativeHook logging
+	Logger.getLogger(GlobalScreen::class.java.`package`.name).level = Level.OFF
 	println("TouchSafe 2 AlcoMeasure Integration: STARTED")
 	LOGGER.info("TouchSafe 2 AlcoMeasure Integration: STARTED")   // TODO output the version number here
 
@@ -55,12 +59,13 @@ fun main() {
 
 				val id: Rfid
 				if (os != "Linux") {
-					LOGGER.info("os: " + os)
+					LOGGER.info("os: $os")
 					id = Input.getId()
 				} else {
 					LOGGER.info("Running on Linux: getting input from JNativeHook")
 					val possibleId = InputV2.getId()
 					if (possibleId == null) {
+						LOGGER.info("Invalid RFID processed, displaying message on AlcoMeasure unit and skipping loop")
 						// Show "Invalid RFID" message on AlcoMeasure unit and skip loop
 						AlcoMeasure.displayMessage(MESSAGES_BUNDLE.getString("INVALID_RFID"))
 						continue

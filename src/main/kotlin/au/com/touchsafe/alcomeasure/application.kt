@@ -45,8 +45,8 @@ fun main() {
 			// AlcoMeasure device details - required to connect to the device
 			RequiredSettingsProperty("alcomeasureHost"),
 			RequiredSettingsProperty("alcomeasurePort"),
-
-			// RequiredSettingsProperty("alcomeasureLocationId"), // Not used
+			// LocationId for the AlcoMeasure unit in the AlcoMeasureDevice table
+			RequiredSettingsProperty("alcomeasureLocationId", regex = Regex("^[0-9]+$")),
 
 			// Database settings - these are all required to create the connection uri
 			RequiredSettingsProperty("dbHost"),
@@ -66,8 +66,9 @@ fun main() {
 			RequiredSettingsProperty("emailUsername")
 	)
 
-	// Check that the required settings are present
-	if (!requiredSettingsProperties.checkPresent()) {
+	// Check that the required settings are present and that they match the required regex - ".*" by default
+	// checkAllPresent not required, as checkAllMatchRegex checks that the setting is present
+	if (!requiredSettingsProperties.checkAllMatchRegex()) {
 		exitProcess(1)
 	}
 
@@ -119,7 +120,7 @@ fun main() {
 					LOGGER.info(DebugMarker.DEBUG1.marker, "Connected to DB \"${SqlServer.DB_CONNECTION_URI}\"")
 
 					// TODO Load information from the AlcoMeasureDevice table and store somewhere
-					val alcoDevice = SqlServer.validateAlcoMeasureDevice(connection, 2)    // TODO get rid of the hard-coded locationid (should come from settings.properties file)
+					val alcoDevice = SqlServer.validateAlcoMeasureDevice(connection, SETTINGS_PROPERTIES.getProperty("alcomeasureLocationId").toInt())
 
 					if (alcoDevice == null) {
 						LOGGER.info("No Alco Measure Device found for this location. Unable to run a test at this location")
@@ -165,18 +166,18 @@ fun main() {
 										var subject = MESSAGES_BUNDLE.getString("EMAIL_SUBJECT")
 										if (result.value != 0.0) {
 											LOGGER.debug(DebugMarker.DEBUG2.marker, "Result ${result.value} is over 0.0, sending email")
-											LOGGER.info(DebugMarker.DEBUG2.marker, "Result ${result.value} is over 0.0, sending email")
+											LOGGER.info("Result ${result.value} is over 0.0, sending email")
 										} else {
 											// Change email subject, as result is zero
 											subject = "Breathalyser result"
 											LOGGER.debug(DebugMarker.DEBUG2.marker, "mailAllReports = true, sending email")
-											LOGGER.info(DebugMarker.DEBUG2.marker, "mailAllReports = true, sending email")
+											LOGGER.info("mailAllReports = true, sending email")
 										}
 										LOGGER.debug(DebugMarker.DEBUG2.marker, "Creating email body for breathalyser notification email")
-										LOGGER.info(DebugMarker.DEBUG2.marker, "Creating email body for breathalyser notification email")
+										LOGGER.info("Creating email body for breathalyser notification email")
 										val emailBody = java.text.MessageFormat.format(MESSAGES_BUNDLE.getString("EMAIL_BODY"), user.firstName, user.surname, "%.8f".format(result.value))
 										LOGGER.debug(DebugMarker.DEBUG3.marker, "Created email body \"$emailBody\"")
-										LOGGER.info(DebugMarker.DEBUG3.marker, "Created email body \"$emailBody\"")
+										LOGGER.info("Created email body \"$emailBody\"")
 										Email.send(Email.TO, MESSAGES_BUNDLE.getString("EMAIL_SUBJECT"), emailBody, "photo1" to result.photo1Uri, "photo2" to result.photo2Uri, "photo3" to result.photo3Uri)
 										LOGGER.info("Sent email \"${MESSAGES_BUNDLE.getString("EMAIL_SUBJECT")}\" to ${Email.TO} with result value: ${"%.8f".format(result.value)} for ${user.firstName} ${user.surname}")
 									}

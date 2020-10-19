@@ -163,13 +163,13 @@ fun main() {
 									SqlServer.storeResult(connection, user, result)
 									// TODO Push test result and email details to Redis
 									if (result.value != 0.0 || mailAllReports()) {
-										var subject = MESSAGES_BUNDLE.getString("EMAIL_SUBJECT")
+										val subject: String
 										if (result.value != 0.0) {
+											subject = MESSAGES_BUNDLE.getString("EMAIL_SUBJECT_NONZERO")
 											LOGGER.debug(DebugMarker.DEBUG2.marker, "Result ${result.value} is over 0.0, sending email")
 											LOGGER.info("Result ${result.value} is over 0.0, sending email")
 										} else {
-											// Change email subject, as result is zero
-											subject = "Breathalyser result"
+											subject = MESSAGES_BUNDLE.getString("EMAIL_SUBJECT_ZERO")
 											LOGGER.debug(DebugMarker.DEBUG2.marker, "mailAllReports = true, sending email")
 											LOGGER.info("mailAllReports = true, sending email")
 										}
@@ -178,8 +178,8 @@ fun main() {
 										val emailBody = java.text.MessageFormat.format(MESSAGES_BUNDLE.getString("EMAIL_BODY"), user.firstName, user.surname, "%.8f".format(result.value))
 										LOGGER.debug(DebugMarker.DEBUG3.marker, "Created email body \"$emailBody\"")
 										LOGGER.info("Created email body \"$emailBody\"")
-										Email.send(Email.TO, MESSAGES_BUNDLE.getString("EMAIL_SUBJECT"), emailBody, "photo1" to result.photo1Uri, "photo2" to result.photo2Uri, "photo3" to result.photo3Uri)
-										LOGGER.info("Sent email \"${MESSAGES_BUNDLE.getString("EMAIL_SUBJECT")}\" to ${Email.TO} with result value: ${"%.8f".format(result.value)} for ${user.firstName} ${user.surname}")
+										Email.send(Email.TO, subject, emailBody, "photo1" to result.photo1Uri, "photo2" to result.photo2Uri, "photo3" to result.photo3Uri)
+										LOGGER.info("Sent email \"$subject\" to ${Email.TO} with result value: ${"%.8f".format(result.value)} for ${user.firstName} ${user.surname}")
 									}
 								}
 							} else {

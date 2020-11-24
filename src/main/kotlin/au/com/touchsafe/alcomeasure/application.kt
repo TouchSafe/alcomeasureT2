@@ -74,16 +74,14 @@ fun main() {
 
 	val os = getOperatingSystemSystemUtils()
 	LOGGER.info("OS: $os")
-	if (os != "Linux") {
-		LOGGER.info("Connected keyboards:" + lc.kra.system.keyboard.GlobalKeyboardHook.listKeyboards().map { (key, value) -> " [$key:$value]" }.joinToString(""))
-	} else {
-		LOGGER.debug("Registering JNativeHook native hook")
-		GlobalScreen.registerNativeHook()
-		LOGGER.debug("Registered JNativeHook native hook")
-		LOGGER.debug("Adding JNativeHook key listener")
-		GlobalScreen.addNativeKeyListener(InputV2.KEYBOARD_HOOK)
-		LOGGER.info("Added JNativeHook key listener")
-	}
+	// Keyboard setup
+	LOGGER.debug("Registering JNativeHook native hook")
+	GlobalScreen.registerNativeHook()
+	LOGGER.debug("Registered JNativeHook native hook")
+	LOGGER.debug("Adding JNativeHook key listener")
+	GlobalScreen.addNativeKeyListener(InputV2.KEYBOARD_HOOK)
+	LOGGER.info("Added JNativeHook key listener")
+
 	// TODO Need to handle connection error here with Redis
 	Redis.applicationStarted()
 

@@ -155,8 +155,8 @@ fun main() {
 
 							// Redis.cardScanned(user.id, user.firstName, user.surname)    // user.id is not valid at the point. Probably bug here.
 							Redis.cardScanned(id.cardNumber, user.firstName, user.surname)
-							// TODO handle Linux / Dev system here
-							if (os != "Linux") {
+							// TODO handle Dev system here (no alcomeasure device)
+							if (SETTINGS_PROPERTIES.getProperty("alcomeasureHost") == "") {
 								AlcoMeasure.performTest(user)?.let { result ->
 									LOGGER.debug(DebugMarker.DEBUG1.marker, "Test completed with result $result")
 									LOGGER.debug(DebugMarker.DEBUG2.marker, "Storing result")
@@ -183,7 +183,7 @@ fun main() {
 									}
 								}
 							} else {
-								LOGGER.info("Running on Linux: can't handle AlcoMeasure Connection currently, using a dummy result for code testing")
+								LOGGER.info("No AlcoMeasure host specified in settings.properties, using a dummy result for code testing")
 								// data class Result(val value: Double, val photo1Uri: java.net.URL? = null, val photo2Uri: java.net.URL? = null, val photo3Uri: java.net.URL? = null)
 								val result = Result(0.00)
 								LOGGER.debug(DebugMarker.DEBUG1.marker, "Test completed with result $result")

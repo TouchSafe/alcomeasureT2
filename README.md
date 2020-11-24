@@ -37,8 +37,8 @@ the moment there is a NUC and AlcoMeasure device at TouchSafe in Brisbane and on
 area. Example: applicationID = e022520a-c7ae-49d7-b202-e7933fb83dcb
 
 alcomeasureHost - IP address or hostname of the AlcoMeasure Testing Device. This will have to be changed at each client
-site. Example: alcomeasureHost = 192.168.0.164
-
+site. If this field is empty, a dummy result of zero will be used. Example: alcomeasureHost = 192.168.0.164
+    
 alcomeasurePort - TCP Port number that the AlcoMeasure unit is listening on. This is configured on the AlcoMeasure unit
 and I believe the default port is 26000. Example: alcomeasurePort = 26000
 
